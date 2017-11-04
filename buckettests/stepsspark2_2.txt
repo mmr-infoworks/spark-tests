@@ -96,3 +96,31 @@ testnobck.filter("ziw_row_id = '91c36e90096e5b5b6d5dhihie85077018406'").take(10)
 plan - testnobck2.htm
 
 
+read files based on pattern
+=================================================================================================
+scala> val testparbck = spark.read.option("inferSchema", true).orc("/apps/hive/warehouse/testparbck/ziw_status_flag=I/*_00002*")
+
+scala> testparbck.count()
+res11: Long = 3000000
+
+
+scala> val source = testparbck.limit(1000) ( was running out of memory)
+source: org.apache.spark.sql.Dataset[org.apache.spark.sql.Row] = [c_customer_sk: decimal(38,0), c_customer_id: string ... 73 more fields]
+
+scala> source.createOrReplaceTempView("par1")
+warning: there was one deprecation warning; re-run with -deprecation for details
+
+imitating merge logic
+scala> val mergedf  = spark.sql("select b.* from par1 a inner join par1 b on a.ziw_row_id = b.ziw_row_id")
+mergedf: org.apache.spark.sql.DataFrame = [c_customer_sk: decimal(38,0), c_customer_id: string ... 73 more fields]
+
+mergedf.write.format("orc").bucketBy(3,"ziw_row_id").saveAsTable("mergedf")
+17/11/04 09:54:26 WARN HiveExternalCatalog: Persisting bucketed data source table `default`.`mergedf` into Hive metastore in Spark SQL specific format, which is NOT compatible with Hive.
+
+
+/apps/hive/warehouse/mergedf
+ hdfs dfs -ls /apps/hive/warehouse/mergedf/
+Found 2 items
+-rw-r--r--   3 ec2-user hdfs          0 2017-11-04 09:54 /apps/hive/warehouse/mergedf/_SUCCESS
+-rw-r--r--   3 ec2-user hdfs    3661649 2017-11-04 09:54 /apps/hive/warehouse/mergedf/part-00000-6da94ab9-4b84-4961-b739-1a8461d407d7_00002.c000.snappy.orc
+[ec2-user@dev2 mm]$
