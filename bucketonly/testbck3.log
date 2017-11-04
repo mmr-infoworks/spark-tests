@@ -1,0 +1,1470 @@
+scala> testbck.count17/11/04 05:39:52 DEBUG DFSClient: DataStreamer block BP-387439159-172.30.1.247-1493051499278:blk_1074043682_302911 sending packet packet seqno: -1 offsetInBlock: 0 lastPacketInBlock: false lastByteOffsetInBlock: 0
+17/11/04 05:39:52 DEBUG DFSClient: DFSClient seqno: -1 reply: SUCCESS reply: SUCCESS reply: SUCCESS downstreamAckTimeNanos: 830307 flag: 0 flag: 0 flag: 0
+(*)
+<console>:26: error: too many arguments for method count: ()Long
+       testbck.count(*)
+                    ^
+
+scala> testbck.count()
+17/11/04 05:39:58 DEBUG HiveSessionStateBuilder$$anon$1:
+=== Result of Batch Resolution ===
+!'DeserializeToObject unresolveddeserializer(createexternalrow(getcolumnbyordinal(0, DecimalType(38,0)).toJavaBigDecimal, getcolumnbyordinal(1, StringType).toString, getcolumnbyordinal(2, DecimalType(38,0)).toJavaBigDecimal, getcolumnbyordinal(3, DecimalType(38,0)).toJavaBigDecimal, getcolumnbyordinal(4, DecimalType(38,0)).toJavaBigDecimal, getcolumnbyordinal(5, DecimalType(38,0)).toJavaBigDecimal, getcolumnbyordinal(6, DecimalType(38,0)).toJavaBigDecimal, getcolumnbyordinal(7, StringType).toString, getcolumnbyordinal(8, StringType).toString, getcolumnbyordinal(9, StringType).toString, getcolumnbyordinal(10, DecimalType(38,0)).toJavaBigDecimal, getcolumnbyordinal(11, DecimalType(38,0)).toJavaBigDecimal, getcolumnbyordinal(12, DecimalType(38,0)).toJavaBigDecimal, getcolumnbyordinal(13, StringType).toString, getcolumnbyordinal(14, StringType).toString, getcolumnbyordinal(15, StringType).toString, getcolumnbyordinal(16, StringType).toString, getcolumnbyordinal(17, DecimalType(38,0)).toJavaBigDecimal, getcolumnbyordinal(18, StringType).toString, getcolumnbyordinal(19, DecimalType(38,0)).toJavaBigDecimal, getcolumnbyordinal(20, DecimalType(38,0)).toJavaBigDecimal, getcolumnbyordinal(21, DecimalType(38,0)).toJavaBigDecimal, getcolumnbyordinal(22, DecimalType(38,0)).toJavaBigDecimal, getcolumnbyordinal(23, DecimalType(38,0)).toJavaBigDecimal, ... 128 more fields)), obj#614: org.apache.spark.sql.Row   DeserializeToObject createexternalrow(c_customer_sk#309.toJavaBigDecimal, c_customer_id#310.toString, c_current_cdemo_sk#311.toJavaBigDecimal, c_current_hdemo_sk#312.toJavaBigDecimal, c_current_addr_sk#313.toJavaBigDecimal, c_first_shipto_date_sk#314.toJavaBigDecimal, c_first_sales_date_sk#315.toJavaBigDecimal, c_first_name#316.toString, c_last_name#317.toString, c_preferred_cust_flag#318.toString, c_birth_day#319.toJavaBigDecimal, c_birth_month#320.toJavaBigDecimal, c_birth_year#321.toJavaBigDecimal, c_birth_country#322.toString, c_login#323.toString, c_email_address#324.toString, c_last_review_date#325.toString, c_customer_sk__customer#326.toJavaBigDecimal, c_customer_id__customer#327.toString, c_current_cdemo_sk__customer#328.toJavaBigDecimal, c_current_hdemo_sk__customer#329.toJavaBigDecimal, c_current_addr_sk__customer#330.toJavaBigDecimal, c_first_shipto_date_sk__customer#331.toJavaBigDecimal, c_first_sales_date_sk__customer#332.toJavaBigDecimal, ... 128 more fields), obj#614: org.apache.spark.sql.Row
+ +- LocalRelation <empty>, [c_customer_sk#309, c_customer_id#310, c_current_cdemo_sk#311, c_current_hdemo_sk#312, c_current_addr_sk#313, c_first_shipto_date_sk#314, c_first_sales_date_sk#315, c_first_name#316, c_last_name#317, c_preferred_cust_flag#318, c_birth_day#319, c_birth_month#320, c_birth_year#321, c_birth_country#322, c_login#323, c_email_address#324, c_last_review_date#325, c_customer_sk__customer#326, c_customer_id__customer#327, c_current_cdemo_sk__customer#328, c_current_hdemo_sk__customer#329, c_current_addr_sk__customer#330, c_first_shipto_date_sk__customer#331, c_first_sales_date_sk__customer#332, ... 52 more fields]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         +- LocalRelation <empty>, [c_customer_sk#309, c_customer_id#310, c_current_cdemo_sk#311, c_current_hdemo_sk#312, c_current_addr_sk#313, c_first_shipto_date_sk#314, c_first_sales_date_sk#315, c_first_name#316, c_last_name#317, c_preferred_cust_flag#318, c_birth_day#319, c_birth_month#320, c_birth_year#321, c_birth_country#322, c_login#323, c_email_address#324, c_last_review_date#325, c_customer_sk__customer#326, c_customer_id__customer#327, c_current_cdemo_sk__customer#328, c_current_hdemo_sk__customer#329, c_current_addr_sk__customer#330, c_first_shipto_date_sk__customer#331, c_first_sales_date_sk__customer#332, ... 52 more fields]
+
+17/11/04 05:39:58 DEBUG HiveSessionStateBuilder$$anon$1:
+=== Result of Batch Resolution ===
+!'DeserializeToObject unresolveddeserializer(createexternalrow(getcolumnbyordinal(0, LongType), StructField(count,LongType,false))), obj#618: org.apache.spark.sql.Row   DeserializeToObject createexternalrow(count#616L, StructField(count,LongType,false)), obj#618: org.apache.spark.sql.Row
+ +- LocalRelation <empty>, [count#616L]                                                                                                                                  +- LocalRelation <empty>, [count#616L]
+
+17/11/04 05:39:58 DEBUG BaseSessionStateBuilder$$anon$2:
+=== Result of Batch Finish Analysis ===
+ Aggregate [count(1) AS count#616L]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Aggregate [count(1) AS count#616L]
+ +- Project [c_customer_sk#309, c_customer_id#310, c_current_cdemo_sk#311, c_current_hdemo_sk#312, c_current_addr_sk#313, c_first_shipto_date_sk#314, c_first_sales_date_sk#315, c_first_name#316, c_last_name#317, c_preferred_cust_flag#318, c_birth_day#319, c_birth_month#320, c_birth_year#321, c_birth_country#322, c_login#323, c_email_address#324, c_last_review_date#325, c_customer_sk__customer#326, c_customer_id__customer#327, c_current_cdemo_sk__customer#328, c_current_hdemo_sk__customer#329, c_current_addr_sk__customer#330, c_first_shipto_date_sk__customer#331, c_first_sales_date_sk__customer#332, ... 52 more fields]   +- Project [c_customer_sk#309, c_customer_id#310, c_current_cdemo_sk#311, c_current_hdemo_sk#312, c_current_addr_sk#313, c_first_shipto_date_sk#314, c_first_sales_date_sk#315, c_first_name#316, c_last_name#317, c_preferred_cust_flag#318, c_birth_day#319, c_birth_month#320, c_birth_year#321, c_birth_country#322, c_login#323, c_email_address#324, c_last_review_date#325, c_customer_sk__customer#326, c_customer_id__customer#327, c_current_cdemo_sk__customer#328, c_current_hdemo_sk__customer#329, c_current_addr_sk__customer#330, c_first_shipto_date_sk__customer#331, c_first_sales_date_sk__customer#332, ... 52 more fields]
+!   +- SubqueryAlias testbck                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           +- Relation[c_customer_sk#309,c_customer_id#310,c_current_cdemo_sk#311,c_current_hdemo_sk#312,c_current_addr_sk#313,c_first_shipto_date_sk#314,c_first_sales_date_sk#315,c_first_name#316,c_last_name#317,c_preferred_cust_flag#318,c_birth_day#319,c_birth_month#320,c_birth_year#321,c_birth_country#322,c_login#323,c_email_address#324,c_last_review_date#325,c_customer_sk__customer#326,c_customer_id__customer#327,c_current_cdemo_sk__customer#328,c_current_hdemo_sk__customer#329,c_current_addr_sk__customer#330,c_first_shipto_date_sk__customer#331,c_first_sales_date_sk__customer#332,... 52 more fields] orc
+!      +- Relation[c_customer_sk#309,c_customer_id#310,c_current_cdemo_sk#311,c_current_hdemo_sk#312,c_current_addr_sk#313,c_first_shipto_date_sk#314,c_first_sales_date_sk#315,c_first_name#316,c_last_name#317,c_preferred_cust_flag#318,c_birth_day#319,c_birth_month#320,c_birth_year#321,c_birth_country#322,c_login#323,c_email_address#324,c_last_review_date#325,c_customer_sk__customer#326,c_customer_id__customer#327,c_current_cdemo_sk__customer#328,c_current_hdemo_sk__customer#329,c_current_addr_sk__customer#330,c_first_shipto_date_sk__customer#331,c_first_sales_date_sk__customer#332,... 52 more fields] orc
+
+17/11/04 05:39:58 DEBUG BaseSessionStateBuilder$$anon$2:
+=== Result of Batch Operator Optimizations ===
+ Aggregate [count(1) AS count#616L]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Aggregate [count(1) AS count#616L]
+!+- Project [c_customer_sk#309, c_customer_id#310, c_current_cdemo_sk#311, c_current_hdemo_sk#312, c_current_addr_sk#313, c_first_shipto_date_sk#314, c_first_sales_date_sk#315, c_first_name#316, c_last_name#317, c_preferred_cust_flag#318, c_birth_day#319, c_birth_month#320, c_birth_year#321, c_birth_country#322, c_login#323, c_email_address#324, c_last_review_date#325, c_customer_sk__customer#326, c_customer_id__customer#327, c_current_cdemo_sk__customer#328, c_current_hdemo_sk__customer#329, c_current_addr_sk__customer#330, c_first_shipto_date_sk__customer#331, c_first_sales_date_sk__customer#332, ... 52 more fields]   +- Project
+    +- Relation[c_customer_sk#309,c_customer_id#310,c_current_cdemo_sk#311,c_current_hdemo_sk#312,c_current_addr_sk#313,c_first_shipto_date_sk#314,c_first_sales_date_sk#315,c_first_name#316,c_last_name#317,c_preferred_cust_flag#318,c_birth_day#319,c_birth_month#320,c_birth_year#321,c_birth_country#322,c_login#323,c_email_address#324,c_last_review_date#325,c_customer_sk__customer#326,c_customer_id__customer#327,c_current_cdemo_sk__customer#328,c_current_hdemo_sk__customer#329,c_current_addr_sk__customer#330,c_first_shipto_date_sk__customer#331,c_first_sales_date_sk__customer#332,... 52 more fields] orc                       +- Relation[c_customer_sk#309,c_customer_id#310,c_current_cdemo_sk#311,c_current_hdemo_sk#312,c_current_addr_sk#313,c_first_shipto_date_sk#314,c_first_sales_date_sk#315,c_first_name#316,c_last_name#317,c_preferred_cust_flag#318,c_birth_day#319,c_birth_month#320,c_birth_year#321,c_birth_country#322,c_login#323,c_email_address#324,c_last_review_date#325,c_customer_sk__customer#326,c_customer_id__customer#327,c_current_cdemo_sk__customer#328,c_current_hdemo_sk__customer#329,c_current_addr_sk__customer#330,c_first_shipto_date_sk__customer#331,c_first_sales_date_sk__customer#332,... 52 more fields] orc
+
+17/11/04 05:39:58 INFO FileSourceStrategy: Pruning directories with:
+17/11/04 05:39:58 INFO FileSourceStrategy: Post-Scan Filters:
+17/11/04 05:39:58 INFO FileSourceStrategy: Output Data Schema: struct<>
+17/11/04 05:39:58 INFO FileSourceScanExec: Pushed Filters:
+17/11/04 05:39:58 DEBUG ContextCleaner: Got cleaning task CleanAccum(78)
+17/11/04 05:39:58 DEBUG ContextCleaner: Cleaning accumulator 78
+17/11/04 05:39:58 INFO ContextCleaner: Cleaned accumulator 78
+17/11/04 05:39:58 DEBUG ContextCleaner: Got cleaning task CleanAccum(83)
+17/11/04 05:39:58 DEBUG ContextCleaner: Cleaning accumulator 83
+17/11/04 05:39:58 INFO ContextCleaner: Cleaned accumulator 83
+17/11/04 05:39:58 DEBUG ContextCleaner: Got cleaning task CleanAccum(79)
+17/11/04 05:39:58 DEBUG ContextCleaner: Cleaning accumulator 79
+17/11/04 05:39:58 INFO ContextCleaner: Cleaned accumulator 79
+17/11/04 05:39:58 DEBUG ContextCleaner: Got cleaning task CleanAccum(81)
+17/11/04 05:39:58 DEBUG ContextCleaner: Cleaning accumulator 81
+17/11/04 05:39:58 INFO ContextCleaner: Cleaned accumulator 81
+17/11/04 05:39:58 DEBUG ContextCleaner: Got cleaning task CleanAccum(80)
+17/11/04 05:39:58 DEBUG ContextCleaner: Cleaning accumulator 80
+17/11/04 05:39:58 INFO ContextCleaner: Cleaned accumulator 80
+17/11/04 05:39:58 DEBUG ContextCleaner: Got cleaning task CleanBroadcast(3)
+17/11/04 05:39:58 DEBUG ContextCleaner: Cleaning broadcast 3
+17/11/04 05:39:58 DEBUG TorrentBroadcast: Unpersisting TorrentBroadcast 3
+17/11/04 05:39:58 DEBUG BlockManagerSlaveEndpoint: removing broadcast 3
+17/11/04 05:39:58 DEBUG BlockManager: Removing broadcast 3
+17/11/04 05:39:58 DEBUG BlockManager: Removing block broadcast_3_piece0
+17/11/04 05:39:58 DEBUG MemoryStore: Block broadcast_3_piece0 of size 30253 dropped from memory (free 383321165)
+17/11/04 05:39:58 INFO BlockManagerInfo: Removed broadcast_3_piece0 on 172.30.1.247:49840 in memory (size: 29.5 KB, free: 366.3 MB)
+17/11/04 05:39:58 DEBUG BlockManagerMaster: Updated info of block broadcast_3_piece0
+17/11/04 05:39:58 DEBUG BlockManager: Told master about block broadcast_3_piece0
+17/11/04 05:39:58 DEBUG BlockManager: Removing block broadcast_3
+17/11/04 05:39:58 DEBUG MemoryStore: Block broadcast_3 of size 347560 dropped from memory (free 383668725)
+17/11/04 05:39:58 DEBUG DFSClient: DFSClient writeChunk allocating new packet seqno=13, src=/spark2-history/local-1509773229242.inprogress, packetSize=65016, chunksPerPacket=126, bytesCurBlock=73728
+17/11/04 05:39:58 DEBUG DFSClient: DFSClient flush(): bytesCurBlock=81472 lastFlushOffset=74008 createNewBlock=false
+17/11/04 05:39:58 DEBUG DFSClient: Queued packet 13
+17/11/04 05:39:58 DEBUG DFSClient: Waiting for ack for: 13
+17/11/04 05:39:58 DEBUG DFSClient: DataStreamer block BP-387439159-172.30.1.247-1493051499278:blk_1074043682_302911 sending packet packet seqno: 13 offsetInBlock: 73728 lastPacketInBlock: false lastByteOffsetInBlock: 81472
+17/11/04 05:39:58 DEBUG BlockManagerSlaveEndpoint: Done removing broadcast 3, response is 0
+17/11/04 05:39:58 DEBUG ContextCleaner: Cleaned broadcast 3
+17/11/04 05:39:58 DEBUG BlockManagerSlaveEndpoint: Sent response: 0 to 172.30.1.247:42665
+17/11/04 05:39:58 DEBUG ContextCleaner: Got cleaning task CleanAccum(82)
+17/11/04 05:39:58 DEBUG ContextCleaner: Cleaning accumulator 82
+17/11/04 05:39:58 INFO ContextCleaner: Cleaned accumulator 82
+17/11/04 05:39:58 DEBUG DFSClient: DFSClient seqno: 13 reply: SUCCESS reply: SUCCESS reply: SUCCESS downstreamAckTimeNanos: 1055706 flag: 0 flag: 0 flag: 0
+17/11/04 05:39:58 DEBUG WholeStageCodegenExec:
+/* 001 */ public Object generate(Object[] references) {
+/* 002 */   return new GeneratedIterator(references);
+/* 003 */ }
+/* 004 */
+/* 005 */ final class GeneratedIterator extends org.apache.spark.sql.execution.BufferedRowIterator {
+/* 006 */   private Object[] references;
+/* 007 */   private scala.collection.Iterator[] inputs;
+/* 008 */   private boolean agg_initAgg;
+/* 009 */   private boolean agg_bufIsNull;
+/* 010 */   private long agg_bufValue;
+/* 011 */   private scala.collection.Iterator inputadapter_input;
+/* 012 */   private org.apache.spark.sql.execution.metric.SQLMetric agg_numOutputRows;
+/* 013 */   private org.apache.spark.sql.execution.metric.SQLMetric agg_aggTime;
+/* 014 */   private UnsafeRow agg_result;
+/* 015 */   private org.apache.spark.sql.catalyst.expressions.codegen.BufferHolder agg_holder;
+/* 016 */   private org.apache.spark.sql.catalyst.expressions.codegen.UnsafeRowWriter agg_rowWriter;
+/* 017 */
+/* 018 */   public GeneratedIterator(Object[] references) {
+/* 019 */     this.references = references;
+/* 020 */   }
+/* 021 */
+/* 022 */   public void init(int index, scala.collection.Iterator[] inputs) {
+/* 023 */     partitionIndex = index;
+/* 024 */     this.inputs = inputs;
+/* 025 */     agg_initAgg = false;
+/* 026 */
+/* 027 */     inputadapter_input = inputs[0];
+/* 028 */     this.agg_numOutputRows = (org.apache.spark.sql.execution.metric.SQLMetric) references[0];
+/* 029 */     this.agg_aggTime = (org.apache.spark.sql.execution.metric.SQLMetric) references[1];
+/* 030 */     agg_result = new UnsafeRow(1);
+/* 031 */     this.agg_holder = new org.apache.spark.sql.catalyst.expressions.codegen.BufferHolder(agg_result, 0);
+/* 032 */     this.agg_rowWriter = new org.apache.spark.sql.catalyst.expressions.codegen.UnsafeRowWriter(agg_holder, 1);
+/* 033 */
+/* 034 */   }
+/* 035 */
+/* 036 */   private void agg_doAggregateWithoutKey() throws java.io.IOException {
+/* 037 */     // initialize aggregation buffer
+/* 038 */     agg_bufIsNull = false;
+/* 039 */     agg_bufValue = 0L;
+/* 040 */
+/* 041 */     while (inputadapter_input.hasNext() && !stopEarly()) {
+/* 042 */       InternalRow inputadapter_row = (InternalRow) inputadapter_input.next();
+/* 043 */       long inputadapter_value = inputadapter_row.getLong(0);
+/* 044 */
+/* 045 */       // do aggregate
+/* 046 */       // common sub-expressions
+/* 047 */
+/* 048 */       // evaluate aggregate function
+/* 049 */       boolean agg_isNull3 = false;
+/* 050 */
+/* 051 */       long agg_value3 = -1L;
+/* 052 */       agg_value3 = agg_bufValue + inputadapter_value;
+/* 053 */       // update aggregation buffer
+/* 054 */       agg_bufIsNull = false;
+/* 055 */       agg_bufValue = agg_value3;
+/* 056 */       if (shouldStop()) return;
+/* 057 */     }
+/* 058 */
+/* 059 */   }
+/* 060 */
+/* 061 */   protected void processNext() throws java.io.IOException {
+/* 062 */     while (!agg_initAgg) {
+/* 063 */       agg_initAgg = true;
+/* 064 */       long agg_beforeAgg = System.nanoTime();
+/* 065 */       agg_doAggregateWithoutKey();
+/* 066 */       agg_aggTime.add((System.nanoTime() - agg_beforeAgg) / 1000000);
+/* 067 */
+/* 068 */       // output the result
+/* 069 */
+/* 070 */       agg_numOutputRows.add(1);
+/* 071 */       agg_rowWriter.zeroOutNullBytes();
+/* 072 */
+/* 073 */       if (agg_bufIsNull) {
+/* 074 */         agg_rowWriter.setNullAt(0);
+/* 075 */       } else {
+/* 076 */         agg_rowWriter.write(0, agg_bufValue);
+/* 077 */       }
+/* 078 */       append(agg_result);
+/* 079 */     }
+/* 080 */   }
+/* 081 */ }
+
+17/11/04 05:39:58 DEBUG CodeGenerator:
+/* 001 */ public Object generate(Object[] references) {
+/* 002 */   return new GeneratedIterator(references);
+/* 003 */ }
+/* 004 */
+/* 005 */ final class GeneratedIterator extends org.apache.spark.sql.execution.BufferedRowIterator {
+/* 006 */   private Object[] references;
+/* 007 */   private scala.collection.Iterator[] inputs;
+/* 008 */   private boolean agg_initAgg;
+/* 009 */   private boolean agg_bufIsNull;
+/* 010 */   private long agg_bufValue;
+/* 011 */   private scala.collection.Iterator inputadapter_input;
+/* 012 */   private org.apache.spark.sql.execution.metric.SQLMetric agg_numOutputRows;
+/* 013 */   private org.apache.spark.sql.execution.metric.SQLMetric agg_aggTime;
+/* 014 */   private UnsafeRow agg_result;
+/* 015 */   private org.apache.spark.sql.catalyst.expressions.codegen.BufferHolder agg_holder;
+/* 016 */   private org.apache.spark.sql.catalyst.expressions.codegen.UnsafeRowWriter agg_rowWriter;
+/* 017 */
+/* 018 */   public GeneratedIterator(Object[] references) {
+/* 019 */     this.references = references;
+/* 020 */   }
+/* 021 */
+/* 022 */   public void init(int index, scala.collection.Iterator[] inputs) {
+/* 023 */     partitionIndex = index;
+/* 024 */     this.inputs = inputs;
+/* 025 */     agg_initAgg = false;
+/* 026 */
+/* 027 */     inputadapter_input = inputs[0];
+/* 028 */     this.agg_numOutputRows = (org.apache.spark.sql.execution.metric.SQLMetric) references[0];
+/* 029 */     this.agg_aggTime = (org.apache.spark.sql.execution.metric.SQLMetric) references[1];
+/* 030 */     agg_result = new UnsafeRow(1);
+/* 031 */     this.agg_holder = new org.apache.spark.sql.catalyst.expressions.codegen.BufferHolder(agg_result, 0);
+/* 032 */     this.agg_rowWriter = new org.apache.spark.sql.catalyst.expressions.codegen.UnsafeRowWriter(agg_holder, 1);
+/* 033 */
+/* 034 */   }
+/* 035 */
+/* 036 */   private void agg_doAggregateWithoutKey() throws java.io.IOException {
+/* 037 */     // initialize aggregation buffer
+/* 038 */     agg_bufIsNull = false;
+/* 039 */     agg_bufValue = 0L;
+/* 040 */
+/* 041 */     while (inputadapter_input.hasNext() && !stopEarly()) {
+/* 042 */       InternalRow inputadapter_row = (InternalRow) inputadapter_input.next();
+/* 043 */       long inputadapter_value = inputadapter_row.getLong(0);
+/* 044 */
+/* 045 */       // do aggregate
+/* 046 */       // common sub-expressions
+/* 047 */
+/* 048 */       // evaluate aggregate function
+/* 049 */       boolean agg_isNull3 = false;
+/* 050 */
+/* 051 */       long agg_value3 = -1L;
+/* 052 */       agg_value3 = agg_bufValue + inputadapter_value;
+/* 053 */       // update aggregation buffer
+/* 054 */       agg_bufIsNull = false;
+/* 055 */       agg_bufValue = agg_value3;
+/* 056 */       if (shouldStop()) return;
+/* 057 */     }
+/* 058 */
+/* 059 */   }
+/* 060 */
+/* 061 */   protected void processNext() throws java.io.IOException {
+/* 062 */     while (!agg_initAgg) {
+/* 063 */       agg_initAgg = true;
+/* 064 */       long agg_beforeAgg = System.nanoTime();
+/* 065 */       agg_doAggregateWithoutKey();
+/* 066 */       agg_aggTime.add((System.nanoTime() - agg_beforeAgg) / 1000000);
+/* 067 */
+/* 068 */       // output the result
+/* 069 */
+/* 070 */       agg_numOutputRows.add(1);
+/* 071 */       agg_rowWriter.zeroOutNullBytes();
+/* 072 */
+/* 073 */       if (agg_bufIsNull) {
+/* 074 */         agg_rowWriter.setNullAt(0);
+/* 075 */       } else {
+/* 076 */         agg_rowWriter.write(0, agg_bufValue);
+/* 077 */       }
+/* 078 */       append(agg_result);
+/* 079 */     }
+/* 080 */   }
+/* 081 */ }
+
+17/11/04 05:39:58 INFO CodeGenerator: Code generated in 12.810605 ms
+17/11/04 05:39:58 DEBUG WholeStageCodegenExec:
+/* 001 */ public Object generate(Object[] references) {
+/* 002 */   return new GeneratedIterator(references);
+/* 003 */ }
+/* 004 */
+/* 005 */ final class GeneratedIterator extends org.apache.spark.sql.execution.BufferedRowIterator {
+/* 006 */   private Object[] references;
+/* 007 */   private scala.collection.Iterator[] inputs;
+/* 008 */   private boolean agg_initAgg;
+/* 009 */   private boolean agg_bufIsNull;
+/* 010 */   private long agg_bufValue;
+/* 011 */   private org.apache.spark.sql.execution.metric.SQLMetric scan_numOutputRows;
+/* 012 */   private scala.collection.Iterator scan_input;
+/* 013 */   private org.apache.spark.sql.execution.metric.SQLMetric agg_numOutputRows;
+/* 014 */   private org.apache.spark.sql.execution.metric.SQLMetric agg_aggTime;
+/* 015 */   private UnsafeRow agg_result;
+/* 016 */   private org.apache.spark.sql.catalyst.expressions.codegen.BufferHolder agg_holder;
+/* 017 */   private org.apache.spark.sql.catalyst.expressions.codegen.UnsafeRowWriter agg_rowWriter;
+/* 018 */
+/* 019 */   public GeneratedIterator(Object[] references) {
+/* 020 */     this.references = references;
+/* 021 */   }
+/* 022 */
+/* 023 */   public void init(int index, scala.collection.Iterator[] inputs) {
+/* 024 */     partitionIndex = index;
+/* 025 */     this.inputs = inputs;
+/* 026 */     agg_initAgg = false;
+/* 027 */
+/* 028 */     this.scan_numOutputRows = (org.apache.spark.sql.execution.metric.SQLMetric) references[0];
+/* 029 */     scan_input = inputs[0];
+/* 030 */     this.agg_numOutputRows = (org.apache.spark.sql.execution.metric.SQLMetric) references[1];
+/* 031 */     this.agg_aggTime = (org.apache.spark.sql.execution.metric.SQLMetric) references[2];
+/* 032 */     agg_result = new UnsafeRow(1);
+/* 033 */     this.agg_holder = new org.apache.spark.sql.catalyst.expressions.codegen.BufferHolder(agg_result, 0);
+/* 034 */     this.agg_rowWriter = new org.apache.spark.sql.catalyst.expressions.codegen.UnsafeRowWriter(agg_holder, 1);
+/* 035 */
+/* 036 */   }
+/* 037 */
+/* 038 */   private void agg_doAggregateWithoutKey() throws java.io.IOException {
+/* 039 */     // initialize aggregation buffer
+/* 040 */     agg_bufIsNull = false;
+/* 041 */     agg_bufValue = 0L;
+/* 042 */
+/* 043 */     while (scan_input.hasNext()) {
+/* 044 */       InternalRow scan_row = (InternalRow) scan_input.next();
+/* 045 */       scan_numOutputRows.add(1);
+/* 046 */       // do aggregate
+/* 047 */       // common sub-expressions
+/* 048 */
+/* 049 */       // evaluate aggregate function
+/* 050 */       boolean agg_isNull1 = false;
+/* 051 */
+/* 052 */       long agg_value1 = -1L;
+/* 053 */       agg_value1 = agg_bufValue + 1L;
+/* 054 */       // update aggregation buffer
+/* 055 */       agg_bufIsNull = false;
+/* 056 */       agg_bufValue = agg_value1;
+/* 057 */       if (shouldStop()) return;
+/* 058 */     }
+/* 059 */
+/* 060 */   }
+/* 061 */
+/* 062 */   protected void processNext() throws java.io.IOException {
+/* 063 */     while (!agg_initAgg) {
+/* 064 */       agg_initAgg = true;
+/* 065 */       long agg_beforeAgg = System.nanoTime();
+/* 066 */       agg_doAggregateWithoutKey();
+/* 067 */       agg_aggTime.add((System.nanoTime() - agg_beforeAgg) / 1000000);
+/* 068 */
+/* 069 */       // output the result
+/* 070 */
+/* 071 */       agg_numOutputRows.add(1);
+/* 072 */       agg_rowWriter.zeroOutNullBytes();
+/* 073 */
+/* 074 */       if (agg_bufIsNull) {
+/* 075 */         agg_rowWriter.setNullAt(0);
+/* 076 */       } else {
+/* 077 */         agg_rowWriter.write(0, agg_bufValue);
+/* 078 */       }
+/* 079 */       append(agg_result);
+/* 080 */     }
+/* 081 */   }
+/* 082 */ }
+
+17/11/04 05:39:58 DEBUG CodeGenerator:
+/* 001 */ public Object generate(Object[] references) {
+/* 002 */   return new GeneratedIterator(references);
+/* 003 */ }
+/* 004 */
+/* 005 */ final class GeneratedIterator extends org.apache.spark.sql.execution.BufferedRowIterator {
+/* 006 */   private Object[] references;
+/* 007 */   private scala.collection.Iterator[] inputs;
+/* 008 */   private boolean agg_initAgg;
+/* 009 */   private boolean agg_bufIsNull;
+/* 010 */   private long agg_bufValue;
+/* 011 */   private org.apache.spark.sql.execution.metric.SQLMetric scan_numOutputRows;
+/* 012 */   private scala.collection.Iterator scan_input;
+/* 013 */   private org.apache.spark.sql.execution.metric.SQLMetric agg_numOutputRows;
+/* 014 */   private org.apache.spark.sql.execution.metric.SQLMetric agg_aggTime;
+/* 015 */   private UnsafeRow agg_result;
+/* 016 */   private org.apache.spark.sql.catalyst.expressions.codegen.BufferHolder agg_holder;
+/* 017 */   private org.apache.spark.sql.catalyst.expressions.codegen.UnsafeRowWriter agg_rowWriter;
+/* 018 */
+/* 019 */   public GeneratedIterator(Object[] references) {
+/* 020 */     this.references = references;
+/* 021 */   }
+/* 022 */
+/* 023 */   public void init(int index, scala.collection.Iterator[] inputs) {
+/* 024 */     partitionIndex = index;
+/* 025 */     this.inputs = inputs;
+/* 026 */     agg_initAgg = false;
+/* 027 */
+/* 028 */     this.scan_numOutputRows = (org.apache.spark.sql.execution.metric.SQLMetric) references[0];
+/* 029 */     scan_input = inputs[0];
+/* 030 */     this.agg_numOutputRows = (org.apache.spark.sql.execution.metric.SQLMetric) references[1];
+/* 031 */     this.agg_aggTime = (org.apache.spark.sql.execution.metric.SQLMetric) references[2];
+/* 032 */     agg_result = new UnsafeRow(1);
+/* 033 */     this.agg_holder = new org.apache.spark.sql.catalyst.expressions.codegen.BufferHolder(agg_result, 0);
+/* 034 */     this.agg_rowWriter = new org.apache.spark.sql.catalyst.expressions.codegen.UnsafeRowWriter(agg_holder, 1);
+/* 035 */
+/* 036 */   }
+/* 037 */
+/* 038 */   private void agg_doAggregateWithoutKey() throws java.io.IOException {
+/* 039 */     // initialize aggregation buffer
+/* 040 */     agg_bufIsNull = false;
+/* 041 */     agg_bufValue = 0L;
+/* 042 */
+/* 043 */     while (scan_input.hasNext()) {
+/* 044 */       InternalRow scan_row = (InternalRow) scan_input.next();
+/* 045 */       scan_numOutputRows.add(1);
+/* 046 */       // do aggregate
+/* 047 */       // common sub-expressions
+/* 048 */
+/* 049 */       // evaluate aggregate function
+/* 050 */       boolean agg_isNull1 = false;
+/* 051 */
+/* 052 */       long agg_value1 = -1L;
+/* 053 */       agg_value1 = agg_bufValue + 1L;
+/* 054 */       // update aggregation buffer
+/* 055 */       agg_bufIsNull = false;
+/* 056 */       agg_bufValue = agg_value1;
+/* 057 */       if (shouldStop()) return;
+/* 058 */     }
+/* 059 */
+/* 060 */   }
+/* 061 */
+/* 062 */   protected void processNext() throws java.io.IOException {
+/* 063 */     while (!agg_initAgg) {
+/* 064 */       agg_initAgg = true;
+/* 065 */       long agg_beforeAgg = System.nanoTime();
+/* 066 */       agg_doAggregateWithoutKey();
+/* 067 */       agg_aggTime.add((System.nanoTime() - agg_beforeAgg) / 1000000);
+/* 068 */
+/* 069 */       // output the result
+/* 070 */
+/* 071 */       agg_numOutputRows.add(1);
+/* 072 */       agg_rowWriter.zeroOutNullBytes();
+/* 073 */
+/* 074 */       if (agg_bufIsNull) {
+/* 075 */         agg_rowWriter.setNullAt(0);
+/* 076 */       } else {
+/* 077 */         agg_rowWriter.write(0, agg_bufValue);
+/* 078 */       }
+/* 079 */       append(agg_result);
+/* 080 */     }
+/* 081 */   }
+/* 082 */ }
+
+17/11/04 05:39:58 INFO CodeGenerator: Code generated in 12.444186 ms
+17/11/04 05:39:58 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 339.4 KB, free 365.6 MB)
+17/11/04 05:39:58 DEBUG BlockManager: Put block broadcast_4 locally took  6 ms
+17/11/04 05:39:58 DEBUG BlockManager: Putting block broadcast_4 without replication took  6 ms
+17/11/04 05:39:58 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 29.5 KB, free 365.5 MB)
+17/11/04 05:39:58 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on 172.30.1.247:49840 (size: 29.5 KB, free: 366.2 MB)
+17/11/04 05:39:58 DEBUG BlockManagerMaster: Updated info of block broadcast_4_piece0
+17/11/04 05:39:58 DEBUG BlockManager: Told master about block broadcast_4_piece0
+17/11/04 05:39:58 DEBUG BlockManager: Put block broadcast_4_piece0 locally took  1 ms
+17/11/04 05:39:58 DEBUG BlockManager: Putting block broadcast_4_piece0 without replication took  1 ms
+17/11/04 05:39:58 INFO SparkContext: Created broadcast 4 from count at <console>:26
+17/11/04 05:39:58 INFO FileSourceScanExec: Planning with 3 buckets
+17/11/04 05:39:58 DEBUG ClosureCleaner: +++ Cleaning closure <function2> (org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$8) +++
+17/11/04 05:39:58 DEBUG ClosureCleaner:  + declared fields: 4
+17/11/04 05:39:58 DEBUG ClosureCleaner:      public static final long org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$8.serialVersionUID
+17/11/04 05:39:58 DEBUG ClosureCleaner:      private final org.apache.spark.sql.catalyst.expressions.codegen.CodeAndComment org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$8.cleanedSource$2
+17/11/04 05:39:58 DEBUG ClosureCleaner:      private final java.lang.Object[] org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$8.references$1
+17/11/04 05:39:58 DEBUG ClosureCleaner:      public final org.apache.spark.sql.execution.metric.SQLMetric org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$8.durationMs$1
+17/11/04 05:39:58 DEBUG ClosureCleaner:  + declared methods: 2
+17/11/04 05:39:58 DEBUG ClosureCleaner:      public final java.lang.Object org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$8.apply(java.lang.Object,java.lang.Object)
+17/11/04 05:39:58 DEBUG ClosureCleaner:      public final scala.collection.Iterator org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$8.apply(int,scala.collection.Iterator)
+17/11/04 05:39:58 DEBUG ClosureCleaner:  + inner classes: 1
+17/11/04 05:39:58 DEBUG ClosureCleaner:      org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$8$$anon$1
+17/11/04 05:39:58 DEBUG ClosureCleaner:  + outer classes: 0
+17/11/04 05:39:58 DEBUG ClosureCleaner:  + outer objects: 0
+17/11/04 05:39:58 DEBUG ClosureCleaner:  + populating accessed fields because this is the starting closure
+17/11/04 05:39:58 DEBUG ClosureCleaner:  + fields accessed by starting closure: 0
+17/11/04 05:39:58 DEBUG ClosureCleaner:  + there are no enclosing objects!
+17/11/04 05:39:58 DEBUG ClosureCleaner:  +++ closure <function2> (org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$8) is now cleaned +++
+17/11/04 05:39:58 DEBUG ClosureCleaner: +++ Cleaning closure <function2> (org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$8) +++
+17/11/04 05:39:58 DEBUG ClosureCleaner:  + declared fields: 4
+17/11/04 05:39:58 DEBUG ClosureCleaner:      public static final long org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$8.serialVersionUID
+17/11/04 05:39:58 DEBUG ClosureCleaner:      private final org.apache.spark.sql.catalyst.expressions.codegen.CodeAndComment org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$8.cleanedSource$2
+17/11/04 05:39:58 DEBUG ClosureCleaner:      private final java.lang.Object[] org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$8.references$1
+17/11/04 05:39:58 DEBUG ClosureCleaner:      public final org.apache.spark.sql.execution.metric.SQLMetric org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$8.durationMs$1
+17/11/04 05:39:58 DEBUG ClosureCleaner:  + declared methods: 2
+17/11/04 05:39:58 DEBUG ClosureCleaner:      public final java.lang.Object org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$8.apply(java.lang.Object,java.lang.Object)
+17/11/04 05:39:58 DEBUG ClosureCleaner:      public final scala.collection.Iterator org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$8.apply(int,scala.collection.Iterator)
+17/11/04 05:39:58 DEBUG ClosureCleaner:  + inner classes: 1
+17/11/04 05:39:58 DEBUG ClosureCleaner:      org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$8$$anon$1
+17/11/04 05:39:58 DEBUG ClosureCleaner:  + outer classes: 0
+17/11/04 05:39:58 DEBUG ClosureCleaner:  + outer objects: 0
+17/11/04 05:39:58 DEBUG ClosureCleaner:  + populating accessed fields because this is the starting closure
+17/11/04 05:39:58 DEBUG ClosureCleaner:  + fields accessed by starting closure: 0
+17/11/04 05:39:58 DEBUG ClosureCleaner:  + there are no enclosing objects!
+17/11/04 05:39:58 DEBUG ClosureCleaner:  +++ closure <function2> (org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$8) is now cleaned +++
+17/11/04 05:39:58 DEBUG ClosureCleaner: +++ Cleaning closure <function1> (org.apache.spark.rdd.RDD$$anonfun$collect$1$$anonfun$13) +++
+17/11/04 05:39:58 DEBUG ClosureCleaner:  + declared fields: 2
+17/11/04 05:39:58 DEBUG ClosureCleaner:      public static final long org.apache.spark.rdd.RDD$$anonfun$collect$1$$anonfun$13.serialVersionUID
+17/11/04 05:39:58 DEBUG ClosureCleaner:      private final org.apache.spark.rdd.RDD$$anonfun$collect$1 org.apache.spark.rdd.RDD$$anonfun$collect$1$$anonfun$13.$outer
+17/11/04 05:39:58 DEBUG ClosureCleaner:  + declared methods: 2
+17/11/04 05:39:58 DEBUG ClosureCleaner:      public final java.lang.Object org.apache.spark.rdd.RDD$$anonfun$collect$1$$anonfun$13.apply(java.lang.Object)
+17/11/04 05:39:58 DEBUG ClosureCleaner:      public final java.lang.Object org.apache.spark.rdd.RDD$$anonfun$collect$1$$anonfun$13.apply(scala.collection.Iterator)
+17/11/04 05:39:58 DEBUG ClosureCleaner:  + inner classes: 0
+17/11/04 05:39:58 DEBUG ClosureCleaner:  + outer classes: 2
+17/11/04 05:39:58 DEBUG ClosureCleaner:      org.apache.spark.rdd.RDD$$anonfun$collect$1
+17/11/04 05:39:58 DEBUG ClosureCleaner:      org.apache.spark.rdd.RDD
+17/11/04 05:39:58 DEBUG ClosureCleaner:  + outer objects: 2
+17/11/04 05:39:58 DEBUG ClosureCleaner:      <function0>
+17/11/04 05:39:58 DEBUG ClosureCleaner:      MapPartitionsRDD[11] at count at <console>:26
+17/11/04 05:39:58 DEBUG ClosureCleaner:  + populating accessed fields because this is the starting closure
+17/11/04 05:39:58 DEBUG ClosureCleaner:  + fields accessed by starting closure: 2
+17/11/04 05:39:58 DEBUG ClosureCleaner:      (class org.apache.spark.rdd.RDD,Set(org$apache$spark$rdd$RDD$$evidence$1))
+17/11/04 05:39:58 DEBUG ClosureCleaner:      (class org.apache.spark.rdd.RDD$$anonfun$collect$1,Set($outer))
+17/11/04 05:39:58 DEBUG ClosureCleaner:  + outermost object is not a closure or REPL line object, so do not clone it: (class org.apache.spark.rdd.RDD,MapPartitionsRDD[11] at count at <console>:26)
+17/11/04 05:39:58 DEBUG DFSClient: DFSClient writeChunk allocating new packet seqno=14, src=/spark2-history/local-1509773229242.inprogress, packetSize=65016, chunksPerPacket=126, bytesCurBlock=81408
+17/11/04 05:39:58 DEBUG DFSClient: DFSClient flush(): bytesCurBlock=81597 lastFlushOffset=81472 createNewBlock=false
+17/11/04 05:39:58 DEBUG DFSClient: Queued packet 14
+17/11/04 05:39:58 DEBUG DFSClient: Waiting for ack for: 14
+17/11/04 05:39:58 DEBUG DFSClient: DataStreamer block BP-387439159-172.30.1.247-1493051499278:blk_1074043682_302911 sending packet packet seqno: 14 offsetInBlock: 81408 lastPacketInBlock: false lastByteOffsetInBlock: 81597
+17/11/04 05:39:58 DEBUG ClosureCleaner:  + cloning the object <function0> of class org.apache.spark.rdd.RDD$$anonfun$collect$1
+17/11/04 05:39:58 DEBUG ClosureCleaner:  + cleaning cloned closure <function0> recursively (org.apache.spark.rdd.RDD$$anonfun$collect$1)
+17/11/04 05:39:58 DEBUG ClosureCleaner: +++ Cleaning closure <function0> (org.apache.spark.rdd.RDD$$anonfun$collect$1) +++
+17/11/04 05:39:58 DEBUG DFSClient: DFSClient seqno: 14 reply: SUCCESS reply: SUCCESS reply: SUCCESS downstreamAckTimeNanos: 820953 flag: 0 flag: 0 flag: 0
+17/11/04 05:39:58 DEBUG ClosureCleaner:  + declared fields: 2
+17/11/04 05:39:58 DEBUG ClosureCleaner:      public static final long org.apache.spark.rdd.RDD$$anonfun$collect$1.serialVersionUID
+17/11/04 05:39:58 DEBUG ClosureCleaner:      private final org.apache.spark.rdd.RDD org.apache.spark.rdd.RDD$$anonfun$collect$1.$outer
+17/11/04 05:39:58 DEBUG ClosureCleaner:  + declared methods: 2
+17/11/04 05:39:58 DEBUG ClosureCleaner:      public org.apache.spark.rdd.RDD org.apache.spark.rdd.RDD$$anonfun$collect$1.org$apache$spark$rdd$RDD$$anonfun$$$outer()
+17/11/04 05:39:58 DEBUG ClosureCleaner:      public final java.lang.Object org.apache.spark.rdd.RDD$$anonfun$collect$1.apply()
+17/11/04 05:39:58 DEBUG ClosureCleaner:  + inner classes: 1
+17/11/04 05:39:58 DEBUG ClosureCleaner:      org.apache.spark.rdd.RDD$$anonfun$collect$1$$anonfun$13
+17/11/04 05:39:58 DEBUG ClosureCleaner:  + outer classes: 1
+17/11/04 05:39:58 DEBUG ClosureCleaner:      org.apache.spark.rdd.RDD
+17/11/04 05:39:58 DEBUG ClosureCleaner:  + outer objects: 1
+17/11/04 05:39:58 DEBUG ClosureCleaner:      MapPartitionsRDD[11] at count at <console>:26
+17/11/04 05:39:58 DEBUG ClosureCleaner:  + fields accessed by starting closure: 2
+17/11/04 05:39:58 DEBUG ClosureCleaner:      (class org.apache.spark.rdd.RDD,Set(org$apache$spark$rdd$RDD$$evidence$1))
+17/11/04 05:39:58 DEBUG ClosureCleaner:      (class org.apache.spark.rdd.RDD$$anonfun$collect$1,Set($outer))
+17/11/04 05:39:58 DEBUG ClosureCleaner:  + outermost object is not a closure or REPL line object, so do not clone it: (class org.apache.spark.rdd.RDD,MapPartitionsRDD[11] at count at <console>:26)
+17/11/04 05:39:58 DEBUG ClosureCleaner:  +++ closure <function0> (org.apache.spark.rdd.RDD$$anonfun$collect$1) is now cleaned +++
+17/11/04 05:39:58 DEBUG ClosureCleaner:  +++ closure <function1> (org.apache.spark.rdd.RDD$$anonfun$collect$1$$anonfun$13) is now cleaned +++
+17/11/04 05:39:58 DEBUG ClosureCleaner: +++ Cleaning closure <function2> (org.apache.spark.SparkContext$$anonfun$runJob$5) +++
+17/11/04 05:39:58 DEBUG ClosureCleaner:  + declared fields: 2
+17/11/04 05:39:58 DEBUG ClosureCleaner:      public static final long org.apache.spark.SparkContext$$anonfun$runJob$5.serialVersionUID
+17/11/04 05:39:58 DEBUG ClosureCleaner:      private final scala.Function1 org.apache.spark.SparkContext$$anonfun$runJob$5.cleanedFunc$1
+17/11/04 05:39:58 DEBUG ClosureCleaner:  + declared methods: 2
+17/11/04 05:39:58 DEBUG ClosureCleaner:      public final java.lang.Object org.apache.spark.SparkContext$$anonfun$runJob$5.apply(java.lang.Object,java.lang.Object)
+17/11/04 05:39:58 DEBUG ClosureCleaner:      public final java.lang.Object org.apache.spark.SparkContext$$anonfun$runJob$5.apply(org.apache.spark.TaskContext,scala.collection.Iterator)
+17/11/04 05:39:58 DEBUG ClosureCleaner:  + inner classes: 0
+17/11/04 05:39:58 DEBUG ClosureCleaner:  + outer classes: 0
+17/11/04 05:39:58 DEBUG ClosureCleaner:  + outer objects: 0
+17/11/04 05:39:58 DEBUG ClosureCleaner:  + populating accessed fields because this is the starting closure
+17/11/04 05:39:58 DEBUG ClosureCleaner:  + fields accessed by starting closure: 0
+17/11/04 05:39:58 DEBUG ClosureCleaner:  + there are no enclosing objects!
+17/11/04 05:39:58 DEBUG ClosureCleaner:  +++ closure <function2> (org.apache.spark.SparkContext$$anonfun$runJob$5) is now cleaned +++
+17/11/04 05:39:58 INFO SparkContext: Starting job: count at <console>:26
+17/11/04 05:39:58 INFO DAGScheduler: Registering RDD 8 (count at <console>:26)
+17/11/04 05:39:58 INFO DAGScheduler: Got job 2 (count at <console>:26) with 1 output partitions
+17/11/04 05:39:58 INFO DAGScheduler: Final stage: ResultStage 3 (count at <console>:26)
+17/11/04 05:39:58 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 2)
+17/11/04 05:39:58 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 2)
+17/11/04 05:39:58 DEBUG DAGScheduler: submitStage(ResultStage 3)
+17/11/04 05:39:58 DEBUG DAGScheduler: missing: List(ShuffleMapStage 2)
+17/11/04 05:39:58 DEBUG DAGScheduler: submitStage(ShuffleMapStage 2)
+17/11/04 05:39:58 DEBUG DAGScheduler: missing: List()
+17/11/04 05:39:58 INFO DAGScheduler: Submitting ShuffleMapStage 2 (MapPartitionsRDD[8] at count at <console>:26), which has no missing parents
+17/11/04 05:39:58 DEBUG DAGScheduler: submitMissingTasks(ShuffleMapStage 2)
+17/11/04 05:39:58 DEBUG DFSClient: DFSClient writeChunk allocating new packet seqno=15, src=/spark2-history/local-1509773229242.inprogress, packetSize=65016, chunksPerPacket=126, bytesCurBlock=81408
+17/11/04 05:39:58 DEBUG DFSClient: DFSClient flush(): bytesCurBlock=86207 lastFlushOffset=81597 createNewBlock=false
+17/11/04 05:39:58 DEBUG DFSClient: Queued packet 15
+17/11/04 05:39:58 DEBUG DFSClient: Waiting for ack for: 15
+17/11/04 05:39:58 DEBUG DFSClient: DataStreamer block BP-387439159-172.30.1.247-1493051499278:blk_1074043682_302911 sending packet packet seqno: 15 offsetInBlock: 81408 lastPacketInBlock: false lastByteOffsetInBlock: 86207
+17/11/04 05:39:58 DEBUG DFSClient: DFSClient seqno: 15 reply: SUCCESS reply: SUCCESS reply: SUCCESS downstreamAckTimeNanos: 754719 flag: 0 flag: 0 flag: 0
+17/11/04 05:39:58 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 9.4 KB, free 365.5 MB)
+17/11/04 05:39:58 DEBUG BlockManager: Put block broadcast_5 locally took  1 ms
+17/11/04 05:39:58 DEBUG BlockManager: Putting block broadcast_5 without replication took  1 ms
+17/11/04 05:39:58 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 4.9 KB, free 365.5 MB)
+17/11/04 05:39:58 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on 172.30.1.247:49840 (size: 4.9 KB, free: 366.2 MB)
+17/11/04 05:39:58 DEBUG BlockManagerMaster: Updated info of block broadcast_5_piece0
+17/11/04 05:39:58 DEBUG BlockManager: Told master about block broadcast_5_piece0
+17/11/04 05:39:58 DEBUG BlockManager: Put block broadcast_5_piece0 locally took  0 ms
+17/11/04 05:39:58 DEBUG BlockManager: Putting block broadcast_5_piece0 without replication took  0 ms
+17/11/04 05:39:58 INFO SparkContext: Created broadcast 5 from broadcast at DAGScheduler.scala:1006
+17/11/04 05:39:58 INFO DAGScheduler: Submitting 3 missing tasks from ShuffleMapStage 2 (MapPartitionsRDD[8] at count at <console>:26) (first 15 tasks are for partitions Vector(0, 1, 2))
+17/11/04 05:39:58 INFO TaskSchedulerImpl: Adding task set 2.0 with 3 tasks
+17/11/04 05:39:58 DEBUG TaskSetManager: Epoch for TaskSet 2.0: 0
+17/11/04 05:39:58 DEBUG TaskSetManager: Valid locality levels for TaskSet 2.0: NO_PREF, ANY
+17/11/04 05:39:58 DEBUG TaskSchedulerImpl: parentName: , name: TaskSet_2.0, runningTasks: 0
+17/11/04 05:39:58 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 4, localhost, executor driver, partition 0, PROCESS_LOCAL, 4777 bytes)
+17/11/04 05:39:58 INFO TaskSetManager: Starting task 1.0 in stage 2.0 (TID 5, localhost, executor driver, partition 1, PROCESS_LOCAL, 4777 bytes)
+17/11/04 05:39:58 INFO TaskSetManager: Starting task 2.0 in stage 2.0 (TID 6, localhost, executor driver, partition 2, PROCESS_LOCAL, 4777 bytes)
+17/11/04 05:39:58 DEBUG TaskSetManager: No tasks for locality level NO_PREF, so moving to locality level ANY
+17/11/04 05:39:58 INFO Executor: Running task 0.0 in stage 2.0 (TID 4)
+17/11/04 05:39:58 INFO Executor: Running task 1.0 in stage 2.0 (TID 5)
+17/11/04 05:39:58 INFO Executor: Running task 2.0 in stage 2.0 (TID 6)
+17/11/04 05:39:58 DEBUG Executor: Task 5's epoch is 0
+17/11/04 05:39:58 DEBUG Executor: Task 6's epoch is 0
+17/11/04 05:39:58 DEBUG BlockManager: Getting local block broadcast_5
+17/11/04 05:39:58 DEBUG BlockManager: Level for block broadcast_5 is StorageLevel(disk, memory, deserialized, 1 replicas)
+17/11/04 05:39:58 DEBUG BlockManager: Getting local block broadcast_5
+17/11/04 05:39:58 DEBUG BlockManager: Level for block broadcast_5 is StorageLevel(disk, memory, deserialized, 1 replicas)
+17/11/04 05:39:58 DEBUG Executor: Task 4's epoch is 0
+17/11/04 05:39:58 DEBUG BlockManager: Getting local block broadcast_5
+17/11/04 05:39:58 DEBUG BlockManager: Level for block broadcast_5 is StorageLevel(disk, memory, deserialized, 1 replicas)
+17/11/04 05:39:58 INFO Executor: Finished task 1.0 in stage 2.0 (TID 5). 1502 bytes result sent to driver
+17/11/04 05:39:58 INFO Executor: Finished task 2.0 in stage 2.0 (TID 6). 1545 bytes result sent to driver
+17/11/04 05:39:58 INFO Executor: Finished task 0.0 in stage 2.0 (TID 4). 1502 bytes result sent to driver
+17/11/04 05:39:58 DEBUG TaskSchedulerImpl: parentName: , name: TaskSet_2.0, runningTasks: 2
+17/11/04 05:39:58 DEBUG TaskSchedulerImpl: parentName: , name: TaskSet_2.0, runningTasks: 1
+17/11/04 05:39:58 INFO TaskSetManager: Finished task 1.0 in stage 2.0 (TID 5) in 44 ms on localhost (executor driver) (1/3)
+17/11/04 05:39:58 INFO TaskSetManager: Finished task 2.0 in stage 2.0 (TID 6) in 45 ms on localhost (executor driver) (2/3)
+17/11/04 05:39:58 DEBUG DAGScheduler: ShuffleMapTask finished on driver
+17/11/04 05:39:58 DEBUG DAGScheduler: ShuffleMapTask finished on driver
+17/11/04 05:39:58 DEBUG TaskSchedulerImpl: parentName: , name: TaskSet_2.0, runningTasks: 0
+17/11/04 05:39:58 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 4) in 47 ms on localhost (executor driver) (3/3)
+17/11/04 05:39:58 INFO TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool
+17/11/04 05:39:58 DEBUG DAGScheduler: ShuffleMapTask finished on driver
+17/11/04 05:39:58 INFO DAGScheduler: ShuffleMapStage 2 (count at <console>:26) finished in 0.049 s
+17/11/04 05:39:58 INFO DAGScheduler: looking for newly runnable stages
+17/11/04 05:39:58 INFO DAGScheduler: running: Set()
+17/11/04 05:39:58 INFO DAGScheduler: waiting: Set(ResultStage 3)
+17/11/04 05:39:58 INFO DAGScheduler: failed: Set()
+17/11/04 05:39:58 DEBUG DFSClient: DFSClient writeChunk allocating new packet seqno=16, src=/spark2-history/local-1509773229242.inprogress, packetSize=65016, chunksPerPacket=126, bytesCurBlock=86016
+17/11/04 05:39:58 DEBUG DFSClient: DFSClient flush(): bytesCurBlock=100795 lastFlushOffset=86207 createNewBlock=false
+17/11/04 05:39:58 DEBUG DFSClient: Queued packet 16
+17/11/04 05:39:58 DEBUG DFSClient: Waiting for ack for: 16
+17/11/04 05:39:58 DEBUG DFSClient: DataStreamer block BP-387439159-172.30.1.247-1493051499278:blk_1074043682_302911 sending packet packet seqno: 16 offsetInBlock: 86016 lastPacketInBlock: false lastByteOffsetInBlock: 100795
+17/11/04 05:39:58 DEBUG MapOutputTrackerMaster: Increasing epoch to 1
+17/11/04 05:39:58 DEBUG DFSClient: DFSClient seqno: 16 reply: SUCCESS reply: SUCCESS reply: SUCCESS downstreamAckTimeNanos: 965136 flag: 0 flag: 0 flag: 0
+17/11/04 05:39:58 DEBUG DAGScheduler: submitStage(ResultStage 3)
+17/11/04 05:39:58 DEBUG DAGScheduler: missing: List()
+17/11/04 05:39:58 INFO DAGScheduler: Submitting ResultStage 3 (MapPartitionsRDD[11] at count at <console>:26), which has no missing parents
+17/11/04 05:39:58 DEBUG DAGScheduler: submitMissingTasks(ResultStage 3)
+17/11/04 05:39:58 INFO MemoryStore: Block broadcast_6 stored as values in memory (estimated size 7.0 KB, free 365.5 MB)
+17/11/04 05:39:58 DEBUG BlockManager: Put block broadcast_6 locally took  1 ms
+17/11/04 05:39:58 DEBUG BlockManager: Putting block broadcast_6 without replication took  1 ms
+17/11/04 05:39:58 INFO MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 3.7 KB, free 365.5 MB)
+17/11/04 05:39:58 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on 172.30.1.247:49840 (size: 3.7 KB, free: 366.2 MB)
+17/11/04 05:39:58 DEBUG BlockManagerMaster: Updated info of block broadcast_6_piece0
+17/11/04 05:39:58 DEBUG BlockManager: Told master about block broadcast_6_piece0
+17/11/04 05:39:58 DEBUG BlockManager: Put block broadcast_6_piece0 locally took  1 ms
+17/11/04 05:39:58 DEBUG BlockManager: Putting block broadcast_6_piece0 without replication took  1 ms
+17/11/04 05:39:58 INFO SparkContext: Created broadcast 6 from broadcast at DAGScheduler.scala:1006
+17/11/04 05:39:58 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 3 (MapPartitionsRDD[11] at count at <console>:26) (first 15 tasks are for partitions Vector(0))
+17/11/04 05:39:58 INFO TaskSchedulerImpl: Adding task set 3.0 with 1 tasks
+17/11/04 05:39:58 DEBUG TaskSetManager: Epoch for TaskSet 3.0: 1
+17/11/04 05:39:58 DEBUG TaskSetManager: Valid locality levels for TaskSet 3.0: ANY
+17/11/04 05:39:58 DEBUG TaskSchedulerImpl: parentName: , name: TaskSet_3.0, runningTasks: 0
+17/11/04 05:39:58 INFO TaskSetManager: Starting task 0.0 in stage 3.0 (TID 7, localhost, executor driver, partition 0, ANY, 4726 bytes)
+17/11/04 05:39:58 INFO Executor: Running task 0.0 in stage 3.0 (TID 7)
+17/11/04 05:39:58 DEBUG Executor: Task 7's epoch is 1
+17/11/04 05:39:58 DEBUG BlockManager: Getting local block broadcast_6
+17/11/04 05:39:58 DEBUG BlockManager: Level for block broadcast_6 is StorageLevel(disk, memory, deserialized, 1 replicas)
+17/11/04 05:39:58 DEBUG MapOutputTrackerMaster: Fetching outputs for shuffle 0, partitions 0-1
+17/11/04 05:39:58 DEBUG ShuffleBlockFetcherIterator: maxBytesInFlight: 50331648, targetRequestSize: 10066329
+17/11/04 05:39:58 INFO ShuffleBlockFetcherIterator: Getting 3 non-empty blocks out of 3 blocks
+17/11/04 05:39:58 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 4 ms
+17/11/04 05:39:58 DEBUG ShuffleBlockFetcherIterator: Got local blocks in  10 ms
+17/11/04 05:39:58 INFO Executor: Finished task 0.0 in stage 3.0 (TID 7). 1574 bytes result sent to driver
+17/11/04 05:39:58 DEBUG TaskSchedulerImpl: parentName: , name: TaskSet_3.0, runningTasks: 0
+17/11/04 05:39:58 INFO TaskSetManager: Finished task 0.0 in stage 3.0 (TID 7) in 29 ms on localhost (executor driver) (1/1)
+17/11/04 05:39:58 INFO TaskSchedulerImpl: Removed TaskSet 3.0, whose tasks have all completed, from pool
+17/11/04 05:39:58 INFO DAGScheduler: ResultStage 3 (count at <console>:26) finished in 0.028 s
+17/11/04 05:39:58 DEBUG DAGScheduler: After removal of stage 2, remaining stages = 1
+17/11/04 05:39:58 DEBUG DAGScheduler: After removal of stage 3, remaining stages = 0
+17/11/04 05:39:58 INFO DAGScheduler: Job 2 finished: count at <console>:26, took 0.109795 s
+17/11/04 05:39:58 DEBUG DFSClient: DFSClient writeChunk allocating new packet seqno=17, src=/spark2-history/local-1509773229242.inprogress, packetSize=65016, chunksPerPacket=126, bytesCurBlock=100352
+17/11/04 05:39:58 DEBUG DFSClient: DFSClient flush(): bytesCurBlock=110277 lastFlushOffset=100795 createNewBlock=false
+17/11/04 05:39:58 DEBUG DFSClient: Queued packet 17
+17/11/04 05:39:58 DEBUG DFSClient: Waiting for ack for: 17
+17/11/04 05:39:58 DEBUG DFSClient: DataStreamer block BP-387439159-172.30.1.247-1493051499278:blk_1074043682_302911 sending packet packet seqno: 17 offsetInBlock: 100352 lastPacketInBlock: false lastByteOffsetInBlock: 110277
+res4: Long = 0
+
+scala> 17/11/04 05:39:58 DEBUG DFSClient: DFSClient seqno: 17 reply: SUCCESS reply: SUCCESS reply: SUCCESS downstreamAckTimeNanos: 871834 flag: 0 flag: 0 flag: 0
+17/11/04 05:39:58 DEBUG DFSClient: DFSClient writeChunk allocating new packet seqno=18, src=/spark2-history/local-1509773229242.inprogress, packetSize=65016, chunksPerPacket=126, bytesCurBlock=110080
+17/11/04 05:39:58 DEBUG DFSClient: DFSClient flush(): bytesCurBlock=110391 lastFlushOffset=110277 createNewBlock=false
+17/11/04 05:39:58 DEBUG DFSClient: Queued packet 18
+17/11/04 05:39:58 DEBUG DFSClient: Waiting for ack for: 18
+17/11/04 05:39:58 DEBUG DFSClient: DataStreamer block BP-387439159-172.30.1.247-1493051499278:blk_1074043682_302911 sending packet packet seqno: 18 offsetInBlock: 110080 lastPacketInBlock: false lastByteOffsetInBlock: 110391
+17/11/04 05:39:58 DEBUG DFSClient: DFSClient seqno: 18 reply: SUCCESS reply: SUCCESS reply: SUCCESS downstreamAckTimeNanos: 438420 flag: 0 flag: 0 flag: 0
+17/11/04 05:39:58 DEBUG DFSClient: DFSClient writeChunk allocating new packet seqno=19, src=/spark2-history/local-1509773229242.inprogress, packetSize=65016, chunksPerPacket=126, bytesCurBlock=110080
+17/11/04 05:39:58 DEBUG DFSClient: DFSClient flush(): bytesCurBlock=110503 lastFlushOffset=110391 createNewBlock=false
+17/11/04 05:39:58 DEBUG DFSClient: Queued packet 19
+17/11/04 05:39:58 DEBUG DFSClient: Waiting for ack for: 19
+17/11/04 05:39:58 DEBUG DFSClient: DataStreamer block BP-387439159-172.30.1.247-1493051499278:blk_1074043682_302911 sending packet packet seqno: 19 offsetInBlock: 110080 lastPacketInBlock: false lastByteOffsetInBlock: 110503
+17/11/04 05:39:58 DEBUG DFSClient: DFSClient seqno: 19 reply: SUCCESS reply: SUCCESS reply: SUCCESS downstreamAckTimeNanos: 473624 flag: 0 flag: 0 flag: 0
+17/11/04 05:40:03 DEBUG ManagedSelector: Queued change org.spark_project.jetty.io.ManagedSelector$Accept@54e59ee8 on org.spark_project.jetty.io.ManagedSelector@1a3685d9 id=0 keys=0 selected=0
+17/11/04 05:40:03 DEBUG ManagedSelector: Selector loop woken up from select, 0/0 selected
+17/11/04 05:40:03 DEBUG ManagedSelector: Running change org.spark_project.jetty.io.ManagedSelector$Accept@54e59ee8
+17/11/04 05:40:03 DEBUG ManagedSelector: Queued change org.spark_project.jetty.io.ManagedSelector$CreateEndPoint@653d5c42 on org.spark_project.jetty.io.ManagedSelector@1a3685d9 id=0 keys=1 selected=0
+17/11/04 05:40:03 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f produced org.spark_project.jetty.io.ManagedSelector$CreateEndPoint@653d5c42
+17/11/04 05:40:03 DEBUG ExecuteProduceConsume: EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f dispatch
+17/11/04 05:40:03 DEBUG QueuedThreadPool: queue EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f
+17/11/04 05:40:03 DEBUG ExecuteProduceConsume: EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f run org.spark_project.jetty.io.ManagedSelector$CreateEndPoint@653d5c42
+17/11/04 05:40:03 DEBUG QueuedThreadPool: run EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f
+17/11/04 05:40:03 DEBUG ExecuteProduceConsume: EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f run
+17/11/04 05:40:03 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f produce enter
+17/11/04 05:40:03 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f producing
+17/11/04 05:40:03 DEBUG ManagedSelector: Selector loop waiting on select
+17/11/04 05:40:03 DEBUG AbstractEndPoint: onOpen SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,0/30000,null@0}{io=0/0,kio=0,kro=0}
+17/11/04 05:40:03 DEBUG IdleTimeout: SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,0/30000,null@0}{io=0/0,kio=0,kro=0} idle timeout check, elapsed: 0 ms, remaining: 30000 ms
+17/11/04 05:40:03 DEBUG HttpChannel: new HttpChannelOverHttp@46d5582{r=0,c=false,a=IDLE,uri=null} -> SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,0/30000,null@0}{io=0/0,kio=0,kro=0},null,HttpChannelState@23133b7d{s=IDLE a=NOT_ASYNC i=true r=!P!U w=false}
+17/11/04 05:40:03 DEBUG HttpConnection: New HTTP Connection HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,0/30000,null@0}{io=0/0,kio=0,kro=0}][p=HttpParser{s=START,0 of 0},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=0,c=false,a=IDLE,uri=null}]
+17/11/04 05:40:03 DEBUG AbstractConnection: onOpen HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=0}][p=HttpParser{s=START,0 of 0},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=0,c=false,a=IDLE,uri=null}]
+17/11/04 05:40:03 DEBUG AbstractConnection: fillInterested HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=0}][p=HttpParser{s=START,0 of 0},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=0,c=false,a=IDLE,uri=null}]
+17/11/04 05:40:03 DEBUG FillInterest: FillInterest@6118b379{true,AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=0}][p=HttpParser{s=START,0 of 0},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=0,c=false,a=IDLE,uri=null}]}} register AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=0}][p=HttpParser{s=START,0 of 0},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=0,c=false,a=IDLE,uri=null}]}
+17/11/04 05:40:03 DEBUG FillInterest: FillInterest@6118b379{true,AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=0}][p=HttpParser{s=START,0 of 0},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=0,c=false,a=IDLE,uri=null}]}} register AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=0}][p=HttpParser{s=START,0 of 0},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=0,c=false,a=IDLE,uri=null}]}
+17/11/04 05:40:03 DEBUG SelectChannelEndPoint: changeInterests p=false 0->1 for SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1/30000,HttpConnection@2cc3bc11}{io=0/1,kio=0,kro=0}
+17/11/04 05:40:03 DEBUG ManagedSelector: Queued change SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1/30000,HttpConnection@2cc3bc11}{io=0/1,kio=0,kro=0}:runUpdateKey on org.spark_project.jetty.io.ManagedSelector@1a3685d9 id=0 keys=1 selected=0
+17/11/04 05:40:03 DEBUG ManagedSelector: Created SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1/30000,HttpConnection@2cc3bc11}{io=0/1,kio=0,kro=0}
+17/11/04 05:40:03 DEBUG ManagedSelector: Selector loop woken up from select, 0/1 selected
+17/11/04 05:40:03 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f ran org.spark_project.jetty.io.ManagedSelector$CreateEndPoint@653d5c42
+17/11/04 05:40:03 DEBUG ManagedSelector: Running change SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1/30000,HttpConnection@2cc3bc11}{io=0/1,kio=0,kro=0}:runUpdateKey
+17/11/04 05:40:03 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f produce exit
+17/11/04 05:40:03 DEBUG QueuedThreadPool: ran EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f
+17/11/04 05:40:03 DEBUG SelectChannelEndPoint: Key interests updated 0 -> 1 on SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1/30000,HttpConnection@2cc3bc11}{io=1/1,kio=1,kro=0}
+17/11/04 05:40:03 DEBUG ManagedSelector: Selector loop waiting on select
+17/11/04 05:40:03 DEBUG ManagedSelector: Selector loop woken up from select, 1/1 selected
+17/11/04 05:40:03 DEBUG SelectChannelEndPoint: onSelected 1->0 r=true w=false for SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1/30000,HttpConnection@2cc3bc11}{io=1/0,kio=1,kro=1}
+17/11/04 05:40:03 DEBUG SelectChannelEndPoint: task SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1/30000,HttpConnection@2cc3bc11}{io=1/0,kio=1,kro=1}:runFillable
+17/11/04 05:40:03 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f produced SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1/30000,HttpConnection@2cc3bc11}{io=1/0,kio=1,kro=1}:runFillable
+17/11/04 05:40:03 DEBUG ExecuteProduceConsume: EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f dispatch
+17/11/04 05:40:03 DEBUG QueuedThreadPool: queue EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f
+17/11/04 05:40:03 DEBUG ExecuteProduceConsume: EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f run SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1/30000,HttpConnection@2cc3bc11}{io=1/0,kio=1,kro=1}:runFillable
+17/11/04 05:40:03 DEBUG QueuedThreadPool: run EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f
+17/11/04 05:40:03 DEBUG ExecuteProduceConsume: EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f run
+17/11/04 05:40:03 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f produce enter
+17/11/04 05:40:03 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f producing
+17/11/04 05:40:03 DEBUG SelectChannelEndPoint: Key interests updated 1 -> 0 on SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}
+17/11/04 05:40:03 DEBUG FillInterest: FillInterest@6118b379{true,AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1/30000,HttpConnection@2cc3bc11}{io=1/0,kio=1,kro=1}][p=HttpParser{s=START,0 of 0},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=0,c=false,a=IDLE,uri=null}]}} fillable AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of 0},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=0,c=false,a=IDLE,uri=null}]}
+17/11/04 05:40:03 DEBUG ManagedSelector: Selector loop waiting on select
+17/11/04 05:40:03 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of 0},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=0,c=false,a=IDLE,uri=null}] onFillable enter HttpChannelState@23133b7d{s=IDLE a=NOT_ASYNC i=true r=!P!U w=false} null
+17/11/04 05:40:03 DEBUG ChannelEndPoint: filled 447 SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}
+17/11/04 05:40:03 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of 0},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=0,c=false,a=IDLE,uri=null}] filled 447 HeapByteBuffer@44e0302f[p=0,l=447,c=8192,r=447]={<<<GET /SQL/ HTTP/1.....8,en;q=0.6\r\n\r\n>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+17/11/04 05:40:03 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of 0},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=0,c=false,a=IDLE,uri=null}] parse HeapByteBuffer@44e0302f[p=0,l=447,c=8192,r=447]={<<<GET /SQL/ HTTP/1.....8,en;q=0.6\r\n\r\n>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} {}
+17/11/04 05:40:03 DEBUG HttpParser: parseNext s=START HeapByteBuffer@44e0302f[p=0,l=447,c=8192,r=447]={<<<GET /SQL/ HTTP/1.....8,en;q=0.6\r\n\r\n>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+17/11/04 05:40:03 DEBUG HttpParser: START --> SPACE1
+17/11/04 05:40:03 DEBUG HttpParser: SPACE1 --> URI
+17/11/04 05:40:03 DEBUG HttpParser: URI --> SPACE2
+17/11/04 05:40:03 DEBUG HttpParser: SPACE2 --> REQUEST_VERSION
+17/11/04 05:40:03 DEBUG HttpParser: REQUEST_VERSION --> HEADER
+17/11/04 05:40:03 DEBUG HttpParser: HEADER --> HEADER_VALUE
+17/11/04 05:40:03 DEBUG HttpParser: HEADER_VALUE --> HEADER_IN_VALUE
+17/11/04 05:40:03 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:03 DEBUG HttpParser: HEADER --> HEADER_IN_VALUE
+17/11/04 05:40:03 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:03 DEBUG HttpParser: HEADER --> HEADER_IN_NAME
+17/11/04 05:40:03 DEBUG HttpParser: HEADER_IN_NAME --> HEADER_VALUE
+17/11/04 05:40:03 DEBUG HttpParser: HEADER_VALUE --> HEADER_IN_VALUE
+17/11/04 05:40:03 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:03 DEBUG HttpParser: HEADER --> HEADER_VALUE
+17/11/04 05:40:03 DEBUG HttpParser: HEADER_VALUE --> HEADER_IN_VALUE
+17/11/04 05:40:03 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:03 DEBUG HttpParser: HEADER --> HEADER_VALUE
+17/11/04 05:40:03 DEBUG HttpParser: HEADER_VALUE --> HEADER_IN_VALUE
+17/11/04 05:40:03 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:03 DEBUG HttpParser: HEADER --> HEADER_VALUE
+17/11/04 05:40:03 DEBUG HttpParser: HEADER_VALUE --> HEADER_IN_VALUE
+17/11/04 05:40:03 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:03 DEBUG HttpParser: HEADER --> HEADER_IN_VALUE
+17/11/04 05:40:03 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:03 DEBUG HttpParser: HEADER --> HEADER_IN_VALUE
+17/11/04 05:40:03 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:03 DEBUG HttpParser: HEADER --> END
+17/11/04 05:40:03 DEBUG HttpChannel: HttpChannelOverHttp@46d5582{r=1,c=false,a=IDLE,uri=//dev2:4040/SQL/} onRequestComplete
+17/11/04 05:40:03 DEBUG HttpInput: HttpInputOverHTTP@3b9a61ec[c=0,q=1,[0]=EOF,s=STREAM] addContent EOF
+17/11/04 05:40:03 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,2/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=END,0 of 0},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=1,c=false,a=IDLE,uri=//dev2:4040/SQL/}] parsed true HttpParser{s=END,0 of 0}
+17/11/04 05:40:03 DEBUG HttpConnection: releaseRequestBuffer HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,2/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=END,0 of 0},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=1,c=false,a=IDLE,uri=//dev2:4040/SQL/}]
+17/11/04 05:40:03 DEBUG HttpChannel: HttpChannelOverHttp@46d5582{r=1,c=false,a=IDLE,uri=//dev2:4040/SQL/} handle //dev2:4040/SQL/
+17/11/04 05:40:03 DEBUG HttpChannelState: HttpChannelState@23133b7d{s=IDLE a=NOT_ASYNC i=true r=!P!U w=false} handling IDLE
+17/11/04 05:40:03 DEBUG HttpChannel: HttpChannelOverHttp@46d5582{r=1,c=false,a=DISPATCHED,uri=//dev2:4040/SQL/} action DISPATCH
+17/11/04 05:40:03 DEBUG Server: REQUEST on HttpChannelOverHttp@46d5582{r=1,c=false,a=DISPATCHED,uri=//dev2:4040/SQL/}
+GET /SQL/ HTTP/1.1
+Host: dev2:4040
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://dev2:4040/SQL/execution/?id=1
+Accept-Encoding: gzip, deflate
+Accept-Language: en-GB,en-US;q=0.8,en;q=0.6
+
+
+17/11/04 05:40:03 DEBUG ContextHandler: scope null||/SQL/ @ o.s.j.s.ServletContextHandler@3feebf9c{/SQL,null,AVAILABLE,@Spark}
+17/11/04 05:40:03 DEBUG ContextHandler: context=/SQL||/ @ o.s.j.s.ServletContextHandler@3feebf9c{/SQL,null,AVAILABLE,@Spark}
+17/11/04 05:40:03 DEBUG ServletHandler: servlet /SQL|/|null -> org.apache.spark.ui.JettyUtils$$anon$3-a4df251@4487270d==org.apache.spark.ui.JettyUtils$$anon$3,-1,true
+17/11/04 05:40:03 DEBUG ServletHandler: chain=null
+17/11/04 05:40:03 DEBUG SecurityManager: user=null aclsEnabled=false viewAcls=ec2-user viewAclsGroups=
+17/11/04 05:40:03 DEBUG Server: RESPONSE for /SQL/ h=true
+200 null
+Date: Sat, 04 Nov 2017 05:40:03 GMT
+Content-Type: text/html;charset=utf-8
+Cache-Control: no-cache, no-store, must-revalidate
+X-Frame-Options: SAMEORIGIN
+
+
+17/11/04 05:40:03 DEBUG HttpChannelState: HttpChannelState@23133b7d{s=DISPATCHED a=NOT_ASYNC i=true r=!P!U w=false} unhandle DISPATCHED
+17/11/04 05:40:03 DEBUG HttpChannel: HttpChannelOverHttp@46d5582{r=1,c=false,a=COMPLETING,uri=//dev2:4040/SQL/} action COMPLETE
+17/11/04 05:40:03 DEBUG HttpChannel: sendResponse info=null content=DirectByteBuffer@428a3dcc[p=0,l=7980,c=32768,r=7980]={<<<<!DOCTYPE html><h...dy>\n    </html>>>>pto_date_sk__cust...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} complete=true committing=true callback=Blocker@45cf0be{null}
+17/11/04 05:40:03 DEBUG HttpChannel: Commit HTTP/1.1{s=200,h=4} to HttpChannelOverHttp@46d5582{r=1,c=true,a=COMPLETING,uri=//dev2:4040/SQL/}
+17/11/04 05:40:03 DEBUG HttpConnection: org.spark_project.jetty.server.HttpConnection$SendCallback@67a9486b[PROCESSING][i=HTTP/1.1{s=200,h=4},cb=org.spark_project.jetty.server.HttpChannel$CommitCallback@4171842a] generate: NEED_HEADER (null,[p=0,l=7980,c=32768,r=7980],true)@START
+17/11/04 05:40:03 DEBUG HttpConnection: org.spark_project.jetty.server.HttpConnection$SendCallback@67a9486b[PROCESSING][i=HTTP/1.1{s=200,h=4},cb=org.spark_project.jetty.server.HttpChannel$CommitCallback@4171842a] generate: FLUSH ([p=0,l=229,c=8192,r=229],[p=0,l=7980,c=32768,r=7980],true)@COMPLETING
+17/11/04 05:40:03 DEBUG WriteFlusher: write: WriteFlusher@290c08e9{IDLE} [HeapByteBuffer@44e0302f[p=0,l=229,c=8192,r=229]={<<<HTTP/1.1 200 OK\r\n...z-SNAPSHOT)\r\n\r\n>>>ept: text/html,ap...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00},DirectByteBuffer@428a3dcc[p=0,l=7980,c=32768,r=7980]={<<<<!DOCTYPE html><h...dy>\n    </html>>>>pto_date_sk__cust...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}]
+17/11/04 05:40:03 DEBUG WriteFlusher: update WriteFlusher@290c08e9{WRITING}:IDLE-->WRITING
+17/11/04 05:40:03 DEBUG ChannelEndPoint: flushed 8209 SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,W,6/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}
+17/11/04 05:40:03 DEBUG WriteFlusher: Flushed=true 229/229+1 WriteFlusher@290c08e9{WRITING}
+17/11/04 05:40:03 DEBUG WriteFlusher: update WriteFlusher@290c08e9{IDLE}:WRITING-->IDLE
+17/11/04 05:40:03 DEBUG HttpConnection: org.spark_project.jetty.server.HttpConnection$SendCallback@67a9486b[PROCESSING][i=HTTP/1.1{s=200,h=4},cb=org.spark_project.jetty.server.HttpChannel$CommitCallback@4171842a] generate: DONE ([p=229,l=229,c=8192,r=0],[p=7980,l=7980,c=32768,r=0],true)@END
+17/11/04 05:40:03 DEBUG HttpParser: reset HttpParser{s=END,0 of 0}
+17/11/04 05:40:03 DEBUG HttpParser: END --> START
+17/11/04 05:40:03 DEBUG HttpChannel: HttpChannelOverHttp@46d5582{r=1,c=false,a=IDLE,uri=null} handle exit, result COMPLETE
+17/11/04 05:40:03 DEBUG ChannelEndPoint: filled 0 SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}
+17/11/04 05:40:03 DEBUG ChannelEndPoint: filled 0 SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}
+17/11/04 05:40:03 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=1,c=false,a=IDLE,uri=null}] filled 0 HeapByteBuffer@44e0302f[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+17/11/04 05:40:03 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=1,c=false,a=IDLE,uri=null}] parse HeapByteBuffer@44e0302f[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} {}
+17/11/04 05:40:03 DEBUG HttpParser: parseNext s=START HeapByteBuffer@44e0302f[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+17/11/04 05:40:03 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=1,c=false,a=IDLE,uri=null}] parsed false HttpParser{s=START,0 of -1}
+17/11/04 05:40:03 DEBUG HttpConnection: releaseRequestBuffer HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=1,c=false,a=IDLE,uri=null}]
+17/11/04 05:40:03 DEBUG AbstractConnection: fillInterested HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=1,c=false,a=IDLE,uri=null}]
+17/11/04 05:40:03 DEBUG FillInterest: FillInterest@6118b379{true,AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=1,c=false,a=IDLE,uri=null}]}} register AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=1,c=false,a=IDLE,uri=null}]}
+17/11/04 05:40:03 DEBUG FillInterest: FillInterest@6118b379{true,AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=1,c=false,a=IDLE,uri=null}]}} register AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=1,c=false,a=IDLE,uri=null}]}
+17/11/04 05:40:03 DEBUG SelectChannelEndPoint: changeInterests p=false 0->1 for SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1/30000,HttpConnection@2cc3bc11}{io=0/1,kio=0,kro=1}
+17/11/04 05:40:03 DEBUG ManagedSelector: Queued change SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1/30000,HttpConnection@2cc3bc11}{io=0/1,kio=0,kro=1}:runUpdateKey on org.spark_project.jetty.io.ManagedSelector@1a3685d9 id=0 keys=1 selected=0
+17/11/04 05:40:03 DEBUG ManagedSelector: Selector loop woken up from select, 0/1 selected
+17/11/04 05:40:03 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1/30000,HttpConnection@2cc3bc11}{io=0/1,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=1,c=false,a=IDLE,uri=null}] onFillable exit HttpChannelState@23133b7d{s=IDLE a=NOT_ASYNC i=true r=!P!U w=false} null
+17/11/04 05:40:03 DEBUG ManagedSelector: Running change SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1/30000,HttpConnection@2cc3bc11}{io=0/1,kio=0,kro=1}:runUpdateKey
+17/11/04 05:40:03 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f ran SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1/30000,HttpConnection@2cc3bc11}{io=0/1,kio=0,kro=1}:runFillable
+17/11/04 05:40:03 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f produce exit
+17/11/04 05:40:03 DEBUG SelectChannelEndPoint: Key interests updated 0 -> 1 on SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1/30000,HttpConnection@2cc3bc11}{io=1/1,kio=1,kro=1}
+17/11/04 05:40:03 DEBUG QueuedThreadPool: ran EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f
+17/11/04 05:40:03 DEBUG ManagedSelector: Selector loop waiting on select
+17/11/04 05:40:03 DEBUG ManagedSelector: Queued change org.spark_project.jetty.io.ManagedSelector$Accept@295a18a8 on org.spark_project.jetty.io.ManagedSelector@4bf871cb id=1 keys=0 selected=0
+17/11/04 05:40:03 DEBUG ManagedSelector: Selector loop woken up from select, 0/0 selected
+17/11/04 05:40:03 DEBUG ManagedSelector: Running change org.spark_project.jetty.io.ManagedSelector$Accept@295a18a8
+17/11/04 05:40:03 DEBUG ManagedSelector: Queued change org.spark_project.jetty.io.ManagedSelector$CreateEndPoint@190e85a9 on org.spark_project.jetty.io.ManagedSelector@4bf871cb id=1 keys=1 selected=0
+17/11/04 05:40:03 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@4a7e9e7f produced org.spark_project.jetty.io.ManagedSelector$CreateEndPoint@190e85a9
+17/11/04 05:40:03 DEBUG ExecuteProduceConsume: EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@4a7e9e7f dispatch
+17/11/04 05:40:03 DEBUG QueuedThreadPool: queue EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@4a7e9e7f
+17/11/04 05:40:03 DEBUG ExecuteProduceConsume: EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@4a7e9e7f run org.spark_project.jetty.io.ManagedSelector$CreateEndPoint@190e85a9
+17/11/04 05:40:03 DEBUG QueuedThreadPool: run EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@4a7e9e7f
+17/11/04 05:40:03 DEBUG ExecuteProduceConsume: EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@4a7e9e7f run
+17/11/04 05:40:03 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@4a7e9e7f produce enter
+17/11/04 05:40:03 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@4a7e9e7f producing
+17/11/04 05:40:03 DEBUG AbstractEndPoint: onOpen SelectChannelEndPoint@29531d1a{/122.178.219.222:61406<->4040,Open,in,out,-,-,0/30000,null@0}{io=0/0,kio=0,kro=0}
+17/11/04 05:40:03 DEBUG ManagedSelector: Selector loop waiting on select
+17/11/04 05:40:03 DEBUG IdleTimeout: SelectChannelEndPoint@29531d1a{/122.178.219.222:61406<->4040,Open,in,out,-,-,0/30000,null@0}{io=0/0,kio=0,kro=0} idle timeout check, elapsed: 0 ms, remaining: 30000 ms
+17/11/04 05:40:03 DEBUG HttpChannel: new HttpChannelOverHttp@4b13536e{r=0,c=false,a=IDLE,uri=null} -> SelectChannelEndPoint@29531d1a{/122.178.219.222:61406<->4040,Open,in,out,-,-,0/30000,null@0}{io=0/0,kio=0,kro=0},null,HttpChannelState@18a91b06{s=IDLE a=NOT_ASYNC i=true r=!P!U w=false}
+17/11/04 05:40:03 DEBUG HttpConnection: New HTTP Connection HttpConnection@7567f677[SelectChannelEndPoint@29531d1a{/122.178.219.222:61406<->4040,Open,in,out,-,-,0/30000,null@0}{io=0/0,kio=0,kro=0}][p=HttpParser{s=START,0 of 0},g=HttpGenerator@44ed9e0c{s=START},c=HttpChannelOverHttp@4b13536e{r=0,c=false,a=IDLE,uri=null}]
+17/11/04 05:40:03 DEBUG AbstractConnection: onOpen HttpConnection@7567f677[SelectChannelEndPoint@29531d1a{/122.178.219.222:61406<->4040,Open,in,out,-,-,1/30000,HttpConnection@7567f677}{io=0/0,kio=0,kro=0}][p=HttpParser{s=START,0 of 0},g=HttpGenerator@44ed9e0c{s=START},c=HttpChannelOverHttp@4b13536e{r=0,c=false,a=IDLE,uri=null}]
+17/11/04 05:40:03 DEBUG AbstractConnection: fillInterested HttpConnection@7567f677[SelectChannelEndPoint@29531d1a{/122.178.219.222:61406<->4040,Open,in,out,-,-,1/30000,HttpConnection@7567f677}{io=0/0,kio=0,kro=0}][p=HttpParser{s=START,0 of 0},g=HttpGenerator@44ed9e0c{s=START},c=HttpChannelOverHttp@4b13536e{r=0,c=false,a=IDLE,uri=null}]
+17/11/04 05:40:03 DEBUG FillInterest: FillInterest@15342ddc{true,AC.ReadCB@7567f677{HttpConnection@7567f677[SelectChannelEndPoint@29531d1a{/122.178.219.222:61406<->4040,Open,in,out,FI,-,0/30000,HttpConnection@7567f677}{io=0/0,kio=0,kro=0}][p=HttpParser{s=START,0 of 0},g=HttpGenerator@44ed9e0c{s=START},c=HttpChannelOverHttp@4b13536e{r=0,c=false,a=IDLE,uri=null}]}} register AC.ReadCB@7567f677{HttpConnection@7567f677[SelectChannelEndPoint@29531d1a{/122.178.219.222:61406<->4040,Open,in,out,FI,-,0/30000,HttpConnection@7567f677}{io=0/0,kio=0,kro=0}][p=HttpParser{s=START,0 of 0},g=HttpGenerator@44ed9e0c{s=START},c=HttpChannelOverHttp@4b13536e{r=0,c=false,a=IDLE,uri=null}]}
+17/11/04 05:40:03 DEBUG FillInterest: FillInterest@15342ddc{true,AC.ReadCB@7567f677{HttpConnection@7567f677[SelectChannelEndPoint@29531d1a{/122.178.219.222:61406<->4040,Open,in,out,FI,-,0/30000,HttpConnection@7567f677}{io=0/0,kio=0,kro=0}][p=HttpParser{s=START,0 of 0},g=HttpGenerator@44ed9e0c{s=START},c=HttpChannelOverHttp@4b13536e{r=0,c=false,a=IDLE,uri=null}]}} register AC.ReadCB@7567f677{HttpConnection@7567f677[SelectChannelEndPoint@29531d1a{/122.178.219.222:61406<->4040,Open,in,out,FI,-,0/30000,HttpConnection@7567f677}{io=0/0,kio=0,kro=0}][p=HttpParser{s=START,0 of 0},g=HttpGenerator@44ed9e0c{s=START},c=HttpChannelOverHttp@4b13536e{r=0,c=false,a=IDLE,uri=null}]}
+17/11/04 05:40:03 DEBUG SelectChannelEndPoint: changeInterests p=false 0->1 for SelectChannelEndPoint@29531d1a{/122.178.219.222:61406<->4040,Open,in,out,FI,-,0/30000,HttpConnection@7567f677}{io=0/1,kio=0,kro=0}
+17/11/04 05:40:03 DEBUG ManagedSelector: Queued change SelectChannelEndPoint@29531d1a{/122.178.219.222:61406<->4040,Open,in,out,FI,-,0/30000,HttpConnection@7567f677}{io=0/1,kio=0,kro=0}:runUpdateKey on org.spark_project.jetty.io.ManagedSelector@4bf871cb id=1 keys=1 selected=0
+17/11/04 05:40:03 DEBUG ManagedSelector: Created SelectChannelEndPoint@29531d1a{/122.178.219.222:61406<->4040,Open,in,out,FI,-,0/30000,HttpConnection@7567f677}{io=0/1,kio=0,kro=0}
+17/11/04 05:40:03 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@4a7e9e7f ran org.spark_project.jetty.io.ManagedSelector$CreateEndPoint@190e85a9
+17/11/04 05:40:03 DEBUG ManagedSelector: Selector loop woken up from select, 0/1 selected
+17/11/04 05:40:03 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@4a7e9e7f produce exit
+17/11/04 05:40:03 DEBUG QueuedThreadPool: ran EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@4a7e9e7f
+17/11/04 05:40:03 DEBUG ManagedSelector: Running change SelectChannelEndPoint@29531d1a{/122.178.219.222:61406<->4040,Open,in,out,FI,-,1/30000,HttpConnection@7567f677}{io=0/1,kio=0,kro=0}:runUpdateKey
+17/11/04 05:40:03 DEBUG SelectChannelEndPoint: Key interests updated 0 -> 1 on SelectChannelEndPoint@29531d1a{/122.178.219.222:61406<->4040,Open,in,out,FI,-,1/30000,HttpConnection@7567f677}{io=1/1,kio=1,kro=0}
+17/11/04 05:40:03 DEBUG ManagedSelector: Selector loop waiting on select
+17/11/04 05:40:04 DEBUG ManagedSelector: Selector loop woken up from select, 1/1 selected
+17/11/04 05:40:04 DEBUG SelectChannelEndPoint: onSelected 1->0 r=true w=false for SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,541/30000,HttpConnection@2cc3bc11}{io=1/0,kio=1,kro=1}
+17/11/04 05:40:04 DEBUG SelectChannelEndPoint: task SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,542/30000,HttpConnection@2cc3bc11}{io=1/0,kio=1,kro=1}:runFillable
+17/11/04 05:40:04 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f produced SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,542/30000,HttpConnection@2cc3bc11}{io=1/0,kio=1,kro=1}:runFillable
+17/11/04 05:40:04 DEBUG ExecuteProduceConsume: EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f dispatch
+17/11/04 05:40:04 DEBUG QueuedThreadPool: queue EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f
+17/11/04 05:40:04 DEBUG ExecuteProduceConsume: EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f run SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,542/30000,HttpConnection@2cc3bc11}{io=1/0,kio=1,kro=1}:runFillable
+17/11/04 05:40:04 DEBUG QueuedThreadPool: run EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f
+17/11/04 05:40:04 DEBUG ExecuteProduceConsume: EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f run
+17/11/04 05:40:04 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f produce enter
+17/11/04 05:40:04 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f producing
+17/11/04 05:40:04 DEBUG SelectChannelEndPoint: Key interests updated 1 -> 0 on SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,542/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}
+17/11/04 05:40:04 DEBUG ManagedSelector: Selector loop waiting on select
+17/11/04 05:40:04 DEBUG FillInterest: FillInterest@6118b379{true,AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,542/30000,HttpConnection@2cc3bc11}{io=1/0,kio=1,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=1,c=false,a=IDLE,uri=null}]}} fillable AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,542/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=1,c=false,a=IDLE,uri=null}]}
+17/11/04 05:40:04 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,542/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=1,c=false,a=IDLE,uri=null}] onFillable enter HttpChannelState@23133b7d{s=IDLE a=NOT_ASYNC i=true r=!P!U w=false} null
+17/11/04 05:40:04 DEBUG ChannelEndPoint: filled 363 SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,542/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}
+17/11/04 05:40:04 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=1,c=false,a=IDLE,uri=null}] filled 363 HeapByteBuffer@44e0302f[p=0,l=363,c=8192,r=363]={<<<GET /favicon.ico ....8,en;q=0.6\r\n\r\n>>>d=1\r\nAccept-Encod...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+17/11/04 05:40:04 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=1,c=false,a=IDLE,uri=null}] parse HeapByteBuffer@44e0302f[p=0,l=363,c=8192,r=363]={<<<GET /favicon.ico ....8,en;q=0.6\r\n\r\n>>>d=1\r\nAccept-Encod...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} {}
+17/11/04 05:40:04 DEBUG HttpParser: parseNext s=START HeapByteBuffer@44e0302f[p=0,l=363,c=8192,r=363]={<<<GET /favicon.ico ....8,en;q=0.6\r\n\r\n>>>d=1\r\nAccept-Encod...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+17/11/04 05:40:04 DEBUG HttpParser: START --> SPACE1
+17/11/04 05:40:04 DEBUG HttpParser: SPACE1 --> URI
+17/11/04 05:40:04 DEBUG HttpParser: URI --> SPACE2
+17/11/04 05:40:04 DEBUG HttpParser: SPACE2 --> REQUEST_VERSION
+17/11/04 05:40:04 DEBUG HttpParser: REQUEST_VERSION --> HEADER
+17/11/04 05:40:04 DEBUG HttpParser: HEADER --> HEADER_IN_VALUE
+17/11/04 05:40:04 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:04 DEBUG HttpParser: HEADER --> HEADER_IN_VALUE
+17/11/04 05:40:04 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:04 DEBUG HttpParser: HEADER --> HEADER_IN_VALUE
+17/11/04 05:40:04 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:04 DEBUG HttpParser: HEADER --> HEADER_VALUE
+17/11/04 05:40:04 DEBUG HttpParser: HEADER_VALUE --> HEADER_IN_VALUE
+17/11/04 05:40:04 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:04 DEBUG HttpParser: HEADER --> HEADER_VALUE
+17/11/04 05:40:04 DEBUG HttpParser: HEADER_VALUE --> HEADER_IN_VALUE
+17/11/04 05:40:04 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:04 DEBUG HttpParser: HEADER --> HEADER_IN_VALUE
+17/11/04 05:40:04 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:04 DEBUG HttpParser: HEADER --> HEADER_IN_VALUE
+17/11/04 05:40:04 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:04 DEBUG HttpParser: HEADER --> END
+17/11/04 05:40:04 DEBUG HttpChannel: HttpChannelOverHttp@46d5582{r=2,c=false,a=IDLE,uri=//dev2:4040/favicon.ico} onRequestComplete
+17/11/04 05:40:04 DEBUG HttpInput: HttpInputOverHTTP@3b9a61ec[c=0,q=1,[0]=EOF,s=STREAM] addContent EOF
+17/11/04 05:40:04 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=END,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=2,c=false,a=IDLE,uri=//dev2:4040/favicon.ico}] parsed true HttpParser{s=END,0 of -1}
+17/11/04 05:40:04 DEBUG HttpConnection: releaseRequestBuffer HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=END,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=2,c=false,a=IDLE,uri=//dev2:4040/favicon.ico}]
+17/11/04 05:40:04 DEBUG HttpChannel: HttpChannelOverHttp@46d5582{r=2,c=false,a=IDLE,uri=//dev2:4040/favicon.ico} handle //dev2:4040/favicon.ico
+17/11/04 05:40:04 DEBUG HttpChannelState: HttpChannelState@23133b7d{s=IDLE a=NOT_ASYNC i=true r=!P!U w=false} handling IDLE
+17/11/04 05:40:04 DEBUG HttpChannel: HttpChannelOverHttp@46d5582{r=2,c=false,a=DISPATCHED,uri=//dev2:4040/favicon.ico} action DISPATCH
+17/11/04 05:40:04 DEBUG Server: REQUEST on HttpChannelOverHttp@46d5582{r=2,c=false,a=DISPATCHED,uri=//dev2:4040/favicon.ico}
+GET /favicon.ico HTTP/1.1
+Host: dev2:4040
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://dev2:4040/SQL/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-GB,en-US;q=0.8,en;q=0.6
+
+
+17/11/04 05:40:04 DEBUG GzipHandler: org.spark_project.jetty.server.handler.gzip.GzipHandler@40f3080c handle Request(GET //dev2:4040/favicon.ico)@764395eb in null
+17/11/04 05:40:04 DEBUG ContextHandler: scope null||/favicon.ico @ o.s.j.s.ServletContextHandler@697a0948{/,null,AVAILABLE,@Spark}
+17/11/04 05:40:04 DEBUG ContextHandler: context=||/favicon.ico @ o.s.j.s.ServletContextHandler@697a0948{/,null,AVAILABLE,@Spark}
+17/11/04 05:40:04 DEBUG ServletHandler: servlet |/favicon.ico|null -> org.apache.spark.ui.JettyUtils$$anon$4-226de93c@75ff9b3d==org.apache.spark.ui.JettyUtils$$anon$4,-1,true
+17/11/04 05:40:04 DEBUG ServletHandler: chain=null
+17/11/04 05:40:04 DEBUG GzipHttpOutputInterceptor: org.spark_project.jetty.server.handler.gzip.GzipHttpOutputInterceptor@2fc73472 exclude by status 302
+17/11/04 05:40:04 DEBUG HttpChannel: sendResponse info=null content=HeapByteBuffer@738f950f[p=0,l=0,c=0,r=0]={<<<>>>} complete=true committing=true callback=Blocker@45cf0be{null}
+17/11/04 05:40:04 DEBUG HttpChannel: Commit HTTP/1.1{s=302,h=2} to HttpChannelOverHttp@46d5582{r=2,c=true,a=DISPATCHED,uri=//dev2:4040/favicon.ico}
+17/11/04 05:40:04 DEBUG HttpConnection: org.spark_project.jetty.server.HttpConnection$SendCallback@67a9486b[PROCESSING][i=HTTP/1.1{s=302,h=2},cb=org.spark_project.jetty.server.HttpChannel$CommitCallback@37d4d854] generate: NEED_HEADER (null,[p=0,l=0,c=0,r=0],true)@START
+17/11/04 05:40:04 DEBUG HttpConnection: org.spark_project.jetty.server.HttpConnection$SendCallback@67a9486b[PROCESSING][i=HTTP/1.1{s=302,h=2},cb=org.spark_project.jetty.server.HttpChannel$CommitCallback@37d4d854] generate: FLUSH ([p=0,l=143,c=8192,r=143],[p=0,l=0,c=0,r=0],true)@COMPLETING
+17/11/04 05:40:04 DEBUG WriteFlusher: write: WriteFlusher@290c08e9{IDLE} [HeapByteBuffer@44e0302f[p=0,l=143,c=8192,r=143]={<<<HTTP/1.1 302 Foun...z-SNAPSHOT)\r\n\r\n>>>.36 (KHTML, like ...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}]
+17/11/04 05:40:04 DEBUG WriteFlusher: update WriteFlusher@290c08e9{WRITING}:IDLE-->WRITING
+17/11/04 05:40:04 DEBUG ChannelEndPoint: flushed 143 SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,W,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}
+17/11/04 05:40:04 DEBUG WriteFlusher: Flushed=true 143/143+0 WriteFlusher@290c08e9{WRITING}
+17/11/04 05:40:04 DEBUG WriteFlusher: update WriteFlusher@290c08e9{IDLE}:WRITING-->IDLE
+17/11/04 05:40:04 DEBUG HttpConnection: org.spark_project.jetty.server.HttpConnection$SendCallback@67a9486b[PROCESSING][i=HTTP/1.1{s=302,h=2},cb=org.spark_project.jetty.server.HttpChannel$CommitCallback@37d4d854] generate: DONE ([p=143,l=143,c=8192,r=0],[p=0,l=0,c=0,r=0],true)@END
+17/11/04 05:40:04 DEBUG Server: RESPONSE for /favicon.ico h=true
+302 null
+Date: Sat, 04 Nov 2017 05:40:04 GMT
+Location: http://dev2:4040/jobs/
+
+
+17/11/04 05:40:04 DEBUG HttpChannelState: HttpChannelState@23133b7d{s=DISPATCHED a=NOT_ASYNC i=true r=!P!U w=false} unhandle DISPATCHED
+17/11/04 05:40:04 DEBUG HttpChannel: HttpChannelOverHttp@46d5582{r=2,c=true,a=COMPLETING,uri=//dev2:4040/favicon.ico} action COMPLETE
+17/11/04 05:40:04 DEBUG HttpParser: reset HttpParser{s=END,0 of -1}
+17/11/04 05:40:04 DEBUG HttpParser: END --> START
+17/11/04 05:40:04 DEBUG HttpChannel: HttpChannelOverHttp@46d5582{r=2,c=false,a=IDLE,uri=null} handle exit, result COMPLETE
+17/11/04 05:40:04 DEBUG ChannelEndPoint: filled 0 SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}
+17/11/04 05:40:04 DEBUG ChannelEndPoint: filled 0 SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}
+17/11/04 05:40:04 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=2,c=false,a=IDLE,uri=null}] filled 0 HeapByteBuffer@44e0302f[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 302 Foun...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+17/11/04 05:40:04 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=2,c=false,a=IDLE,uri=null}] parse HeapByteBuffer@44e0302f[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 302 Foun...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} {}
+17/11/04 05:40:04 DEBUG HttpParser: parseNext s=START HeapByteBuffer@44e0302f[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 302 Foun...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+17/11/04 05:40:04 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=2,c=false,a=IDLE,uri=null}] parsed false HttpParser{s=START,0 of -1}
+17/11/04 05:40:04 DEBUG HttpConnection: releaseRequestBuffer HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=2,c=false,a=IDLE,uri=null}]
+17/11/04 05:40:04 DEBUG AbstractConnection: fillInterested HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=2,c=false,a=IDLE,uri=null}]
+17/11/04 05:40:04 DEBUG FillInterest: FillInterest@6118b379{true,AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=2,c=false,a=IDLE,uri=null}]}} register AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=2,c=false,a=IDLE,uri=null}]}
+17/11/04 05:40:04 DEBUG FillInterest: FillInterest@6118b379{true,AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=2,c=false,a=IDLE,uri=null}]}} register AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=2,c=false,a=IDLE,uri=null}]}
+17/11/04 05:40:04 DEBUG SelectChannelEndPoint: changeInterests p=false 0->1 for SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=0/1,kio=0,kro=1}
+17/11/04 05:40:04 DEBUG ManagedSelector: Queued change SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=0/1,kio=0,kro=1}:runUpdateKey on org.spark_project.jetty.io.ManagedSelector@1a3685d9 id=0 keys=1 selected=0
+17/11/04 05:40:04 DEBUG ManagedSelector: Selector loop woken up from select, 0/1 selected
+17/11/04 05:40:04 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=0/1,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=2,c=false,a=IDLE,uri=null}] onFillable exit HttpChannelState@23133b7d{s=IDLE a=NOT_ASYNC i=true r=!P!U w=false} null
+17/11/04 05:40:04 DEBUG ManagedSelector: Running change SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=0/1,kio=0,kro=1}:runUpdateKey
+17/11/04 05:40:04 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f ran SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=1/1,kio=0,kro=1}:runFillable
+17/11/04 05:40:04 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f produce exit
+17/11/04 05:40:04 DEBUG QueuedThreadPool: ran EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f
+17/11/04 05:40:04 DEBUG SelectChannelEndPoint: Key interests updated 0 -> 1 on SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=1/1,kio=1,kro=1}
+17/11/04 05:40:04 DEBUG ManagedSelector: Selector loop waiting on select
+17/11/04 05:40:04 DEBUG ManagedSelector: Selector loop woken up from select, 1/1 selected
+17/11/04 05:40:04 DEBUG SelectChannelEndPoint: onSelected 1->0 r=true w=false for SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,363/30000,HttpConnection@2cc3bc11}{io=1/0,kio=1,kro=1}
+17/11/04 05:40:04 DEBUG SelectChannelEndPoint: task SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,363/30000,HttpConnection@2cc3bc11}{io=1/0,kio=1,kro=1}:runFillable
+17/11/04 05:40:04 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f produced SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,363/30000,HttpConnection@2cc3bc11}{io=1/0,kio=1,kro=1}:runFillable
+17/11/04 05:40:04 DEBUG ExecuteProduceConsume: EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f dispatch
+17/11/04 05:40:04 DEBUG QueuedThreadPool: queue EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f
+17/11/04 05:40:04 DEBUG ExecuteProduceConsume: EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f run SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,363/30000,HttpConnection@2cc3bc11}{io=1/0,kio=1,kro=1}:runFillable
+17/11/04 05:40:04 DEBUG QueuedThreadPool: run EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f
+17/11/04 05:40:04 DEBUG ExecuteProduceConsume: EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f run
+17/11/04 05:40:04 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f produce enter
+17/11/04 05:40:04 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f producing
+17/11/04 05:40:04 DEBUG SelectChannelEndPoint: Key interests updated 1 -> 0 on SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,363/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}
+17/11/04 05:40:04 DEBUG ManagedSelector: Selector loop waiting on select
+17/11/04 05:40:04 DEBUG FillInterest: FillInterest@6118b379{true,AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,363/30000,HttpConnection@2cc3bc11}{io=1/0,kio=1,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=2,c=false,a=IDLE,uri=null}]}} fillable AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,363/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=2,c=false,a=IDLE,uri=null}]}
+17/11/04 05:40:04 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,363/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=2,c=false,a=IDLE,uri=null}] onFillable enter HttpChannelState@23133b7d{s=IDLE a=NOT_ASYNC i=true r=!P!U w=false} null
+17/11/04 05:40:04 DEBUG ChannelEndPoint: filled 357 SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,363/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}
+17/11/04 05:40:04 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=2,c=false,a=IDLE,uri=null}] filled 357 HeapByteBuffer@44e0302f[p=0,l=357,c=8192,r=357]={<<<GET /jobs/ HTTP/1....8,en;q=0.6\r\n\r\n>>>.6\r\n\r\nd=1\r\nAccept...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+17/11/04 05:40:04 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=2,c=false,a=IDLE,uri=null}] parse HeapByteBuffer@44e0302f[p=0,l=357,c=8192,r=357]={<<<GET /jobs/ HTTP/1....8,en;q=0.6\r\n\r\n>>>.6\r\n\r\nd=1\r\nAccept...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} {}
+17/11/04 05:40:04 DEBUG HttpParser: parseNext s=START HeapByteBuffer@44e0302f[p=0,l=357,c=8192,r=357]={<<<GET /jobs/ HTTP/1....8,en;q=0.6\r\n\r\n>>>.6\r\n\r\nd=1\r\nAccept...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+17/11/04 05:40:04 DEBUG HttpParser: START --> SPACE1
+17/11/04 05:40:04 DEBUG HttpParser: SPACE1 --> URI
+17/11/04 05:40:04 DEBUG HttpParser: URI --> SPACE2
+17/11/04 05:40:04 DEBUG HttpParser: SPACE2 --> REQUEST_VERSION
+17/11/04 05:40:04 DEBUG HttpParser: REQUEST_VERSION --> HEADER
+17/11/04 05:40:04 DEBUG HttpParser: HEADER --> HEADER_IN_VALUE
+17/11/04 05:40:04 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:04 DEBUG HttpParser: HEADER --> HEADER_IN_VALUE
+17/11/04 05:40:04 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:04 DEBUG HttpParser: HEADER --> HEADER_IN_VALUE
+17/11/04 05:40:04 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:04 DEBUG HttpParser: HEADER --> HEADER_IN_VALUE
+17/11/04 05:40:04 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:04 DEBUG HttpParser: HEADER --> HEADER_VALUE
+17/11/04 05:40:04 DEBUG HttpParser: HEADER_VALUE --> HEADER_IN_VALUE
+17/11/04 05:40:04 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:04 DEBUG HttpParser: HEADER --> HEADER_IN_VALUE
+17/11/04 05:40:04 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:04 DEBUG HttpParser: HEADER --> HEADER_IN_VALUE
+17/11/04 05:40:04 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:04 DEBUG HttpParser: HEADER --> END
+17/11/04 05:40:04 DEBUG HttpChannel: HttpChannelOverHttp@46d5582{r=3,c=false,a=IDLE,uri=//dev2:4040/jobs/} onRequestComplete
+17/11/04 05:40:04 DEBUG HttpInput: HttpInputOverHTTP@3b9a61ec[c=0,q=1,[0]=EOF,s=STREAM] addContent EOF
+17/11/04 05:40:04 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=END,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=3,c=false,a=IDLE,uri=//dev2:4040/jobs/}] parsed true HttpParser{s=END,0 of -1}
+17/11/04 05:40:04 DEBUG HttpConnection: releaseRequestBuffer HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=END,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=3,c=false,a=IDLE,uri=//dev2:4040/jobs/}]
+17/11/04 05:40:04 DEBUG HttpChannel: HttpChannelOverHttp@46d5582{r=3,c=false,a=IDLE,uri=//dev2:4040/jobs/} handle //dev2:4040/jobs/
+17/11/04 05:40:04 DEBUG HttpChannelState: HttpChannelState@23133b7d{s=IDLE a=NOT_ASYNC i=true r=!P!U w=false} handling IDLE
+17/11/04 05:40:04 DEBUG HttpChannel: HttpChannelOverHttp@46d5582{r=3,c=false,a=DISPATCHED,uri=//dev2:4040/jobs/} action DISPATCH
+17/11/04 05:40:04 DEBUG Server: REQUEST on HttpChannelOverHttp@46d5582{r=3,c=false,a=DISPATCHED,uri=//dev2:4040/jobs/}
+GET /jobs/ HTTP/1.1
+Host: dev2:4040
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://dev2:4040/SQL/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-GB,en-US;q=0.8,en;q=0.6
+
+
+17/11/04 05:40:04 DEBUG GzipHandler: org.spark_project.jetty.server.handler.gzip.GzipHandler@76f50b1b handle Request(GET //dev2:4040/jobs/)@764395eb in null
+17/11/04 05:40:04 DEBUG ContextHandler: scope null||/jobs/ @ o.s.j.s.ServletContextHandler@6a3fbcb1{/jobs,null,AVAILABLE,@Spark}
+17/11/04 05:40:04 DEBUG ContextHandler: context=/jobs||/ @ o.s.j.s.ServletContextHandler@6a3fbcb1{/jobs,null,AVAILABLE,@Spark}
+17/11/04 05:40:04 DEBUG ServletHandler: servlet /jobs|/|null -> org.apache.spark.ui.JettyUtils$$anon$3-14d25b6e@cf4a9199==org.apache.spark.ui.JettyUtils$$anon$3,-1,true
+17/11/04 05:40:04 DEBUG ServletHandler: chain=null
+17/11/04 05:40:04 DEBUG SecurityManager: user=null aclsEnabled=false viewAcls=ec2-user viewAclsGroups=
+17/11/04 05:40:04 DEBUG Server: RESPONSE for /jobs/ h=true
+200 null
+Date: Sat, 04 Nov 2017 05:40:04 GMT
+Content-Type: text/html;charset=utf-8
+Cache-Control: no-cache, no-store, must-revalidate
+X-Frame-Options: SAMEORIGIN
+
+
+17/11/04 05:40:04 DEBUG HttpChannelState: HttpChannelState@23133b7d{s=DISPATCHED a=NOT_ASYNC i=true r=!P!U w=false} unhandle DISPATCHED
+17/11/04 05:40:04 DEBUG HttpChannel: HttpChannelOverHttp@46d5582{r=3,c=false,a=COMPLETING,uri=//dev2:4040/jobs/} action COMPLETE
+17/11/04 05:40:04 DEBUG GzipHttpOutputInterceptor: org.spark_project.jetty.server.handler.gzip.GzipHttpOutputInterceptor@2887e07 compressing java.util.zip.Deflater@42f061d3
+17/11/04 05:40:04 DEBUG HttpChannel: sendResponse info=null content=HeapByteBuffer@4998954c[p=0,l=2302,c=32768,r=2302]={<<<\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\x00\xE5ZmS\xE38\x12...\x9d\xEa\x9f\xB1y\xFf\x06g\xC78\xA0%'\x00\x00>>>tasks inside it."...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} complete=true committing=true callback=GzipBufferCB@4f91d74
+17/11/04 05:40:04 DEBUG HttpChannel: Commit HTTP/1.1{s=200,h=6} to HttpChannelOverHttp@46d5582{r=3,c=true,a=COMPLETING,uri=//dev2:4040/jobs/}
+17/11/04 05:40:04 DEBUG HttpConnection: org.spark_project.jetty.server.HttpConnection$SendCallback@67a9486b[PROCESSING][i=HTTP/1.1{s=200,h=6},cb=org.spark_project.jetty.server.HttpChannel$CommitCallback@77e0accf] generate: NEED_HEADER (null,[p=0,l=2302,c=32768,r=2302],true)@START
+17/11/04 05:40:04 DEBUG HttpConnection: org.spark_project.jetty.server.HttpConnection$SendCallback@67a9486b[PROCESSING][i=HTTP/1.1{s=200,h=6},cb=org.spark_project.jetty.server.HttpChannel$CommitCallback@77e0accf] generate: FLUSH ([p=0,l=288,c=8192,r=288],[p=0,l=2302,c=32768,r=2302],true)@COMPLETING
+17/11/04 05:40:04 DEBUG WriteFlusher: write: WriteFlusher@290c08e9{IDLE} [HeapByteBuffer@44e0302f[p=0,l=288,c=8192,r=288]={<<<HTTP/1.1 200 OK\r\n...z-SNAPSHOT)\r\n\r\n>>>oding: gzip, defl...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00},HeapByteBuffer@4998954c[p=0,l=2302,c=32768,r=2302]={<<<\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\x00\xE5ZmS\xE38\x12...\x9d\xEa\x9f\xB1y\xFf\x06g\xC78\xA0%'\x00\x00>>>tasks inside it."...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}]
+17/11/04 05:40:04 DEBUG WriteFlusher: update WriteFlusher@290c08e9{WRITING}:IDLE-->WRITING
+17/11/04 05:40:04 DEBUG ChannelEndPoint: flushed 2590 SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,W,10/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}
+17/11/04 05:40:04 DEBUG WriteFlusher: Flushed=true 288/288+1 WriteFlusher@290c08e9{WRITING}
+17/11/04 05:40:04 DEBUG WriteFlusher: update WriteFlusher@290c08e9{IDLE}:WRITING-->IDLE
+17/11/04 05:40:04 DEBUG HttpConnection: org.spark_project.jetty.server.HttpConnection$SendCallback@67a9486b[PROCESSING][i=HTTP/1.1{s=200,h=6},cb=org.spark_project.jetty.server.HttpChannel$CommitCallback@77e0accf] generate: DONE ([p=288,l=288,c=8192,r=0],[p=2302,l=2302,c=32768,r=0],true)@END
+17/11/04 05:40:04 DEBUG HttpParser: reset HttpParser{s=END,0 of -1}
+17/11/04 05:40:04 DEBUG HttpParser: END --> START
+17/11/04 05:40:04 DEBUG HttpChannel: HttpChannelOverHttp@46d5582{r=3,c=false,a=IDLE,uri=null} handle exit, result COMPLETE
+17/11/04 05:40:04 DEBUG ChannelEndPoint: filled 0 SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}
+17/11/04 05:40:04 DEBUG ChannelEndPoint: filled 0 SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}
+17/11/04 05:40:04 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=3,c=false,a=IDLE,uri=null}] filled 0 HeapByteBuffer@44e0302f[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+17/11/04 05:40:04 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=3,c=false,a=IDLE,uri=null}] parse HeapByteBuffer@44e0302f[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} {}
+17/11/04 05:40:04 DEBUG HttpParser: parseNext s=START HeapByteBuffer@44e0302f[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+17/11/04 05:40:04 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=3,c=false,a=IDLE,uri=null}] parsed false HttpParser{s=START,0 of -1}
+17/11/04 05:40:04 DEBUG HttpConnection: releaseRequestBuffer HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=3,c=false,a=IDLE,uri=null}]
+17/11/04 05:40:04 DEBUG AbstractConnection: fillInterested HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=3,c=false,a=IDLE,uri=null}]
+17/11/04 05:40:04 DEBUG FillInterest: FillInterest@6118b379{true,AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=3,c=false,a=IDLE,uri=null}]}} register AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=3,c=false,a=IDLE,uri=null}]}
+17/11/04 05:40:04 DEBUG FillInterest: FillInterest@6118b379{true,AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=3,c=false,a=IDLE,uri=null}]}} register AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=3,c=false,a=IDLE,uri=null}]}
+17/11/04 05:40:04 DEBUG SelectChannelEndPoint: changeInterests p=false 0->1 for SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=0/1,kio=0,kro=1}
+17/11/04 05:40:04 DEBUG ManagedSelector: Queued change SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=0/1,kio=0,kro=1}:runUpdateKey on org.spark_project.jetty.io.ManagedSelector@1a3685d9 id=0 keys=1 selected=0
+17/11/04 05:40:04 DEBUG ManagedSelector: Selector loop woken up from select, 0/1 selected
+17/11/04 05:40:04 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1/30000,HttpConnection@2cc3bc11}{io=0/1,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=3,c=false,a=IDLE,uri=null}] onFillable exit HttpChannelState@23133b7d{s=IDLE a=NOT_ASYNC i=true r=!P!U w=false} null
+17/11/04 05:40:04 DEBUG ManagedSelector: Running change SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1/30000,HttpConnection@2cc3bc11}{io=0/1,kio=0,kro=1}:runUpdateKey
+17/11/04 05:40:04 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f ran SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1/30000,HttpConnection@2cc3bc11}{io=1/1,kio=0,kro=1}:runFillable
+17/11/04 05:40:04 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f produce exit
+17/11/04 05:40:04 DEBUG QueuedThreadPool: ran EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f
+17/11/04 05:40:04 DEBUG SelectChannelEndPoint: Key interests updated 0 -> 1 on SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1/30000,HttpConnection@2cc3bc11}{io=1/1,kio=1,kro=1}
+17/11/04 05:40:04 DEBUG ManagedSelector: Selector loop waiting on select
+17/11/04 05:40:06 DEBUG ManagedSelector: Selector loop woken up from select, 1/1 selected
+17/11/04 05:40:06 DEBUG SelectChannelEndPoint: onSelected 1->0 r=true w=false for SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1673/30000,HttpConnection@2cc3bc11}{io=1/0,kio=1,kro=1}
+17/11/04 05:40:06 DEBUG SelectChannelEndPoint: task SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1673/30000,HttpConnection@2cc3bc11}{io=1/0,kio=1,kro=1}:runFillable
+17/11/04 05:40:06 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f produced SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1673/30000,HttpConnection@2cc3bc11}{io=1/0,kio=1,kro=1}:runFillable
+17/11/04 05:40:06 DEBUG ExecuteProduceConsume: EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f dispatch
+17/11/04 05:40:06 DEBUG QueuedThreadPool: queue EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f
+17/11/04 05:40:06 DEBUG ExecuteProduceConsume: EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f run SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1673/30000,HttpConnection@2cc3bc11}{io=1/0,kio=1,kro=1}:runFillable
+17/11/04 05:40:06 DEBUG QueuedThreadPool: run EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f
+17/11/04 05:40:06 DEBUG ExecuteProduceConsume: EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f run
+17/11/04 05:40:06 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f produce enter
+17/11/04 05:40:06 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f producing
+17/11/04 05:40:06 DEBUG FillInterest: FillInterest@6118b379{true,AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1673/30000,HttpConnection@2cc3bc11}{io=1/0,kio=1,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=3,c=false,a=IDLE,uri=null}]}} fillable AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1673/30000,HttpConnection@2cc3bc11}{io=1/0,kio=1,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=3,c=false,a=IDLE,uri=null}]}
+17/11/04 05:40:06 DEBUG SelectChannelEndPoint: Key interests updated 1 -> 0 on SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1673/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}
+17/11/04 05:40:06 DEBUG ManagedSelector: Selector loop waiting on select
+17/11/04 05:40:06 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,1673/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=3,c=false,a=IDLE,uri=null}] onFillable enter HttpChannelState@23133b7d{s=IDLE a=NOT_ASYNC i=true r=!P!U w=false} null
+17/11/04 05:40:06 DEBUG ChannelEndPoint: filled 446 SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,1673/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}
+17/11/04 05:40:06 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=3,c=false,a=IDLE,uri=null}] filled 446 HeapByteBuffer@44e0302f[p=0,l=446,c=8192,r=446]={<<<GET /SQL/executio....8,en;q=0.6\r\n\r\n>>>\n\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+17/11/04 05:40:06 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=3,c=false,a=IDLE,uri=null}] parse HeapByteBuffer@44e0302f[p=0,l=446,c=8192,r=446]={<<<GET /SQL/executio....8,en;q=0.6\r\n\r\n>>>\n\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} {}
+17/11/04 05:40:06 DEBUG HttpParser: parseNext s=START HeapByteBuffer@44e0302f[p=0,l=446,c=8192,r=446]={<<<GET /SQL/executio....8,en;q=0.6\r\n\r\n>>>\n\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+17/11/04 05:40:06 DEBUG HttpParser: START --> SPACE1
+17/11/04 05:40:06 DEBUG HttpParser: SPACE1 --> URI
+17/11/04 05:40:06 DEBUG HttpParser: URI --> SPACE2
+17/11/04 05:40:06 DEBUG HttpParser: SPACE2 --> REQUEST_VERSION
+17/11/04 05:40:06 DEBUG HttpParser: REQUEST_VERSION --> HEADER
+17/11/04 05:40:06 DEBUG HttpParser: HEADER --> HEADER_IN_VALUE
+17/11/04 05:40:06 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:06 DEBUG HttpParser: HEADER --> HEADER_IN_VALUE
+17/11/04 05:40:06 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:06 DEBUG HttpParser: HEADER --> HEADER_IN_NAME
+17/11/04 05:40:06 DEBUG HttpParser: HEADER_IN_NAME --> HEADER_VALUE
+17/11/04 05:40:06 DEBUG HttpParser: HEADER_VALUE --> HEADER_IN_VALUE
+17/11/04 05:40:06 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:06 DEBUG HttpParser: HEADER --> HEADER_IN_VALUE
+17/11/04 05:40:06 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:06 DEBUG HttpParser: HEADER --> HEADER_IN_VALUE
+17/11/04 05:40:06 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:06 DEBUG HttpParser: HEADER --> HEADER_VALUE
+17/11/04 05:40:06 DEBUG HttpParser: HEADER_VALUE --> HEADER_IN_VALUE
+17/11/04 05:40:06 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:06 DEBUG HttpParser: HEADER --> HEADER_IN_VALUE
+17/11/04 05:40:06 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:06 DEBUG HttpParser: HEADER --> HEADER_IN_VALUE
+17/11/04 05:40:06 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:06 DEBUG HttpParser: HEADER --> END
+17/11/04 05:40:06 DEBUG HttpChannel: HttpChannelOverHttp@46d5582{r=4,c=false,a=IDLE,uri=//dev2:4040/SQL/execution?id=2} onRequestComplete
+17/11/04 05:40:06 DEBUG HttpInput: HttpInputOverHTTP@3b9a61ec[c=0,q=1,[0]=EOF,s=STREAM] addContent EOF
+17/11/04 05:40:06 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=END,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=4,c=false,a=IDLE,uri=//dev2:4040/SQL/execution?id=2}] parsed true HttpParser{s=END,0 of -1}
+17/11/04 05:40:06 DEBUG HttpConnection: releaseRequestBuffer HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=END,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=4,c=false,a=IDLE,uri=//dev2:4040/SQL/execution?id=2}]
+17/11/04 05:40:06 DEBUG HttpChannel: HttpChannelOverHttp@46d5582{r=4,c=false,a=IDLE,uri=//dev2:4040/SQL/execution?id=2} handle //dev2:4040/SQL/execution?id=2
+17/11/04 05:40:06 DEBUG HttpChannelState: HttpChannelState@23133b7d{s=IDLE a=NOT_ASYNC i=true r=!P!U w=false} handling IDLE
+17/11/04 05:40:06 DEBUG HttpChannel: HttpChannelOverHttp@46d5582{r=4,c=false,a=DISPATCHED,uri=//dev2:4040/SQL/execution?id=2} action DISPATCH
+17/11/04 05:40:06 DEBUG Server: REQUEST on HttpChannelOverHttp@46d5582{r=4,c=false,a=DISPATCHED,uri=//dev2:4040/SQL/execution?id=2}
+GET /SQL/execution HTTP/1.1
+Host: dev2:4040
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://dev2:4040/SQL/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-GB,en-US;q=0.8,en;q=0.6
+
+
+17/11/04 05:40:06 DEBUG ContextHandler: scope null||/SQL/execution @ o.s.j.s.ServletContextHandler@4ae49387{/SQL/execution,null,AVAILABLE,@Spark}
+17/11/04 05:40:06 DEBUG HttpChannel: sendResponse info=null content=HeapByteBuffer@738f950f[p=0,l=0,c=0,r=0]={<<<>>>} complete=true committing=true callback=Blocker@45cf0be{null}
+17/11/04 05:40:06 DEBUG HttpChannel: Commit HTTP/1.1{s=302,h=2} to HttpChannelOverHttp@46d5582{r=4,c=true,a=DISPATCHED,uri=//dev2:4040/SQL/execution?id=2}
+17/11/04 05:40:06 DEBUG HttpConnection: org.spark_project.jetty.server.HttpConnection$SendCallback@67a9486b[PROCESSING][i=HTTP/1.1{s=302,h=2},cb=org.spark_project.jetty.server.HttpChannel$CommitCallback@6020cd0f] generate: NEED_HEADER (null,[p=0,l=0,c=0,r=0],true)@START
+17/11/04 05:40:06 DEBUG HttpConnection: org.spark_project.jetty.server.HttpConnection$SendCallback@67a9486b[PROCESSING][i=HTTP/1.1{s=302,h=2},cb=org.spark_project.jetty.server.HttpChannel$CommitCallback@6020cd0f] generate: FLUSH ([p=0,l=157,c=8192,r=157],[p=0,l=0,c=0,r=0],true)@COMPLETING
+17/11/04 05:40:06 DEBUG WriteFlusher: write: WriteFlusher@290c08e9{IDLE} [HeapByteBuffer@44e0302f[p=0,l=157,c=8192,r=157]={<<<HTTP/1.1 302 Foun...z-SNAPSHOT)\r\n\r\n>>>0_12_6) AppleWebK...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}]
+17/11/04 05:40:06 DEBUG WriteFlusher: update WriteFlusher@290c08e9{WRITING}:IDLE-->WRITING
+17/11/04 05:40:06 DEBUG ChannelEndPoint: flushed 157 SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,W,2/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}
+17/11/04 05:40:06 DEBUG WriteFlusher: Flushed=true 157/157+0 WriteFlusher@290c08e9{WRITING}
+17/11/04 05:40:06 DEBUG WriteFlusher: update WriteFlusher@290c08e9{IDLE}:WRITING-->IDLE
+17/11/04 05:40:06 DEBUG HttpConnection: org.spark_project.jetty.server.HttpConnection$SendCallback@67a9486b[PROCESSING][i=HTTP/1.1{s=302,h=2},cb=org.spark_project.jetty.server.HttpChannel$CommitCallback@6020cd0f] generate: DONE ([p=157,l=157,c=8192,r=0],[p=0,l=0,c=0,r=0],true)@END
+17/11/04 05:40:06 DEBUG Server: RESPONSE for /SQL/execution h=true
+302 null
+Date: Sat, 04 Nov 2017 05:40:06 GMT
+Location: http://dev2:4040/SQL/execution/?id=2
+
+
+17/11/04 05:40:06 DEBUG HttpChannelState: HttpChannelState@23133b7d{s=DISPATCHED a=NOT_ASYNC i=true r=!P!U w=false} unhandle DISPATCHED
+17/11/04 05:40:06 DEBUG HttpChannel: HttpChannelOverHttp@46d5582{r=4,c=true,a=COMPLETING,uri=//dev2:4040/SQL/execution?id=2} action COMPLETE
+17/11/04 05:40:06 DEBUG HttpParser: reset HttpParser{s=END,0 of -1}
+17/11/04 05:40:06 DEBUG HttpParser: END --> START
+17/11/04 05:40:06 DEBUG HttpChannel: HttpChannelOverHttp@46d5582{r=4,c=false,a=IDLE,uri=null} handle exit, result COMPLETE
+17/11/04 05:40:06 DEBUG ChannelEndPoint: filled 0 SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}
+17/11/04 05:40:06 DEBUG ChannelEndPoint: filled 0 SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}
+17/11/04 05:40:06 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=4,c=false,a=IDLE,uri=null}] filled 0 HeapByteBuffer@44e0302f[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 302 Foun...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+17/11/04 05:40:06 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=4,c=false,a=IDLE,uri=null}] parse HeapByteBuffer@44e0302f[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 302 Foun...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} {}
+17/11/04 05:40:06 DEBUG HttpParser: parseNext s=START HeapByteBuffer@44e0302f[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 302 Foun...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+17/11/04 05:40:06 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=4,c=false,a=IDLE,uri=null}] parsed false HttpParser{s=START,0 of -1}
+17/11/04 05:40:06 DEBUG HttpConnection: releaseRequestBuffer HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=4,c=false,a=IDLE,uri=null}]
+17/11/04 05:40:06 DEBUG AbstractConnection: fillInterested HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=4,c=false,a=IDLE,uri=null}]
+17/11/04 05:40:06 DEBUG FillInterest: FillInterest@6118b379{true,AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=4,c=false,a=IDLE,uri=null}]}} register AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=4,c=false,a=IDLE,uri=null}]}
+17/11/04 05:40:06 DEBUG FillInterest: FillInterest@6118b379{true,AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=4,c=false,a=IDLE,uri=null}]}} register AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=4,c=false,a=IDLE,uri=null}]}
+17/11/04 05:40:06 DEBUG SelectChannelEndPoint: changeInterests p=false 0->1 for SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=0/1,kio=0,kro=1}
+17/11/04 05:40:06 DEBUG ManagedSelector: Queued change SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=0/1,kio=0,kro=1}:runUpdateKey on org.spark_project.jetty.io.ManagedSelector@1a3685d9 id=0 keys=1 selected=0
+17/11/04 05:40:06 DEBUG ManagedSelector: Selector loop woken up from select, 0/1 selected
+17/11/04 05:40:06 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=0/1,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=4,c=false,a=IDLE,uri=null}] onFillable exit HttpChannelState@23133b7d{s=IDLE a=NOT_ASYNC i=true r=!P!U w=false} null
+17/11/04 05:40:06 DEBUG ManagedSelector: Running change SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=0/1,kio=0,kro=1}:runUpdateKey
+17/11/04 05:40:06 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f ran SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=0/1,kio=0,kro=1}:runFillable
+17/11/04 05:40:06 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f produce exit
+17/11/04 05:40:06 DEBUG QueuedThreadPool: ran EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f
+17/11/04 05:40:06 DEBUG SelectChannelEndPoint: Key interests updated 0 -> 1 on SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=1/1,kio=1,kro=1}
+17/11/04 05:40:06 DEBUG ManagedSelector: Selector loop waiting on select
+17/11/04 05:40:06 DEBUG ManagedSelector: Selector loop woken up from select, 1/1 selected
+17/11/04 05:40:06 DEBUG SelectChannelEndPoint: onSelected 1->0 r=true w=false for SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,361/30000,HttpConnection@2cc3bc11}{io=1/0,kio=1,kro=1}
+17/11/04 05:40:06 DEBUG SelectChannelEndPoint: task SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,361/30000,HttpConnection@2cc3bc11}{io=1/0,kio=1,kro=1}:runFillable
+17/11/04 05:40:06 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f produced SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,362/30000,HttpConnection@2cc3bc11}{io=1/0,kio=1,kro=1}:runFillable
+17/11/04 05:40:06 DEBUG ExecuteProduceConsume: EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f dispatch
+17/11/04 05:40:06 DEBUG QueuedThreadPool: queue EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f
+17/11/04 05:40:06 DEBUG QueuedThreadPool: run EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f
+17/11/04 05:40:06 DEBUG ExecuteProduceConsume: EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f run SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,362/30000,HttpConnection@2cc3bc11}{io=1/0,kio=1,kro=1}:runFillable
+17/11/04 05:40:06 DEBUG ExecuteProduceConsume: EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f run
+17/11/04 05:40:06 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f produce enter
+17/11/04 05:40:06 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f producing
+17/11/04 05:40:06 DEBUG SelectChannelEndPoint: Key interests updated 1 -> 0 on SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,362/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}
+17/11/04 05:40:06 DEBUG ManagedSelector: Selector loop waiting on select
+17/11/04 05:40:06 DEBUG FillInterest: FillInterest@6118b379{true,AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,362/30000,HttpConnection@2cc3bc11}{io=1/0,kio=1,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=4,c=false,a=IDLE,uri=null}]}} fillable AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,362/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=4,c=false,a=IDLE,uri=null}]}
+17/11/04 05:40:06 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,362/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=4,c=false,a=IDLE,uri=null}] onFillable enter HttpChannelState@23133b7d{s=IDLE a=NOT_ASYNC i=true r=!P!U w=false} null
+17/11/04 05:40:06 DEBUG ChannelEndPoint: filled 447 SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,362/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}
+17/11/04 05:40:06 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=4,c=false,a=IDLE,uri=null}] filled 447 HeapByteBuffer@44e0302f[p=0,l=447,c=8192,r=447]={<<<GET /SQL/executio....8,en;q=0.6\r\n\r\n>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+17/11/04 05:40:06 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=4,c=false,a=IDLE,uri=null}] parse HeapByteBuffer@44e0302f[p=0,l=447,c=8192,r=447]={<<<GET /SQL/executio....8,en;q=0.6\r\n\r\n>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} {}
+17/11/04 05:40:06 DEBUG HttpParser: parseNext s=START HeapByteBuffer@44e0302f[p=0,l=447,c=8192,r=447]={<<<GET /SQL/executio....8,en;q=0.6\r\n\r\n>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+17/11/04 05:40:06 DEBUG HttpParser: START --> SPACE1
+17/11/04 05:40:06 DEBUG HttpParser: SPACE1 --> URI
+17/11/04 05:40:06 DEBUG HttpParser: URI --> SPACE2
+17/11/04 05:40:06 DEBUG HttpParser: SPACE2 --> REQUEST_VERSION
+17/11/04 05:40:06 DEBUG HttpParser: REQUEST_VERSION --> HEADER
+17/11/04 05:40:06 DEBUG HttpParser: HEADER --> HEADER_IN_VALUE
+17/11/04 05:40:06 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:06 DEBUG HttpParser: HEADER --> HEADER_IN_VALUE
+17/11/04 05:40:06 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:06 DEBUG HttpParser: HEADER --> HEADER_IN_NAME
+17/11/04 05:40:06 DEBUG HttpParser: HEADER_IN_NAME --> HEADER_VALUE
+17/11/04 05:40:06 DEBUG HttpParser: HEADER_VALUE --> HEADER_IN_VALUE
+17/11/04 05:40:06 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:06 DEBUG HttpParser: HEADER --> HEADER_IN_VALUE
+17/11/04 05:40:06 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:06 DEBUG HttpParser: HEADER --> HEADER_IN_VALUE
+17/11/04 05:40:06 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:06 DEBUG HttpParser: HEADER --> HEADER_VALUE
+17/11/04 05:40:06 DEBUG HttpParser: HEADER_VALUE --> HEADER_IN_VALUE
+17/11/04 05:40:06 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:06 DEBUG HttpParser: HEADER --> HEADER_IN_VALUE
+17/11/04 05:40:06 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:06 DEBUG HttpParser: HEADER --> HEADER_IN_VALUE
+17/11/04 05:40:06 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:06 DEBUG HttpParser: HEADER --> END
+17/11/04 05:40:06 DEBUG HttpChannel: HttpChannelOverHttp@46d5582{r=5,c=false,a=IDLE,uri=//dev2:4040/SQL/execution/?id=2} onRequestComplete
+17/11/04 05:40:06 DEBUG HttpInput: HttpInputOverHTTP@3b9a61ec[c=0,q=1,[0]=EOF,s=STREAM] addContent EOF
+17/11/04 05:40:06 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=END,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=5,c=false,a=IDLE,uri=//dev2:4040/SQL/execution/?id=2}] parsed true HttpParser{s=END,0 of -1}
+17/11/04 05:40:06 DEBUG HttpConnection: releaseRequestBuffer HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=END,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=5,c=false,a=IDLE,uri=//dev2:4040/SQL/execution/?id=2}]
+17/11/04 05:40:06 DEBUG HttpChannel: HttpChannelOverHttp@46d5582{r=5,c=false,a=IDLE,uri=//dev2:4040/SQL/execution/?id=2} handle //dev2:4040/SQL/execution/?id=2
+17/11/04 05:40:06 DEBUG HttpChannelState: HttpChannelState@23133b7d{s=IDLE a=NOT_ASYNC i=true r=!P!U w=false} handling IDLE
+17/11/04 05:40:06 DEBUG HttpChannel: HttpChannelOverHttp@46d5582{r=5,c=false,a=DISPATCHED,uri=//dev2:4040/SQL/execution/?id=2} action DISPATCH
+17/11/04 05:40:06 DEBUG Server: REQUEST on HttpChannelOverHttp@46d5582{r=5,c=false,a=DISPATCHED,uri=//dev2:4040/SQL/execution/?id=2}
+GET /SQL/execution/ HTTP/1.1
+Host: dev2:4040
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://dev2:4040/SQL/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-GB,en-US;q=0.8,en;q=0.6
+
+
+17/11/04 05:40:06 DEBUG ContextHandler: scope null||/SQL/execution/ @ o.s.j.s.ServletContextHandler@4ae49387{/SQL/execution,null,AVAILABLE,@Spark}
+17/11/04 05:40:06 DEBUG ContextHandler: context=/SQL/execution||/ @ o.s.j.s.ServletContextHandler@4ae49387{/SQL/execution,null,AVAILABLE,@Spark}
+17/11/04 05:40:06 DEBUG ServletHandler: servlet /SQL/execution|/|null -> org.apache.spark.ui.JettyUtils$$anon$3-16391278@e5d9b079==org.apache.spark.ui.JettyUtils$$anon$3,-1,true
+17/11/04 05:40:06 DEBUG ServletHandler: chain=null
+17/11/04 05:40:06 DEBUG SecurityManager: user=null aclsEnabled=false viewAcls=ec2-user viewAclsGroups=
+17/11/04 05:40:06 DEBUG Server: RESPONSE for /SQL/execution/ h=true
+200 null
+Date: Sat, 04 Nov 2017 05:40:06 GMT
+Content-Type: text/html;charset=utf-8
+Cache-Control: no-cache, no-store, must-revalidate
+X-Frame-Options: SAMEORIGIN
+
+
+17/11/04 05:40:06 DEBUG HttpChannelState: HttpChannelState@23133b7d{s=DISPATCHED a=NOT_ASYNC i=true r=!P!U w=false} unhandle DISPATCHED
+17/11/04 05:40:06 DEBUG HttpChannel: HttpChannelOverHttp@46d5582{r=5,c=false,a=COMPLETING,uri=//dev2:4040/SQL/execution/?id=2} action COMPLETE
+17/11/04 05:40:06 DEBUG HttpChannel: sendResponse info=null content=DirectByteBuffer@428a3dcc[p=0,l=8877,c=32768,r=8877]={<<<<!DOCTYPE html><h...dy>\n    </html>>>>, c_first_name#7,...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} complete=true committing=true callback=Blocker@45cf0be{null}
+17/11/04 05:40:06 DEBUG HttpChannel: Commit HTTP/1.1{s=200,h=4} to HttpChannelOverHttp@46d5582{r=5,c=true,a=COMPLETING,uri=//dev2:4040/SQL/execution/?id=2}
+17/11/04 05:40:06 DEBUG HttpConnection: org.spark_project.jetty.server.HttpConnection$SendCallback@67a9486b[PROCESSING][i=HTTP/1.1{s=200,h=4},cb=org.spark_project.jetty.server.HttpChannel$CommitCallback@5ccbd6dd] generate: NEED_HEADER (null,[p=0,l=8877,c=32768,r=8877],true)@START
+17/11/04 05:40:06 DEBUG HttpConnection: org.spark_project.jetty.server.HttpConnection$SendCallback@67a9486b[PROCESSING][i=HTTP/1.1{s=200,h=4},cb=org.spark_project.jetty.server.HttpChannel$CommitCallback@5ccbd6dd] generate: FLUSH ([p=0,l=229,c=8192,r=229],[p=0,l=8877,c=32768,r=8877],true)@COMPLETING
+17/11/04 05:40:06 DEBUG WriteFlusher: write: WriteFlusher@290c08e9{IDLE} [HeapByteBuffer@44e0302f[p=0,l=229,c=8192,r=229]={<<<HTTP/1.1 200 OK\r\n...z-SNAPSHOT)\r\n\r\n>>>ari/537.36\r\nAccep...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00},DirectByteBuffer@428a3dcc[p=0,l=8877,c=32768,r=8877]={<<<<!DOCTYPE html><h...dy>\n    </html>>>>, c_first_name#7,...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}]
+17/11/04 05:40:06 DEBUG WriteFlusher: update WriteFlusher@290c08e9{WRITING}:IDLE-->WRITING
+17/11/04 05:40:06 DEBUG ChannelEndPoint: flushed 9106 SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,W,9/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}
+17/11/04 05:40:06 DEBUG WriteFlusher: Flushed=true 229/229+1 WriteFlusher@290c08e9{WRITING}
+17/11/04 05:40:06 DEBUG WriteFlusher: update WriteFlusher@290c08e9{IDLE}:WRITING-->IDLE
+17/11/04 05:40:06 DEBUG HttpConnection: org.spark_project.jetty.server.HttpConnection$SendCallback@67a9486b[PROCESSING][i=HTTP/1.1{s=200,h=4},cb=org.spark_project.jetty.server.HttpChannel$CommitCallback@5ccbd6dd] generate: DONE ([p=229,l=229,c=8192,r=0],[p=8877,l=8877,c=32768,r=0],true)@END
+17/11/04 05:40:06 DEBUG HttpParser: reset HttpParser{s=END,0 of -1}
+17/11/04 05:40:06 DEBUG HttpParser: END --> START
+17/11/04 05:40:06 DEBUG HttpChannel: HttpChannelOverHttp@46d5582{r=5,c=false,a=IDLE,uri=null} handle exit, result COMPLETE
+17/11/04 05:40:06 DEBUG ChannelEndPoint: filled 0 SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}
+17/11/04 05:40:06 DEBUG ChannelEndPoint: filled 0 SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}
+17/11/04 05:40:06 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=5,c=false,a=IDLE,uri=null}] filled 0 HeapByteBuffer@44e0302f[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+17/11/04 05:40:06 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=5,c=false,a=IDLE,uri=null}] parse HeapByteBuffer@44e0302f[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} {}
+17/11/04 05:40:06 DEBUG HttpParser: parseNext s=START HeapByteBuffer@44e0302f[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+17/11/04 05:40:06 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=5,c=false,a=IDLE,uri=null}] parsed false HttpParser{s=START,0 of -1}
+17/11/04 05:40:06 DEBUG HttpConnection: releaseRequestBuffer HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=5,c=false,a=IDLE,uri=null}]
+17/11/04 05:40:06 DEBUG AbstractConnection: fillInterested HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=5,c=false,a=IDLE,uri=null}]
+17/11/04 05:40:06 DEBUG FillInterest: FillInterest@6118b379{true,AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=5,c=false,a=IDLE,uri=null}]}} register AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=5,c=false,a=IDLE,uri=null}]}
+17/11/04 05:40:06 DEBUG FillInterest: FillInterest@6118b379{true,AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=5,c=false,a=IDLE,uri=null}]}} register AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=5,c=false,a=IDLE,uri=null}]}
+17/11/04 05:40:06 DEBUG SelectChannelEndPoint: changeInterests p=false 0->1 for SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1/30000,HttpConnection@2cc3bc11}{io=0/1,kio=0,kro=1}
+17/11/04 05:40:06 DEBUG ManagedSelector: Queued change SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1/30000,HttpConnection@2cc3bc11}{io=0/1,kio=0,kro=1}:runUpdateKey on org.spark_project.jetty.io.ManagedSelector@1a3685d9 id=0 keys=1 selected=0
+17/11/04 05:40:06 DEBUG ManagedSelector: Selector loop woken up from select, 0/1 selected
+17/11/04 05:40:06 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1/30000,HttpConnection@2cc3bc11}{io=0/1,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=5,c=false,a=IDLE,uri=null}] onFillable exit HttpChannelState@23133b7d{s=IDLE a=NOT_ASYNC i=true r=!P!U w=false} null
+17/11/04 05:40:06 DEBUG ManagedSelector: Running change SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1/30000,HttpConnection@2cc3bc11}{io=0/1,kio=0,kro=1}:runUpdateKey
+17/11/04 05:40:06 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f ran SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1/30000,HttpConnection@2cc3bc11}{io=1/1,kio=0,kro=1}:runFillable
+17/11/04 05:40:06 DEBUG SelectChannelEndPoint: Key interests updated 0 -> 1 on SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1/30000,HttpConnection@2cc3bc11}{io=1/1,kio=1,kro=1}
+17/11/04 05:40:06 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f produce exit
+17/11/04 05:40:06 DEBUG ManagedSelector: Selector loop waiting on select
+17/11/04 05:40:06 DEBUG QueuedThreadPool: ran EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f
+17/11/04 05:40:07 DEBUG ManagedSelector: Selector loop woken up from select, 1/1 selected
+17/11/04 05:40:07 DEBUG SelectChannelEndPoint: onSelected 1->0 r=true w=false for SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,505/30000,HttpConnection@2cc3bc11}{io=1/0,kio=1,kro=1}
+17/11/04 05:40:07 DEBUG SelectChannelEndPoint: task SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,505/30000,HttpConnection@2cc3bc11}{io=1/0,kio=1,kro=1}:runFillable
+17/11/04 05:40:07 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f produced SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,505/30000,HttpConnection@2cc3bc11}{io=1/0,kio=1,kro=1}:runFillable
+17/11/04 05:40:07 DEBUG ExecuteProduceConsume: EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f dispatch
+17/11/04 05:40:07 DEBUG QueuedThreadPool: queue EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f
+17/11/04 05:40:07 DEBUG ExecuteProduceConsume: EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f run SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,505/30000,HttpConnection@2cc3bc11}{io=1/0,kio=1,kro=1}:runFillable
+17/11/04 05:40:07 DEBUG QueuedThreadPool: run EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f
+17/11/04 05:40:07 DEBUG ExecuteProduceConsume: EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f run
+17/11/04 05:40:07 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f produce enter
+17/11/04 05:40:07 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f producing
+17/11/04 05:40:07 DEBUG FillInterest: FillInterest@6118b379{true,AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,505/30000,HttpConnection@2cc3bc11}{io=1/0,kio=1,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=5,c=false,a=IDLE,uri=null}]}} fillable AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,505/30000,HttpConnection@2cc3bc11}{io=1/0,kio=1,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=5,c=false,a=IDLE,uri=null}]}
+17/11/04 05:40:07 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,505/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=5,c=false,a=IDLE,uri=null}] onFillable enter HttpChannelState@23133b7d{s=IDLE a=NOT_ASYNC i=true r=!P!U w=false} null
+17/11/04 05:40:07 DEBUG SelectChannelEndPoint: Key interests updated 1 -> 0 on SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,505/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}
+17/11/04 05:40:07 DEBUG ManagedSelector: Selector loop waiting on select
+17/11/04 05:40:07 DEBUG ChannelEndPoint: filled 378 SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,505/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}
+17/11/04 05:40:07 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=5,c=false,a=IDLE,uri=null}] filled 378 HeapByteBuffer@44e0302f[p=0,l=378,c=8192,r=378]={<<<GET /favicon.ico ....8,en;q=0.6\r\n\r\n>>>oding: gzip, defl...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+17/11/04 05:40:07 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=5,c=false,a=IDLE,uri=null}] parse HeapByteBuffer@44e0302f[p=0,l=378,c=8192,r=378]={<<<GET /favicon.ico ....8,en;q=0.6\r\n\r\n>>>oding: gzip, defl...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} {}
+17/11/04 05:40:07 DEBUG HttpParser: parseNext s=START HeapByteBuffer@44e0302f[p=0,l=378,c=8192,r=378]={<<<GET /favicon.ico ....8,en;q=0.6\r\n\r\n>>>oding: gzip, defl...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+17/11/04 05:40:07 DEBUG HttpParser: START --> SPACE1
+17/11/04 05:40:07 DEBUG HttpParser: SPACE1 --> URI
+17/11/04 05:40:07 DEBUG HttpParser: URI --> SPACE2
+17/11/04 05:40:07 DEBUG HttpParser: SPACE2 --> REQUEST_VERSION
+17/11/04 05:40:07 DEBUG HttpParser: REQUEST_VERSION --> HEADER
+17/11/04 05:40:07 DEBUG HttpParser: HEADER --> HEADER_IN_VALUE
+17/11/04 05:40:07 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:07 DEBUG HttpParser: HEADER --> HEADER_IN_VALUE
+17/11/04 05:40:07 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:07 DEBUG HttpParser: HEADER --> HEADER_IN_VALUE
+17/11/04 05:40:07 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:07 DEBUG HttpParser: HEADER --> HEADER_IN_VALUE
+17/11/04 05:40:07 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:07 DEBUG HttpParser: HEADER --> HEADER_VALUE
+17/11/04 05:40:07 DEBUG HttpParser: HEADER_VALUE --> HEADER_IN_VALUE
+17/11/04 05:40:07 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:07 DEBUG HttpParser: HEADER --> HEADER_IN_VALUE
+17/11/04 05:40:07 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:07 DEBUG HttpParser: HEADER --> HEADER_IN_VALUE
+17/11/04 05:40:07 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:07 DEBUG HttpParser: HEADER --> END
+17/11/04 05:40:07 DEBUG HttpChannel: HttpChannelOverHttp@46d5582{r=6,c=false,a=IDLE,uri=//dev2:4040/favicon.ico} onRequestComplete
+17/11/04 05:40:07 DEBUG HttpInput: HttpInputOverHTTP@3b9a61ec[c=0,q=1,[0]=EOF,s=STREAM] addContent EOF
+17/11/04 05:40:07 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=END,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=6,c=false,a=IDLE,uri=//dev2:4040/favicon.ico}] parsed true HttpParser{s=END,0 of -1}
+17/11/04 05:40:07 DEBUG HttpConnection: releaseRequestBuffer HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=END,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=6,c=false,a=IDLE,uri=//dev2:4040/favicon.ico}]
+17/11/04 05:40:07 DEBUG HttpChannel: HttpChannelOverHttp@46d5582{r=6,c=false,a=IDLE,uri=//dev2:4040/favicon.ico} handle //dev2:4040/favicon.ico
+17/11/04 05:40:07 DEBUG HttpChannelState: HttpChannelState@23133b7d{s=IDLE a=NOT_ASYNC i=true r=!P!U w=false} handling IDLE
+17/11/04 05:40:07 DEBUG HttpChannel: HttpChannelOverHttp@46d5582{r=6,c=false,a=DISPATCHED,uri=//dev2:4040/favicon.ico} action DISPATCH
+17/11/04 05:40:07 DEBUG Server: REQUEST on HttpChannelOverHttp@46d5582{r=6,c=false,a=DISPATCHED,uri=//dev2:4040/favicon.ico}
+GET /favicon.ico HTTP/1.1
+Host: dev2:4040
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://dev2:4040/SQL/execution/?id=2
+Accept-Encoding: gzip, deflate
+Accept-Language: en-GB,en-US;q=0.8,en;q=0.6
+
+
+17/11/04 05:40:07 DEBUG GzipHandler: org.spark_project.jetty.server.handler.gzip.GzipHandler@40f3080c handle Request(GET //dev2:4040/favicon.ico)@764395eb in null
+17/11/04 05:40:07 DEBUG ContextHandler: scope null||/favicon.ico @ o.s.j.s.ServletContextHandler@697a0948{/,null,AVAILABLE,@Spark}
+17/11/04 05:40:07 DEBUG ContextHandler: context=||/favicon.ico @ o.s.j.s.ServletContextHandler@697a0948{/,null,AVAILABLE,@Spark}
+17/11/04 05:40:07 DEBUG ServletHandler: servlet |/favicon.ico|null -> org.apache.spark.ui.JettyUtils$$anon$4-226de93c@75ff9b3d==org.apache.spark.ui.JettyUtils$$anon$4,-1,true
+17/11/04 05:40:07 DEBUG ServletHandler: chain=null
+17/11/04 05:40:07 DEBUG GzipHttpOutputInterceptor: org.spark_project.jetty.server.handler.gzip.GzipHttpOutputInterceptor@4a36d476 exclude by status 302
+17/11/04 05:40:07 DEBUG HttpChannel: sendResponse info=null content=HeapByteBuffer@738f950f[p=0,l=0,c=0,r=0]={<<<>>>} complete=true committing=true callback=Blocker@45cf0be{null}
+17/11/04 05:40:07 DEBUG HttpChannel: Commit HTTP/1.1{s=302,h=2} to HttpChannelOverHttp@46d5582{r=6,c=true,a=DISPATCHED,uri=//dev2:4040/favicon.ico}
+17/11/04 05:40:07 DEBUG HttpConnection: org.spark_project.jetty.server.HttpConnection$SendCallback@67a9486b[PROCESSING][i=HTTP/1.1{s=302,h=2},cb=org.spark_project.jetty.server.HttpChannel$CommitCallback@6771374b] generate: NEED_HEADER (null,[p=0,l=0,c=0,r=0],true)@START
+17/11/04 05:40:07 DEBUG HttpConnection: org.spark_project.jetty.server.HttpConnection$SendCallback@67a9486b[PROCESSING][i=HTTP/1.1{s=302,h=2},cb=org.spark_project.jetty.server.HttpChannel$CommitCallback@6771374b] generate: FLUSH ([p=0,l=143,c=8192,r=143],[p=0,l=0,c=0,r=0],true)@COMPLETING
+17/11/04 05:40:07 DEBUG WriteFlusher: write: WriteFlusher@290c08e9{IDLE} [HeapByteBuffer@44e0302f[p=0,l=143,c=8192,r=143]={<<<HTTP/1.1 302 Foun...z-SNAPSHOT)\r\n\r\n>>>.36 (KHTML, like ...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}]
+17/11/04 05:40:07 DEBUG WriteFlusher: update WriteFlusher@290c08e9{WRITING}:IDLE-->WRITING
+17/11/04 05:40:07 DEBUG ChannelEndPoint: flushed 143 SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,W,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}
+17/11/04 05:40:07 DEBUG WriteFlusher: Flushed=true 143/143+0 WriteFlusher@290c08e9{WRITING}
+17/11/04 05:40:07 DEBUG WriteFlusher: update WriteFlusher@290c08e9{IDLE}:WRITING-->IDLE
+17/11/04 05:40:07 DEBUG HttpConnection: org.spark_project.jetty.server.HttpConnection$SendCallback@67a9486b[PROCESSING][i=HTTP/1.1{s=302,h=2},cb=org.spark_project.jetty.server.HttpChannel$CommitCallback@6771374b] generate: DONE ([p=143,l=143,c=8192,r=0],[p=0,l=0,c=0,r=0],true)@END
+17/11/04 05:40:07 DEBUG Server: RESPONSE for /favicon.ico h=true
+302 null
+Date: Sat, 04 Nov 2017 05:40:07 GMT
+Location: http://dev2:4040/jobs/
+
+
+17/11/04 05:40:07 DEBUG HttpChannelState: HttpChannelState@23133b7d{s=DISPATCHED a=NOT_ASYNC i=true r=!P!U w=false} unhandle DISPATCHED
+17/11/04 05:40:07 DEBUG HttpChannel: HttpChannelOverHttp@46d5582{r=6,c=true,a=COMPLETING,uri=//dev2:4040/favicon.ico} action COMPLETE
+17/11/04 05:40:07 DEBUG HttpParser: reset HttpParser{s=END,0 of -1}
+17/11/04 05:40:07 DEBUG HttpParser: END --> START
+17/11/04 05:40:07 DEBUG HttpChannel: HttpChannelOverHttp@46d5582{r=6,c=false,a=IDLE,uri=null} handle exit, result COMPLETE
+17/11/04 05:40:07 DEBUG ChannelEndPoint: filled 0 SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}
+17/11/04 05:40:07 DEBUG ChannelEndPoint: filled 0 SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}
+17/11/04 05:40:07 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=6,c=false,a=IDLE,uri=null}] filled 0 HeapByteBuffer@44e0302f[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 302 Foun...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+17/11/04 05:40:07 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=6,c=false,a=IDLE,uri=null}] parse HeapByteBuffer@44e0302f[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 302 Foun...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} {}
+17/11/04 05:40:07 DEBUG HttpParser: parseNext s=START HeapByteBuffer@44e0302f[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 302 Foun...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+17/11/04 05:40:07 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=6,c=false,a=IDLE,uri=null}] parsed false HttpParser{s=START,0 of -1}
+17/11/04 05:40:07 DEBUG HttpConnection: releaseRequestBuffer HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=6,c=false,a=IDLE,uri=null}]
+17/11/04 05:40:07 DEBUG AbstractConnection: fillInterested HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=6,c=false,a=IDLE,uri=null}]
+17/11/04 05:40:07 DEBUG FillInterest: FillInterest@6118b379{true,AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=6,c=false,a=IDLE,uri=null}]}} register AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=6,c=false,a=IDLE,uri=null}]}
+17/11/04 05:40:07 DEBUG FillInterest: FillInterest@6118b379{true,AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=6,c=false,a=IDLE,uri=null}]}} register AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=6,c=false,a=IDLE,uri=null}]}
+17/11/04 05:40:07 DEBUG SelectChannelEndPoint: changeInterests p=false 0->1 for SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=0/1,kio=0,kro=1}
+17/11/04 05:40:07 DEBUG ManagedSelector: Queued change SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=0/1,kio=0,kro=1}:runUpdateKey on org.spark_project.jetty.io.ManagedSelector@1a3685d9 id=0 keys=1 selected=0
+17/11/04 05:40:07 DEBUG ManagedSelector: Selector loop woken up from select, 0/1 selected
+17/11/04 05:40:07 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=0/1,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=6,c=false,a=IDLE,uri=null}] onFillable exit HttpChannelState@23133b7d{s=IDLE a=NOT_ASYNC i=true r=!P!U w=false} null
+17/11/04 05:40:07 DEBUG ManagedSelector: Running change SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=0/1,kio=0,kro=1}:runUpdateKey
+17/11/04 05:40:07 DEBUG SelectChannelEndPoint: Key interests updated 0 -> 1 on SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=1/1,kio=1,kro=1}
+17/11/04 05:40:07 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f ran SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=0/1,kio=0,kro=1}:runFillable
+17/11/04 05:40:07 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f produce exit
+17/11/04 05:40:07 DEBUG QueuedThreadPool: ran EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f
+17/11/04 05:40:07 DEBUG ManagedSelector: Selector loop waiting on select
+17/11/04 05:40:07 DEBUG ManagedSelector: Selector loop woken up from select, 1/1 selected
+17/11/04 05:40:07 DEBUG SelectChannelEndPoint: onSelected 1->0 r=true w=false for SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,302/30000,HttpConnection@2cc3bc11}{io=1/0,kio=1,kro=1}
+17/11/04 05:40:07 DEBUG SelectChannelEndPoint: task SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,302/30000,HttpConnection@2cc3bc11}{io=1/0,kio=1,kro=1}:runFillable
+17/11/04 05:40:07 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f produced SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,302/30000,HttpConnection@2cc3bc11}{io=1/0,kio=1,kro=1}:runFillable
+17/11/04 05:40:07 DEBUG ExecuteProduceConsume: EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f dispatch
+17/11/04 05:40:07 DEBUG QueuedThreadPool: queue EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f
+17/11/04 05:40:07 DEBUG ExecuteProduceConsume: EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f run SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,302/30000,HttpConnection@2cc3bc11}{io=1/0,kio=1,kro=1}:runFillable
+17/11/04 05:40:07 DEBUG QueuedThreadPool: run EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f
+17/11/04 05:40:07 DEBUG ExecuteProduceConsume: EPC Pend/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f run
+17/11/04 05:40:07 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f produce enter
+17/11/04 05:40:07 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f producing
+17/11/04 05:40:07 DEBUG SelectChannelEndPoint: Key interests updated 1 -> 0 on SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,302/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}
+17/11/04 05:40:07 DEBUG ManagedSelector: Selector loop waiting on select
+17/11/04 05:40:07 DEBUG FillInterest: FillInterest@6118b379{true,AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,302/30000,HttpConnection@2cc3bc11}{io=1/0,kio=1,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=6,c=false,a=IDLE,uri=null}]}} fillable AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,302/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=6,c=false,a=IDLE,uri=null}]}
+17/11/04 05:40:07 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,302/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=6,c=false,a=IDLE,uri=null}] onFillable enter HttpChannelState@23133b7d{s=IDLE a=NOT_ASYNC i=true r=!P!U w=false} null
+17/11/04 05:40:07 DEBUG ChannelEndPoint: filled 372 SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,302/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}
+17/11/04 05:40:07 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=6,c=false,a=IDLE,uri=null}] filled 372 HeapByteBuffer@44e0302f[p=0,l=372,c=8192,r=372]={<<<GET /jobs/ HTTP/1....8,en;q=0.6\r\n\r\n>>>.6\r\n\r\noding: gzip...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+17/11/04 05:40:07 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=6,c=false,a=IDLE,uri=null}] parse HeapByteBuffer@44e0302f[p=0,l=372,c=8192,r=372]={<<<GET /jobs/ HTTP/1....8,en;q=0.6\r\n\r\n>>>.6\r\n\r\noding: gzip...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} {}
+17/11/04 05:40:07 DEBUG HttpParser: parseNext s=START HeapByteBuffer@44e0302f[p=0,l=372,c=8192,r=372]={<<<GET /jobs/ HTTP/1....8,en;q=0.6\r\n\r\n>>>.6\r\n\r\noding: gzip...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+17/11/04 05:40:07 DEBUG HttpParser: START --> SPACE1
+17/11/04 05:40:07 DEBUG HttpParser: SPACE1 --> URI
+17/11/04 05:40:07 DEBUG HttpParser: URI --> SPACE2
+17/11/04 05:40:07 DEBUG HttpParser: SPACE2 --> REQUEST_VERSION
+17/11/04 05:40:07 DEBUG HttpParser: REQUEST_VERSION --> HEADER
+17/11/04 05:40:07 DEBUG HttpParser: HEADER --> HEADER_IN_VALUE
+17/11/04 05:40:07 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:07 DEBUG HttpParser: HEADER --> HEADER_IN_VALUE
+17/11/04 05:40:07 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:07 DEBUG HttpParser: HEADER --> HEADER_IN_VALUE
+17/11/04 05:40:07 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:07 DEBUG HttpParser: HEADER --> HEADER_IN_VALUE
+17/11/04 05:40:07 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:07 DEBUG HttpParser: HEADER --> HEADER_VALUE
+17/11/04 05:40:07 DEBUG HttpParser: HEADER_VALUE --> HEADER_IN_VALUE
+17/11/04 05:40:07 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:07 DEBUG HttpParser: HEADER --> HEADER_IN_VALUE
+17/11/04 05:40:07 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:07 DEBUG HttpParser: HEADER --> HEADER_IN_VALUE
+17/11/04 05:40:07 DEBUG HttpParser: HEADER_IN_VALUE --> HEADER
+17/11/04 05:40:07 DEBUG HttpParser: HEADER --> END
+17/11/04 05:40:07 DEBUG HttpChannel: HttpChannelOverHttp@46d5582{r=7,c=false,a=IDLE,uri=//dev2:4040/jobs/} onRequestComplete
+17/11/04 05:40:07 DEBUG HttpInput: HttpInputOverHTTP@3b9a61ec[c=0,q=1,[0]=EOF,s=STREAM] addContent EOF
+17/11/04 05:40:07 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,2/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=END,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=7,c=false,a=IDLE,uri=//dev2:4040/jobs/}] parsed true HttpParser{s=END,0 of -1}
+17/11/04 05:40:07 DEBUG HttpConnection: releaseRequestBuffer HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,2/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=END,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=7,c=false,a=IDLE,uri=//dev2:4040/jobs/}]
+17/11/04 05:40:07 DEBUG HttpChannel: HttpChannelOverHttp@46d5582{r=7,c=false,a=IDLE,uri=//dev2:4040/jobs/} handle //dev2:4040/jobs/
+17/11/04 05:40:07 DEBUG HttpChannelState: HttpChannelState@23133b7d{s=IDLE a=NOT_ASYNC i=true r=!P!U w=false} handling IDLE
+17/11/04 05:40:07 DEBUG HttpChannel: HttpChannelOverHttp@46d5582{r=7,c=false,a=DISPATCHED,uri=//dev2:4040/jobs/} action DISPATCH
+17/11/04 05:40:07 DEBUG Server: REQUEST on HttpChannelOverHttp@46d5582{r=7,c=false,a=DISPATCHED,uri=//dev2:4040/jobs/}
+GET /jobs/ HTTP/1.1
+Host: dev2:4040
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://dev2:4040/SQL/execution/?id=2
+Accept-Encoding: gzip, deflate
+Accept-Language: en-GB,en-US;q=0.8,en;q=0.6
+
+
+17/11/04 05:40:07 DEBUG GzipHandler: org.spark_project.jetty.server.handler.gzip.GzipHandler@76f50b1b handle Request(GET //dev2:4040/jobs/)@764395eb in null
+17/11/04 05:40:07 DEBUG ContextHandler: scope null||/jobs/ @ o.s.j.s.ServletContextHandler@6a3fbcb1{/jobs,null,AVAILABLE,@Spark}
+17/11/04 05:40:07 DEBUG ContextHandler: context=/jobs||/ @ o.s.j.s.ServletContextHandler@6a3fbcb1{/jobs,null,AVAILABLE,@Spark}
+17/11/04 05:40:07 DEBUG ServletHandler: servlet /jobs|/|null -> org.apache.spark.ui.JettyUtils$$anon$3-14d25b6e@cf4a9199==org.apache.spark.ui.JettyUtils$$anon$3,-1,true
+17/11/04 05:40:07 DEBUG ServletHandler: chain=null
+17/11/04 05:40:07 DEBUG SecurityManager: user=null aclsEnabled=false viewAcls=ec2-user viewAclsGroups=
+17/11/04 05:40:07 DEBUG Server: RESPONSE for /jobs/ h=true
+200 null
+Date: Sat, 04 Nov 2017 05:40:07 GMT
+Content-Type: text/html;charset=utf-8
+Cache-Control: no-cache, no-store, must-revalidate
+X-Frame-Options: SAMEORIGIN
+
+
+17/11/04 05:40:07 DEBUG HttpChannelState: HttpChannelState@23133b7d{s=DISPATCHED a=NOT_ASYNC i=true r=!P!U w=false} unhandle DISPATCHED
+17/11/04 05:40:07 DEBUG HttpChannel: HttpChannelOverHttp@46d5582{r=7,c=false,a=COMPLETING,uri=//dev2:4040/jobs/} action COMPLETE
+17/11/04 05:40:07 DEBUG GzipHttpOutputInterceptor: org.spark_project.jetty.server.handler.gzip.GzipHttpOutputInterceptor@10a272c9 compressing java.util.zip.Deflater@559b5648
+17/11/04 05:40:07 DEBUG HttpChannel: sendResponse info=null content=HeapByteBuffer@3b3ebc31[p=0,l=2302,c=32768,r=2302]={<<<\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\x00\xE5ZmS\xE38\x12...\x9d\xEa\x9f\xB1y\xFf\x06g\xC78\xA0%'\x00\x00>>>tasks inside it."...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} complete=true committing=true callback=GzipBufferCB@777b9db2
+17/11/04 05:40:07 DEBUG HttpChannel: Commit HTTP/1.1{s=200,h=6} to HttpChannelOverHttp@46d5582{r=7,c=true,a=COMPLETING,uri=//dev2:4040/jobs/}
+17/11/04 05:40:07 DEBUG HttpConnection: org.spark_project.jetty.server.HttpConnection$SendCallback@67a9486b[PROCESSING][i=HTTP/1.1{s=200,h=6},cb=org.spark_project.jetty.server.HttpChannel$CommitCallback@32773129] generate: NEED_HEADER (null,[p=0,l=2302,c=32768,r=2302],true)@START
+17/11/04 05:40:07 DEBUG HttpConnection: org.spark_project.jetty.server.HttpConnection$SendCallback@67a9486b[PROCESSING][i=HTTP/1.1{s=200,h=6},cb=org.spark_project.jetty.server.HttpChannel$CommitCallback@32773129] generate: FLUSH ([p=0,l=288,c=8192,r=288],[p=0,l=2302,c=32768,r=2302],true)@COMPLETING
+17/11/04 05:40:07 DEBUG WriteFlusher: write: WriteFlusher@290c08e9{IDLE} [HeapByteBuffer@44e0302f[p=0,l=288,c=8192,r=288]={<<<HTTP/1.1 200 OK\r\n...z-SNAPSHOT)\r\n\r\n>>>d=2\r\nAccept-Encod...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00},HeapByteBuffer@3b3ebc31[p=0,l=2302,c=32768,r=2302]={<<<\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\x00\xE5ZmS\xE38\x12...\x9d\xEa\x9f\xB1y\xFf\x06g\xC78\xA0%'\x00\x00>>>tasks inside it."...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}]
+17/11/04 05:40:07 DEBUG WriteFlusher: update WriteFlusher@290c08e9{WRITING}:IDLE-->WRITING
+17/11/04 05:40:07 DEBUG ChannelEndPoint: flushed 2590 SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,W,10/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}
+17/11/04 05:40:07 DEBUG WriteFlusher: Flushed=true 288/288+1 WriteFlusher@290c08e9{WRITING}
+17/11/04 05:40:07 DEBUG WriteFlusher: update WriteFlusher@290c08e9{IDLE}:WRITING-->IDLE
+17/11/04 05:40:07 DEBUG HttpConnection: org.spark_project.jetty.server.HttpConnection$SendCallback@67a9486b[PROCESSING][i=HTTP/1.1{s=200,h=6},cb=org.spark_project.jetty.server.HttpChannel$CommitCallback@32773129] generate: DONE ([p=288,l=288,c=8192,r=0],[p=2302,l=2302,c=32768,r=0],true)@END
+17/11/04 05:40:07 DEBUG HttpParser: reset HttpParser{s=END,0 of -1}
+17/11/04 05:40:07 DEBUG HttpParser: END --> START
+17/11/04 05:40:07 DEBUG HttpChannel: HttpChannelOverHttp@46d5582{r=7,c=false,a=IDLE,uri=null} handle exit, result COMPLETE
+17/11/04 05:40:07 DEBUG ChannelEndPoint: filled 0 SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}
+17/11/04 05:40:07 DEBUG ChannelEndPoint: filled 0 SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}
+17/11/04 05:40:07 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=7,c=false,a=IDLE,uri=null}] filled 0 HeapByteBuffer@44e0302f[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+17/11/04 05:40:07 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=7,c=false,a=IDLE,uri=null}] parse HeapByteBuffer@44e0302f[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00} {}
+17/11/04 05:40:07 DEBUG HttpParser: parseNext s=START HeapByteBuffer@44e0302f[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 200 OK\r\n...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+17/11/04 05:40:07 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=7,c=false,a=IDLE,uri=null}] parsed false HttpParser{s=START,0 of -1}
+17/11/04 05:40:07 DEBUG HttpConnection: releaseRequestBuffer HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=7,c=false,a=IDLE,uri=null}]
+17/11/04 05:40:07 DEBUG AbstractConnection: fillInterested HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,-,-,1/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=7,c=false,a=IDLE,uri=null}]
+17/11/04 05:40:07 DEBUG FillInterest: FillInterest@6118b379{true,AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=7,c=false,a=IDLE,uri=null}]}} register AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=7,c=false,a=IDLE,uri=null}]}
+17/11/04 05:40:07 DEBUG FillInterest: FillInterest@6118b379{true,AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=7,c=false,a=IDLE,uri=null}]}} register AC.ReadCB@2cc3bc11{HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,0/30000,HttpConnection@2cc3bc11}{io=0/0,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=7,c=false,a=IDLE,uri=null}]}
+17/11/04 05:40:07 DEBUG SelectChannelEndPoint: changeInterests p=false 0->1 for SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1/30000,HttpConnection@2cc3bc11}{io=0/1,kio=0,kro=1}
+17/11/04 05:40:07 DEBUG ManagedSelector: Queued change SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1/30000,HttpConnection@2cc3bc11}{io=0/1,kio=0,kro=1}:runUpdateKey on org.spark_project.jetty.io.ManagedSelector@1a3685d9 id=0 keys=1 selected=0
+17/11/04 05:40:07 DEBUG ManagedSelector: Selector loop woken up from select, 0/1 selected
+17/11/04 05:40:07 DEBUG ManagedSelector: Running change SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1/30000,HttpConnection@2cc3bc11}{io=0/1,kio=0,kro=1}:runUpdateKey
+17/11/04 05:40:07 DEBUG HttpConnection: HttpConnection@2cc3bc11[SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1/30000,HttpConnection@2cc3bc11}{io=0/1,kio=0,kro=1}][p=HttpParser{s=START,0 of -1},g=HttpGenerator@fb73648{s=START},c=HttpChannelOverHttp@46d5582{r=7,c=false,a=IDLE,uri=null}] onFillable exit HttpChannelState@23133b7d{s=IDLE a=NOT_ASYNC i=true r=!P!U w=false} null
+17/11/04 05:40:07 DEBUG SelectChannelEndPoint: Key interests updated 0 -> 1 on SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1/30000,HttpConnection@2cc3bc11}{io=1/1,kio=1,kro=1}
+17/11/04 05:40:07 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f ran SelectChannelEndPoint@3bd30089{/122.178.219.222:61405<->4040,Open,in,out,FI,-,1/30000,HttpConnection@2cc3bc11}{io=1/1,kio=1,kro=1}:runFillable
+17/11/04 05:40:07 DEBUG ManagedSelector: Selector loop waiting on select
+17/11/04 05:40:07 DEBUG ExecuteProduceConsume: EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f produce exit
+17/11/04 05:40:07 DEBUG QueuedThreadPool: ran EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@145ef71f
+17/11/04 05:40:11 DEBUG Client: IPC Client (1821330375) connection to ip-172-30-1-247.ec2.internal/172.30.1.247:8020 from ec2-user sending #252
+17/11/04 05:40:11 DEBUG Client: IPC Client (1821330375) connection to ip-172-30-1-247.ec2.internal/172.30.1.247:8020 from ec2-user got value #252
+17/11/04 05:40:11 DEBUG ProtobufRpcEngine: Call: renewLease took 1ms
+17/11/04 05:40:11 DEBUG LeaseRenewer: Lease renewed for client DFSClient_NONMAPREDUCE_261854195_1
+17/11/04 05:40:11 DEBUG LeaseRenewer: Lease renewer daemon for [DFSClient_NONMAPREDUCE_261854195_1] with renew id 1 executed

@@ -1,0 +1,334 @@
+scala> sc.setLogLevel("DEBUG")
+
+scala> testparbck.filter("ziw_status_flag = 'N'").take(10)
+17/11/04 05:54:06 INFO SparkSqlParser: Parsing command: ziw_status_flag = 'N'
+17/11/04 05:54:06 DEBUG Analyzer$ResolveReferences: Resolving 'ziw_status_flag to ziw_status_flag#75
+17/11/04 05:54:06 DEBUG HiveSessionStateBuilder$$anon$1:
+=== Result of Batch Resolution ===
+!'Filter ('ziw_status_flag = N)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   Filter (ziw_status_flag#75 = N)
+ +- Project [c_customer_sk#0, c_customer_id#1, c_current_cdemo_sk#2, c_current_hdemo_sk#3, c_current_addr_sk#4, c_first_shipto_date_sk#5, c_first_sales_date_sk#6, c_first_name#7, c_last_name#8, c_preferred_cust_flag#9, c_birth_day#10, c_birth_month#11, c_birth_year#12, c_birth_country#13, c_login#14, c_email_address#15, c_last_review_date#16, c_customer_sk__customer#17, c_customer_id__customer#18, c_current_cdemo_sk__customer#19, c_current_hdemo_sk__customer#20, c_current_addr_sk__customer#21, c_first_shipto_date_sk__customer#22, c_first_sales_date_sk__customer#23, ... 52 more fields]   +- Project [c_customer_sk#0, c_customer_id#1, c_current_cdemo_sk#2, c_current_hdemo_sk#3, c_current_addr_sk#4, c_first_shipto_date_sk#5, c_first_sales_date_sk#6, c_first_name#7, c_last_name#8, c_preferred_cust_flag#9, c_birth_day#10, c_birth_month#11, c_birth_year#12, c_birth_country#13, c_login#14, c_email_address#15, c_last_review_date#16, c_customer_sk__customer#17, c_customer_id__customer#18, c_current_cdemo_sk__customer#19, c_current_hdemo_sk__customer#20, c_current_addr_sk__customer#21, c_first_shipto_date_sk__customer#22, c_first_sales_date_sk__customer#23, ... 52 more fields]
+    +- SubqueryAlias testparbck                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      +- SubqueryAlias testparbck
+       +- Relation[c_customer_sk#0,c_customer_id#1,c_current_cdemo_sk#2,c_current_hdemo_sk#3,c_current_addr_sk#4,c_first_shipto_date_sk#5,c_first_sales_date_sk#6,c_first_name#7,c_last_name#8,c_preferred_cust_flag#9,c_birth_day#10,c_birth_month#11,c_birth_year#12,c_birth_country#13,c_login#14,c_email_address#15,c_last_review_date#16,c_customer_sk__customer#17,c_customer_id__customer#18,c_current_cdemo_sk__customer#19,c_current_hdemo_sk__customer#20,c_current_addr_sk__customer#21,c_first_shipto_date_sk__customer#22,c_first_sales_date_sk__customer#23,... 52 more fields] orc                       +- Relation[c_customer_sk#0,c_customer_id#1,c_current_cdemo_sk#2,c_current_hdemo_sk#3,c_current_addr_sk#4,c_first_shipto_date_sk#5,c_first_sales_date_sk#6,c_first_name#7,c_last_name#8,c_preferred_cust_flag#9,c_birth_day#10,c_birth_month#11,c_birth_year#12,c_birth_country#13,c_login#14,c_email_address#15,c_last_review_date#16,c_customer_sk__customer#17,c_customer_id__customer#18,c_current_cdemo_sk__customer#19,c_current_hdemo_sk__customer#20,c_current_addr_sk__customer#21,c_first_shipto_date_sk__customer#22,c_first_sales_date_sk__customer#23,... 52 more fields] orc
+
+17/11/04 05:54:06 DEBUG HiveSessionStateBuilder$$anon$1:
+=== Result of Batch Resolution ===
+!'DeserializeToObject unresolveddeserializer(createexternalrow(getcolumnbyordinal(0, DecimalType(38,0)).toJavaBigDecimal, getcolumnbyordinal(1, StringType).toString, getcolumnbyordinal(2, DecimalType(38,0)).toJavaBigDecimal, getcolumnbyordinal(3, DecimalType(38,0)).toJavaBigDecimal, getcolumnbyordinal(4, DecimalType(38,0)).toJavaBigDecimal, getcolumnbyordinal(5, DecimalType(38,0)).toJavaBigDecimal, getcolumnbyordinal(6, DecimalType(38,0)).toJavaBigDecimal, getcolumnbyordinal(7, StringType).toString, getcolumnbyordinal(8, StringType).toString, getcolumnbyordinal(9, StringType).toString, getcolumnbyordinal(10, DecimalType(38,0)).toJavaBigDecimal, getcolumnbyordinal(11, DecimalType(38,0)).toJavaBigDecimal, getcolumnbyordinal(12, DecimalType(38,0)).toJavaBigDecimal, getcolumnbyordinal(13, StringType).toString, getcolumnbyordinal(14, StringType).toString, getcolumnbyordinal(15, StringType).toString, getcolumnbyordinal(16, StringType).toString, getcolumnbyordinal(17, DecimalType(38,0)).toJavaBigDecimal, getcolumnbyordinal(18, StringType).toString, getcolumnbyordinal(19, DecimalType(38,0)).toJavaBigDecimal, getcolumnbyordinal(20, DecimalType(38,0)).toJavaBigDecimal, getcolumnbyordinal(21, DecimalType(38,0)).toJavaBigDecimal, getcolumnbyordinal(22, DecimalType(38,0)).toJavaBigDecimal, getcolumnbyordinal(23, DecimalType(38,0)).toJavaBigDecimal, ... 128 more fields)), obj#703: org.apache.spark.sql.Row   DeserializeToObject createexternalrow(c_customer_sk#0.toJavaBigDecimal, c_customer_id#1.toString, c_current_cdemo_sk#2.toJavaBigDecimal, c_current_hdemo_sk#3.toJavaBigDecimal, c_current_addr_sk#4.toJavaBigDecimal, c_first_shipto_date_sk#5.toJavaBigDecimal, c_first_sales_date_sk#6.toJavaBigDecimal, c_first_name#7.toString, c_last_name#8.toString, c_preferred_cust_flag#9.toString, c_birth_day#10.toJavaBigDecimal, c_birth_month#11.toJavaBigDecimal, c_birth_year#12.toJavaBigDecimal, c_birth_country#13.toString, c_login#14.toString, c_email_address#15.toString, c_last_review_date#16.toString, c_customer_sk__customer#17.toJavaBigDecimal, c_customer_id__customer#18.toString, c_current_cdemo_sk__customer#19.toJavaBigDecimal, c_current_hdemo_sk__customer#20.toJavaBigDecimal, c_current_addr_sk__customer#21.toJavaBigDecimal, c_first_shipto_date_sk__customer#22.toJavaBigDecimal, c_first_sales_date_sk__customer#23.toJavaBigDecimal, ... 128 more fields), obj#703: org.apache.spark.sql.Row
+ +- LocalRelation <empty>, [c_customer_sk#0, c_customer_id#1, c_current_cdemo_sk#2, c_current_hdemo_sk#3, c_current_addr_sk#4, c_first_shipto_date_sk#5, c_first_sales_date_sk#6, c_first_name#7, c_last_name#8, c_preferred_cust_flag#9, c_birth_day#10, c_birth_month#11, c_birth_year#12, c_birth_country#13, c_login#14, c_email_address#15, c_last_review_date#16, c_customer_sk__customer#17, c_customer_id__customer#18, c_current_cdemo_sk__customer#19, c_current_hdemo_sk__customer#20, c_current_addr_sk__customer#21, c_first_shipto_date_sk__customer#22, c_first_sales_date_sk__customer#23, ... 52 more fields]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           +- LocalRelation <empty>, [c_customer_sk#0, c_customer_id#1, c_current_cdemo_sk#2, c_current_hdemo_sk#3, c_current_addr_sk#4, c_first_shipto_date_sk#5, c_first_sales_date_sk#6, c_first_name#7, c_last_name#8, c_preferred_cust_flag#9, c_birth_day#10, c_birth_month#11, c_birth_year#12, c_birth_country#13, c_login#14, c_email_address#15, c_last_review_date#16, c_customer_sk__customer#17, c_customer_id__customer#18, c_current_cdemo_sk__customer#19, c_current_hdemo_sk__customer#20, c_current_addr_sk__customer#21, c_first_shipto_date_sk__customer#22, c_first_sales_date_sk__customer#23, ... 52 more fields]
+
+17/11/04 05:54:06 DEBUG HiveSessionStateBuilder$$anon$1:
+=== Result of Batch Resolution ===
+!'DeserializeToObject unresolveddeserializer(createexternalrow(getcolumnbyordinal(0, DecimalType(38,0)).toJavaBigDecimal, getcolumnbyordinal(1, StringType).toString, getcolumnbyordinal(2, DecimalType(38,0)).toJavaBigDecimal, getcolumnbyordinal(3, DecimalType(38,0)).toJavaBigDecimal, getcolumnbyordinal(4, DecimalType(38,0)).toJavaBigDecimal, getcolumnbyordinal(5, DecimalType(38,0)).toJavaBigDecimal, getcolumnbyordinal(6, DecimalType(38,0)).toJavaBigDecimal, getcolumnbyordinal(7, StringType).toString, getcolumnbyordinal(8, StringType).toString, getcolumnbyordinal(9, StringType).toString, getcolumnbyordinal(10, DecimalType(38,0)).toJavaBigDecimal, getcolumnbyordinal(11, DecimalType(38,0)).toJavaBigDecimal, getcolumnbyordinal(12, DecimalType(38,0)).toJavaBigDecimal, getcolumnbyordinal(13, StringType).toString, getcolumnbyordinal(14, StringType).toString, getcolumnbyordinal(15, StringType).toString, getcolumnbyordinal(16, StringType).toString, getcolumnbyordinal(17, DecimalType(38,0)).toJavaBigDecimal, getcolumnbyordinal(18, StringType).toString, getcolumnbyordinal(19, DecimalType(38,0)).toJavaBigDecimal, getcolumnbyordinal(20, DecimalType(38,0)).toJavaBigDecimal, getcolumnbyordinal(21, DecimalType(38,0)).toJavaBigDecimal, getcolumnbyordinal(22, DecimalType(38,0)).toJavaBigDecimal, getcolumnbyordinal(23, DecimalType(38,0)).toJavaBigDecimal, ... 128 more fields)), obj#704: org.apache.spark.sql.Row   DeserializeToObject createexternalrow(c_customer_sk#0.toJavaBigDecimal, c_customer_id#1.toString, c_current_cdemo_sk#2.toJavaBigDecimal, c_current_hdemo_sk#3.toJavaBigDecimal, c_current_addr_sk#4.toJavaBigDecimal, c_first_shipto_date_sk#5.toJavaBigDecimal, c_first_sales_date_sk#6.toJavaBigDecimal, c_first_name#7.toString, c_last_name#8.toString, c_preferred_cust_flag#9.toString, c_birth_day#10.toJavaBigDecimal, c_birth_month#11.toJavaBigDecimal, c_birth_year#12.toJavaBigDecimal, c_birth_country#13.toString, c_login#14.toString, c_email_address#15.toString, c_last_review_date#16.toString, c_customer_sk__customer#17.toJavaBigDecimal, c_customer_id__customer#18.toString, c_current_cdemo_sk__customer#19.toJavaBigDecimal, c_current_hdemo_sk__customer#20.toJavaBigDecimal, c_current_addr_sk__customer#21.toJavaBigDecimal, c_first_shipto_date_sk__customer#22.toJavaBigDecimal, c_first_sales_date_sk__customer#23.toJavaBigDecimal, ... 128 more fields), obj#704: org.apache.spark.sql.Row
+ +- LocalRelation <empty>, [c_customer_sk#0, c_customer_id#1, c_current_cdemo_sk#2, c_current_hdemo_sk#3, c_current_addr_sk#4, c_first_shipto_date_sk#5, c_first_sales_date_sk#6, c_first_name#7, c_last_name#8, c_preferred_cust_flag#9, c_birth_day#10, c_birth_month#11, c_birth_year#12, c_birth_country#13, c_login#14, c_email_address#15, c_last_review_date#16, c_customer_sk__customer#17, c_customer_id__customer#18, c_current_cdemo_sk__customer#19, c_current_hdemo_sk__customer#20, c_current_addr_sk__customer#21, c_first_shipto_date_sk__customer#22, c_first_sales_date_sk__customer#23, ... 52 more fields]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           +- LocalRelation <empty>, [c_customer_sk#0, c_customer_id#1, c_current_cdemo_sk#2, c_current_hdemo_sk#3, c_current_addr_sk#4, c_first_shipto_date_sk#5, c_first_sales_date_sk#6, c_first_name#7, c_last_name#8, c_preferred_cust_flag#9, c_birth_day#10, c_birth_month#11, c_birth_year#12, c_birth_country#13, c_login#14, c_email_address#15, c_last_review_date#16, c_customer_sk__customer#17, c_customer_id__customer#18, c_current_cdemo_sk__customer#19, c_current_hdemo_sk__customer#20, c_current_addr_sk__customer#21, c_first_shipto_date_sk__customer#22, c_first_sales_date_sk__customer#23, ... 52 more fields]
+
+17/11/04 05:54:06 DEBUG BaseSessionStateBuilder$$anon$2:
+=== Result of Batch Finish Analysis ===
+ GlobalLimit 10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         GlobalLimit 10
+ +- LocalLimit 10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       +- LocalLimit 10
+    +- Filter (ziw_status_flag#75 = N)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     +- Filter (ziw_status_flag#75 = N)
+       +- Project [c_customer_sk#0, c_customer_id#1, c_current_cdemo_sk#2, c_current_hdemo_sk#3, c_current_addr_sk#4, c_first_shipto_date_sk#5, c_first_sales_date_sk#6, c_first_name#7, c_last_name#8, c_preferred_cust_flag#9, c_birth_day#10, c_birth_month#11, c_birth_year#12, c_birth_country#13, c_login#14, c_email_address#15, c_last_review_date#16, c_customer_sk__customer#17, c_customer_id__customer#18, c_current_cdemo_sk__customer#19, c_current_hdemo_sk__customer#20, c_current_addr_sk__customer#21, c_first_shipto_date_sk__customer#22, c_first_sales_date_sk__customer#23, ... 52 more fields]         +- Project [c_customer_sk#0, c_customer_id#1, c_current_cdemo_sk#2, c_current_hdemo_sk#3, c_current_addr_sk#4, c_first_shipto_date_sk#5, c_first_sales_date_sk#6, c_first_name#7, c_last_name#8, c_preferred_cust_flag#9, c_birth_day#10, c_birth_month#11, c_birth_year#12, c_birth_country#13, c_login#14, c_email_address#15, c_last_review_date#16, c_customer_sk__customer#17, c_customer_id__customer#18, c_current_cdemo_sk__customer#19, c_current_hdemo_sk__customer#20, c_current_addr_sk__customer#21, c_first_shipto_date_sk__customer#22, c_first_sales_date_sk__customer#23, ... 52 more fields]
+!         +- SubqueryAlias testparbck                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            +- Relation[c_customer_sk#0,c_customer_id#1,c_current_cdemo_sk#2,c_current_hdemo_sk#3,c_current_addr_sk#4,c_first_shipto_date_sk#5,c_first_sales_date_sk#6,c_first_name#7,c_last_name#8,c_preferred_cust_flag#9,c_birth_day#10,c_birth_month#11,c_birth_year#12,c_birth_country#13,c_login#14,c_email_address#15,c_last_review_date#16,c_customer_sk__customer#17,c_customer_id__customer#18,c_current_cdemo_sk__customer#19,c_current_hdemo_sk__customer#20,c_current_addr_sk__customer#21,c_first_shipto_date_sk__customer#22,c_first_sales_date_sk__customer#23,... 52 more fields] orc
+!            +- Relation[c_customer_sk#0,c_customer_id#1,c_current_cdemo_sk#2,c_current_hdemo_sk#3,c_current_addr_sk#4,c_first_shipto_date_sk#5,c_first_sales_date_sk#6,c_first_name#7,c_last_name#8,c_preferred_cust_flag#9,c_birth_day#10,c_birth_month#11,c_birth_year#12,c_birth_country#13,c_login#14,c_email_address#15,c_last_review_date#16,c_customer_sk__customer#17,c_customer_id__customer#18,c_current_cdemo_sk__customer#19,c_current_hdemo_sk__customer#20,c_current_addr_sk__customer#21,c_first_shipto_date_sk__customer#22,c_first_sales_date_sk__customer#23,... 52 more fields] orc
+
+17/11/04 05:54:06 DEBUG BaseSessionStateBuilder$$anon$2:
+=== Result of Batch Operator Optimizations ===
+ GlobalLimit 10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         GlobalLimit 10
+ +- LocalLimit 10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       +- LocalLimit 10
+!   +- Filter (ziw_status_flag#75 = N)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     +- Filter (isnotnull(ziw_status_flag#75) && (ziw_status_flag#75 = N))
+!      +- Project [c_customer_sk#0, c_customer_id#1, c_current_cdemo_sk#2, c_current_hdemo_sk#3, c_current_addr_sk#4, c_first_shipto_date_sk#5, c_first_sales_date_sk#6, c_first_name#7, c_last_name#8, c_preferred_cust_flag#9, c_birth_day#10, c_birth_month#11, c_birth_year#12, c_birth_country#13, c_login#14, c_email_address#15, c_last_review_date#16, c_customer_sk__customer#17, c_customer_id__customer#18, c_current_cdemo_sk__customer#19, c_current_hdemo_sk__customer#20, c_current_addr_sk__customer#21, c_first_shipto_date_sk__customer#22, c_first_sales_date_sk__customer#23, ... 52 more fields]         +- Relation[c_customer_sk#0,c_customer_id#1,c_current_cdemo_sk#2,c_current_hdemo_sk#3,c_current_addr_sk#4,c_first_shipto_date_sk#5,c_first_sales_date_sk#6,c_first_name#7,c_last_name#8,c_preferred_cust_flag#9,c_birth_day#10,c_birth_month#11,c_birth_year#12,c_birth_country#13,c_login#14,c_email_address#15,c_last_review_date#16,c_customer_sk__customer#17,c_customer_id__customer#18,c_current_cdemo_sk__customer#19,c_current_hdemo_sk__customer#20,c_current_addr_sk__customer#21,c_first_shipto_date_sk__customer#22,c_first_sales_date_sk__customer#23,... 52 more fields] orc
+!         +- Relation[c_customer_sk#0,c_customer_id#1,c_current_cdemo_sk#2,c_current_hdemo_sk#3,c_current_addr_sk#4,c_first_shipto_date_sk#5,c_first_sales_date_sk#6,c_first_name#7,c_last_name#8,c_preferred_cust_flag#9,c_birth_day#10,c_birth_month#11,c_birth_year#12,c_birth_country#13,c_login#14,c_email_address#15,c_last_review_date#16,c_customer_sk__customer#17,c_customer_id__customer#18,c_current_cdemo_sk__customer#19,c_current_hdemo_sk__customer#20,c_current_addr_sk__customer#21,c_first_shipto_date_sk__customer#22,c_first_sales_date_sk__customer#23,... 52 more fields] orc
+
+17/11/04 05:54:06 DEBUG HiveClientImpl: Looking up default.testparbck
+17/11/04 05:54:06 INFO CatalystSqlParser: Parsing command: string
+17/11/04 05:54:06 INFO CatalystSqlParser: Parsing command: array<string>
+17/11/04 05:54:06 DEBUG Shim_v1_2: Hive metastore filter is 'ziw_status_flag = "N"'.
+17/11/04 05:54:06 DEBUG BaseSessionStateBuilder$$anon$2:
+=== Result of Batch Prune File Source Table Partitions ===
+ GlobalLimit 10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     GlobalLimit 10
+ +- LocalLimit 10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   +- LocalLimit 10
+!   +- Filter (isnotnull(ziw_status_flag#75) && (ziw_status_flag#75 = N))                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              +- Project [c_customer_sk#0, c_customer_id#1, c_current_cdemo_sk#2, c_current_hdemo_sk#3, c_current_addr_sk#4, c_first_shipto_date_sk#5, c_first_sales_date_sk#6, c_first_name#7, c_last_name#8, c_preferred_cust_flag#9, c_birth_day#10, c_birth_month#11, c_birth_year#12, c_birth_country#13, c_login#14, c_email_address#15, c_last_review_date#16, c_customer_sk__customer#17, c_customer_id__customer#18, c_current_cdemo_sk__customer#19, c_current_hdemo_sk__customer#20, c_current_addr_sk__customer#21, c_first_shipto_date_sk__customer#22, c_first_sales_date_sk__customer#23, ... 52 more fields]
+!      +- Relation[c_customer_sk#0,c_customer_id#1,c_current_cdemo_sk#2,c_current_hdemo_sk#3,c_current_addr_sk#4,c_first_shipto_date_sk#5,c_first_sales_date_sk#6,c_first_name#7,c_last_name#8,c_preferred_cust_flag#9,c_birth_day#10,c_birth_month#11,c_birth_year#12,c_birth_country#13,c_login#14,c_email_address#15,c_last_review_date#16,c_customer_sk__customer#17,c_customer_id__customer#18,c_current_cdemo_sk__customer#19,c_current_hdemo_sk__customer#20,c_current_addr_sk__customer#21,c_first_shipto_date_sk__customer#22,c_first_sales_date_sk__customer#23,... 52 more fields] orc         +- Filter (isnotnull(ziw_status_flag#75) && (ziw_status_flag#75 = N))
+!                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            +- Relation[c_customer_sk#0,c_customer_id#1,c_current_cdemo_sk#2,c_current_hdemo_sk#3,c_current_addr_sk#4,c_first_shipto_date_sk#5,c_first_sales_date_sk#6,c_first_name#7,c_last_name#8,c_preferred_cust_flag#9,c_birth_day#10,c_birth_month#11,c_birth_year#12,c_birth_country#13,c_login#14,c_email_address#15,c_last_review_date#16,c_customer_sk__customer#17,c_customer_id__customer#18,c_current_cdemo_sk__customer#19,c_current_hdemo_sk__customer#20,c_current_addr_sk__customer#21,c_first_shipto_date_sk__customer#22,c_first_sales_date_sk__customer#23,... 52 more fields] orc
+
+17/11/04 05:54:06 INFO FileSourceStrategy: Pruning directories with: isnotnull(ziw_status_flag#75),(ziw_status_flag#75 = N)
+17/11/04 05:54:06 INFO FileSourceStrategy: Post-Scan Filters:
+17/11/04 05:54:06 INFO FileSourceStrategy: Output Data Schema: struct<c_customer_sk: decimal(38,0), c_customer_id: string, c_current_cdemo_sk: decimal(38,0), c_current_hdemo_sk: decimal(38,0), c_current_addr_sk: decimal(38,0) ... 73 more fields>
+17/11/04 05:54:06 INFO FileSourceScanExec: Pushed Filters:
+17/11/04 05:54:06 INFO PrunedInMemoryFileIndex: Selected 0 partitions out of 0, pruned 0 partitions.
+17/11/04 05:54:06 DEBUG DFSClient: DFSClient writeChunk allocating new packet seqno=24, src=/spark2-history/local-1509774703227.inprogress, packetSize=65016, chunksPerPacket=126, bytesCurBlock=134144
+17/11/04 05:54:06 DEBUG DFSClient: DFSClient flush(): bytesCurBlock=145737 lastFlushOffset=134391 createNewBlock=false
+17/11/04 05:54:06 DEBUG DFSClient: Queued packet 24
+17/11/04 05:54:06 DEBUG DFSClient: Waiting for ack for: 24
+17/11/04 05:54:06 DEBUG DFSClient: DataStreamer block BP-387439159-172.30.1.247-1493051499278:blk_1074043741_302970 sending packet packet seqno: 24 offsetInBlock: 134144 lastPacketInBlock: false lastByteOffsetInBlock: 145737
+17/11/04 05:54:06 DEBUG WholeStageCodegenExec:
+/* 001 */ public Object generate(Object[] references) {
+/* 002 */   return new GeneratedIterator(references);
+/* 003 */ }
+/* 004 */
+/* 005 */ final class GeneratedIterator extends org.apache.spark.sql.execution.BufferedRowIterator {
+/* 006 */   private Object[] references;
+/* 007 */   private scala.collection.Iterator[] inputs;
+/* 008 */   private org.apache.spark.sql.execution.metric.SQLMetric scan_numOutputRows;
+/* 009 */   private scala.collection.Iterator scan_input;
+/* 010 */
+/* 011 */   public GeneratedIterator(Object[] references) {
+/* 012 */     this.references = references;
+/* 013 */   }
+/* 014 */
+/* 015 */   public void init(int index, scala.collection.Iterator[] inputs) {
+/* 016 */     partitionIndex = index;
+/* 017 */     this.inputs = inputs;
+/* 018 */     this.scan_numOutputRows = (org.apache.spark.sql.execution.metric.SQLMetric) references[0];
+/* 019 */     scan_input = inputs[0];
+/* 020 */
+/* 021 */   }
+/* 022 */
+/* 023 */   protected void processNext() throws java.io.IOException {
+/* 024 */     while (scan_input.hasNext()) {
+/* 025 */       InternalRow scan_row = (InternalRow) scan_input.next();
+/* 026 */       scan_numOutputRows.add(1);
+/* 027 */       append(scan_row);
+/* 028 */       if (shouldStop()) return;
+/* 029 */     }
+/* 030 */   }
+/* 031 */ }
+
+17/11/04 05:54:06 INFO MemoryStore: Block broadcast_9 stored as values in memory (estimated size 339.4 KB, free 364.8 MB)
+17/11/04 05:54:06 DEBUG BlockManager: Put block broadcast_9 locally took  10 ms
+17/11/04 05:54:06 DEBUG BlockManager: Putting block broadcast_9 without replication took  11 ms
+17/11/04 05:54:06 INFO MemoryStore: Block broadcast_9_piece0 stored as bytes in memory (estimated size 29.5 KB, free 364.8 MB)
+17/11/04 05:54:06 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on 172.30.1.247:57899 (size: 29.5 KB, free: 366.2 MB)
+17/11/04 05:54:06 DEBUG BlockManagerMaster: Updated info of block broadcast_9_piece0
+17/11/04 05:54:06 DEBUG BlockManager: Told master about block broadcast_9_piece0
+17/11/04 05:54:06 DEBUG BlockManager: Put block broadcast_9_piece0 locally took  3 ms
+17/11/04 05:54:06 DEBUG BlockManager: Putting block broadcast_9_piece0 without replication took  3 ms
+17/11/04 05:54:06 INFO SparkContext: Created broadcast 9 from take at <console>:26
+17/11/04 05:54:06 INFO FileSourceScanExec: Planning with 3 buckets
+17/11/04 05:54:06 DEBUG ClosureCleaner: +++ Cleaning closure <function2> (org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$8) +++
+17/11/04 05:54:06 DEBUG ClosureCleaner:  + declared fields: 4
+17/11/04 05:54:06 DEBUG ClosureCleaner:      public static final long org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$8.serialVersionUID
+17/11/04 05:54:06 DEBUG ClosureCleaner:      private final org.apache.spark.sql.catalyst.expressions.codegen.CodeAndComment org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$8.cleanedSource$2
+17/11/04 05:54:06 DEBUG ClosureCleaner:      private final java.lang.Object[] org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$8.references$1
+17/11/04 05:54:06 DEBUG ClosureCleaner:      public final org.apache.spark.sql.execution.metric.SQLMetric org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$8.durationMs$1
+17/11/04 05:54:06 DEBUG ClosureCleaner:  + declared methods: 2
+17/11/04 05:54:06 DEBUG ClosureCleaner:      public final java.lang.Object org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$8.apply(java.lang.Object,java.lang.Object)
+17/11/04 05:54:06 DEBUG ClosureCleaner:      public final scala.collection.Iterator org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$8.apply(int,scala.collection.Iterator)
+17/11/04 05:54:06 DEBUG ClosureCleaner:  + inner classes: 1
+17/11/04 05:54:06 DEBUG ClosureCleaner:      org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$8$$anon$1
+17/11/04 05:54:06 DEBUG ClosureCleaner:  + outer classes: 0
+17/11/04 05:54:06 DEBUG ClosureCleaner:  + outer objects: 0
+17/11/04 05:54:06 DEBUG ClosureCleaner:  + populating accessed fields because this is the starting closure
+17/11/04 05:54:06 DEBUG ClosureCleaner:  + fields accessed by starting closure: 0
+17/11/04 05:54:06 DEBUG ClosureCleaner:  + there are no enclosing objects!
+17/11/04 05:54:06 DEBUG ClosureCleaner:  +++ closure <function2> (org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$8) is now cleaned +++
+17/11/04 05:54:06 DEBUG ClosureCleaner: +++ Cleaning closure <function1> (org.apache.spark.sql.execution.SparkPlan$$anonfun$3) +++
+17/11/04 05:54:06 DEBUG ClosureCleaner:  + declared fields: 1
+17/11/04 05:54:06 DEBUG ClosureCleaner:      public static final long org.apache.spark.sql.execution.SparkPlan$$anonfun$3.serialVersionUID
+17/11/04 05:54:06 DEBUG ClosureCleaner:  + declared methods: 2
+17/11/04 05:54:06 DEBUG ClosureCleaner:      public final java.lang.Object org.apache.spark.sql.execution.SparkPlan$$anonfun$3.apply(java.lang.Object)
+17/11/04 05:54:06 DEBUG ClosureCleaner:      public final byte[] org.apache.spark.sql.execution.SparkPlan$$anonfun$3.apply(scala.collection.Iterator)
+17/11/04 05:54:06 DEBUG ClosureCleaner:  + inner classes: 0
+17/11/04 05:54:06 DEBUG ClosureCleaner:  + outer classes: 0
+17/11/04 05:54:06 DEBUG ClosureCleaner:  + outer objects: 0
+17/11/04 05:54:06 DEBUG ClosureCleaner:  + populating accessed fields because this is the starting closure
+17/11/04 05:54:06 DEBUG ClosureCleaner:  + fields accessed by starting closure: 0
+17/11/04 05:54:06 DEBUG ClosureCleaner:  + there are no enclosing objects!
+17/11/04 05:54:06 DEBUG ClosureCleaner:  +++ closure <function1> (org.apache.spark.sql.execution.SparkPlan$$anonfun$3) is now cleaned +++
+17/11/04 05:54:06 DEBUG ClosureCleaner: +++ Cleaning closure <function2> (org.apache.spark.SparkContext$$anonfun$runJob$5) +++
+17/11/04 05:54:06 DEBUG ClosureCleaner:  + declared fields: 2
+17/11/04 05:54:06 DEBUG ClosureCleaner:      public static final long org.apache.spark.SparkContext$$anonfun$runJob$5.serialVersionUID
+17/11/04 05:54:06 DEBUG ClosureCleaner:      private final scala.Function1 org.apache.spark.SparkContext$$anonfun$runJob$5.cleanedFunc$1
+17/11/04 05:54:06 DEBUG ClosureCleaner:  + declared methods: 2
+17/11/04 05:54:06 DEBUG ClosureCleaner:      public final java.lang.Object org.apache.spark.SparkContext$$anonfun$runJob$5.apply(java.lang.Object,java.lang.Object)
+17/11/04 05:54:06 DEBUG ClosureCleaner:      public final java.lang.Object org.apache.spark.SparkContext$$anonfun$runJob$5.apply(org.apache.spark.TaskContext,scala.collection.Iterator)
+17/11/04 05:54:06 DEBUG ClosureCleaner:  + inner classes: 0
+17/11/04 05:54:06 DEBUG ClosureCleaner:  + outer classes: 0
+17/11/04 05:54:06 DEBUG ClosureCleaner:  + outer objects: 0
+17/11/04 05:54:06 DEBUG ClosureCleaner:  + populating accessed fields because this is the starting closure
+17/11/04 05:54:06 DEBUG ClosureCleaner:  + fields accessed by starting closure: 0
+17/11/04 05:54:06 DEBUG ClosureCleaner:  + there are no enclosing objects!
+17/11/04 05:54:06 DEBUG ClosureCleaner:  +++ closure <function2> (org.apache.spark.SparkContext$$anonfun$runJob$5) is now cleaned +++
+17/11/04 05:54:06 INFO SparkContext: Starting job: take at <console>:26
+17/11/04 05:54:06 INFO DAGScheduler: Got job 4 (take at <console>:26) with 1 output partitions
+17/11/04 05:54:06 INFO DAGScheduler: Final stage: ResultStage 6 (take at <console>:26)
+17/11/04 05:54:06 INFO DAGScheduler: Parents of final stage: List()
+17/11/04 05:54:06 INFO DAGScheduler: Missing parents: List()
+17/11/04 05:54:06 DEBUG DAGScheduler: submitStage(ResultStage 6)
+17/11/04 05:54:06 DEBUG DAGScheduler: missing: List()
+17/11/04 05:54:06 INFO DAGScheduler: Submitting ResultStage 6 (MapPartitionsRDD[17] at take at <console>:26), which has no missing parents
+17/11/04 05:54:06 DEBUG DAGScheduler: submitMissingTasks(ResultStage 6)
+17/11/04 05:54:06 INFO MemoryStore: Block broadcast_10 stored as values in memory (estimated size 17.2 KB, free 364.8 MB)
+17/11/04 05:54:06 DEBUG BlockManager: Put block broadcast_10 locally took  4 ms
+17/11/04 05:54:06 DEBUG BlockManager: Putting block broadcast_10 without replication took  5 ms
+17/11/04 05:54:06 INFO MemoryStore: Block broadcast_10_piece0 stored as bytes in memory (estimated size 6.2 KB, free 364.8 MB)
+17/11/04 05:54:06 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on 172.30.1.247:57899 (size: 6.2 KB, free: 366.2 MB)
+17/11/04 05:54:06 DEBUG BlockManagerMaster: Updated info of block broadcast_10_piece0
+17/11/04 05:54:06 DEBUG BlockManager: Told master about block broadcast_10_piece0
+17/11/04 05:54:06 DEBUG BlockManager: Put block broadcast_10_piece0 locally took  3 ms
+17/11/04 05:54:06 DEBUG BlockManager: Putting block broadcast_10_piece0 without replication took  3 ms
+17/11/04 05:54:06 INFO SparkContext: Created broadcast 10 from broadcast at DAGScheduler.scala:1006
+17/11/04 05:54:06 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 6 (MapPartitionsRDD[17] at take at <console>:26) (first 15 tasks are for partitions Vector(0))
+17/11/04 05:54:06 INFO TaskSchedulerImpl: Adding task set 6.0 with 1 tasks
+17/11/04 05:54:06 DEBUG TaskSetManager: Epoch for TaskSet 6.0: 2
+17/11/04 05:54:06 DEBUG TaskSetManager: Valid locality levels for TaskSet 6.0: NO_PREF, ANY
+17/11/04 05:54:06 DEBUG TaskSchedulerImpl: parentName: , name: TaskSet_6.0, runningTasks: 0
+17/11/04 05:54:06 INFO TaskSetManager: Starting task 0.0 in stage 6.0 (TID 11, localhost, executor driver, partition 0, PROCESS_LOCAL, 4788 bytes)
+17/11/04 05:54:06 DEBUG TaskSetManager: No tasks for locality level NO_PREF, so moving to locality level ANY
+17/11/04 05:54:06 INFO Executor: Running task 0.0 in stage 6.0 (TID 11)
+17/11/04 05:54:06 DEBUG Executor: Task 11's epoch is 2
+17/11/04 05:54:06 DEBUG BlockManager: Getting local block broadcast_10
+17/11/04 05:54:06 DEBUG BlockManager: Level for block broadcast_10 is StorageLevel(disk, memory, deserialized, 1 replicas)
+17/11/04 05:54:06 INFO Executor: Finished task 0.0 in stage 6.0 (TID 11). 1093 bytes result sent to driver
+17/11/04 05:54:06 DEBUG TaskSchedulerImpl: parentName: , name: TaskSet_6.0, runningTasks: 0
+17/11/04 05:54:06 INFO TaskSetManager: Finished task 0.0 in stage 6.0 (TID 11) in 8 ms on localhost (executor driver) (1/1)
+17/11/04 05:54:06 INFO TaskSchedulerImpl: Removed TaskSet 6.0, whose tasks have all completed, from pool
+17/11/04 05:54:06 INFO DAGScheduler: ResultStage 6 (take at <console>:26) finished in 0.007 s
+17/11/04 05:54:06 DEBUG DAGScheduler: After removal of stage 6, remaining stages = 0
+17/11/04 05:54:06 INFO DAGScheduler: Job 4 finished: take at <console>:26, took 0.033877 s
+17/11/04 05:54:06 DEBUG ClosureCleaner: +++ Cleaning closure <function1> (org.apache.spark.sql.execution.SparkPlan$$anonfun$3) +++
+17/11/04 05:54:06 DEBUG ClosureCleaner:  + declared fields: 1
+17/11/04 05:54:06 DEBUG ClosureCleaner:      public static final long org.apache.spark.sql.execution.SparkPlan$$anonfun$3.serialVersionUID
+17/11/04 05:54:06 DEBUG ClosureCleaner:  + declared methods: 2
+17/11/04 05:54:06 DEBUG ClosureCleaner:      public final java.lang.Object org.apache.spark.sql.execution.SparkPlan$$anonfun$3.apply(java.lang.Object)
+17/11/04 05:54:06 DEBUG ClosureCleaner:      public final byte[] org.apache.spark.sql.execution.SparkPlan$$anonfun$3.apply(scala.collection.Iterator)
+17/11/04 05:54:06 DEBUG ClosureCleaner:  + inner classes: 0
+17/11/04 05:54:06 DEBUG ClosureCleaner:  + outer classes: 0
+17/11/04 05:54:06 DEBUG ClosureCleaner:  + outer objects: 0
+17/11/04 05:54:06 DEBUG ClosureCleaner:  + populating accessed fields because this is the starting closure
+17/11/04 05:54:06 DEBUG ClosureCleaner:  + fields accessed by starting closure: 0
+17/11/04 05:54:06 DEBUG ClosureCleaner:  + there are no enclosing objects!
+17/11/04 05:54:06 DEBUG ClosureCleaner:  +++ closure <function1> (org.apache.spark.sql.execution.SparkPlan$$anonfun$3) is now cleaned +++
+17/11/04 05:54:06 DEBUG ClosureCleaner: +++ Cleaning closure <function2> (org.apache.spark.SparkContext$$anonfun$runJob$5) +++
+17/11/04 05:54:06 DEBUG ClosureCleaner:  + declared fields: 2
+17/11/04 05:54:06 DEBUG ClosureCleaner:      public static final long org.apache.spark.SparkContext$$anonfun$runJob$5.serialVersionUID
+17/11/04 05:54:06 DEBUG ClosureCleaner:      private final scala.Function1 org.apache.spark.SparkContext$$anonfun$runJob$5.cleanedFunc$1
+17/11/04 05:54:06 DEBUG ClosureCleaner:  + declared methods: 2
+17/11/04 05:54:06 DEBUG ClosureCleaner:      public final java.lang.Object org.apache.spark.SparkContext$$anonfun$runJob$5.apply(java.lang.Object,java.lang.Object)
+17/11/04 05:54:06 DEBUG ClosureCleaner:      public final java.lang.Object org.apache.spark.SparkContext$$anonfun$runJob$5.apply(org.apache.spark.TaskContext,scala.collection.Iterator)
+17/11/04 05:54:06 DEBUG ClosureCleaner:  + inner classes: 0
+17/11/04 05:54:06 DEBUG ClosureCleaner:  + outer classes: 0
+17/11/04 05:54:06 DEBUG ClosureCleaner:  + outer objects: 0
+17/11/04 05:54:06 DEBUG ClosureCleaner:  + populating accessed fields because this is the starting closure
+17/11/04 05:54:06 DEBUG ClosureCleaner:  + fields accessed by starting closure: 0
+17/11/04 05:54:06 DEBUG ClosureCleaner:  + there are no enclosing objects!
+17/11/04 05:54:06 DEBUG ClosureCleaner:  +++ closure <function2> (org.apache.spark.SparkContext$$anonfun$runJob$5) is now cleaned +++
+17/11/04 05:54:06 INFO SparkContext: Starting job: take at <console>:26
+17/11/04 05:54:06 INFO DAGScheduler: Got job 5 (take at <console>:26) with 2 output partitions
+17/11/04 05:54:06 INFO DAGScheduler: Final stage: ResultStage 7 (take at <console>:26)
+17/11/04 05:54:06 INFO DAGScheduler: Parents of final stage: List()
+17/11/04 05:54:06 INFO DAGScheduler: Missing parents: List()
+17/11/04 05:54:06 DEBUG DAGScheduler: submitStage(ResultStage 7)
+17/11/04 05:54:06 DEBUG DAGScheduler: missing: List()
+17/11/04 05:54:06 INFO DAGScheduler: Submitting ResultStage 7 (MapPartitionsRDD[17] at take at <console>:26), which has no missing parents
+17/11/04 05:54:06 DEBUG DAGScheduler: submitMissingTasks(ResultStage 7)
+17/11/04 05:54:06 INFO MemoryStore: Block broadcast_11 stored as values in memory (estimated size 17.2 KB, free 364.7 MB)
+17/11/04 05:54:06 DEBUG BlockManager: Put block broadcast_11 locally took  1 ms
+17/11/04 05:54:06 DEBUG BlockManager: Putting block broadcast_11 without replication took  3 ms
+17/11/04 05:54:06 INFO MemoryStore: Block broadcast_11_piece0 stored as bytes in memory (estimated size 6.2 KB, free 364.7 MB)
+17/11/04 05:54:06 INFO BlockManagerInfo: Added broadcast_11_piece0 in memory on 172.30.1.247:57899 (size: 6.2 KB, free: 366.1 MB)
+17/11/04 05:54:06 DEBUG BlockManagerMaster: Updated info of block broadcast_11_piece0
+17/11/04 05:54:06 DEBUG BlockManager: Told master about block broadcast_11_piece0
+17/11/04 05:54:06 DEBUG BlockManager: Put block broadcast_11_piece0 locally took  3 ms
+17/11/04 05:54:06 DEBUG BlockManager: Putting block broadcast_11_piece0 without replication took  4 ms
+17/11/04 05:54:06 INFO SparkContext: Created broadcast 11 from broadcast at DAGScheduler.scala:1006
+17/11/04 05:54:06 INFO DAGScheduler: Submitting 2 missing tasks from ResultStage 7 (MapPartitionsRDD[17] at take at <console>:26) (first 15 tasks are for partitions Vector(1, 2))
+17/11/04 05:54:06 INFO TaskSchedulerImpl: Adding task set 7.0 with 2 tasks
+17/11/04 05:54:06 DEBUG TaskSetManager: Epoch for TaskSet 7.0: 2
+17/11/04 05:54:06 DEBUG TaskSetManager: Valid locality levels for TaskSet 7.0: NO_PREF, ANY
+17/11/04 05:54:06 DEBUG TaskSchedulerImpl: parentName: , name: TaskSet_7.0, runningTasks: 0
+17/11/04 05:54:06 INFO TaskSetManager: Starting task 0.0 in stage 7.0 (TID 12, localhost, executor driver, partition 1, PROCESS_LOCAL, 4788 bytes)
+17/11/04 05:54:06 INFO TaskSetManager: Starting task 1.0 in stage 7.0 (TID 13, localhost, executor driver, partition 2, PROCESS_LOCAL, 4788 bytes)
+17/11/04 05:54:06 DEBUG TaskSetManager: No tasks for locality level NO_PREF, so moving to locality level ANY
+17/11/04 05:54:06 INFO Executor: Running task 1.0 in stage 7.0 (TID 13)
+17/11/04 05:54:06 INFO Executor: Running task 0.0 in stage 7.0 (TID 12)
+17/11/04 05:54:06 DEBUG Executor: Task 12's epoch is 2
+17/11/04 05:54:06 DEBUG Executor: Task 13's epoch is 2
+17/11/04 05:54:06 DEBUG BlockManager: Getting local block broadcast_11
+17/11/04 05:54:06 DEBUG BlockManager: Level for block broadcast_11 is StorageLevel(disk, memory, deserialized, 1 replicas)
+17/11/04 05:54:06 DEBUG BlockManager: Getting local block broadcast_11
+17/11/04 05:54:06 DEBUG BlockManager: Level for block broadcast_11 is StorageLevel(disk, memory, deserialized, 1 replicas)
+17/11/04 05:54:06 INFO Executor: Finished task 0.0 in stage 7.0 (TID 12). 1093 bytes result sent to driver
+17/11/04 05:54:06 DEBUG TaskSchedulerImpl: parentName: , name: TaskSet_7.0, runningTasks: 1
+17/11/04 05:54:06 INFO TaskSetManager: Finished task 0.0 in stage 7.0 (TID 12) in 10 ms on localhost (executor driver) (1/2)
+17/11/04 05:54:06 DEBUG DFSClient: DFSClient seqno: 24 reply: SUCCESS reply: SUCCESS reply: SUCCESS downstreamAckTimeNanos: 1003963 flag: 0 flag: 0 flag: 0
+17/11/04 05:54:06 DEBUG DFSClient: DFSClient writeChunk allocating new packet seqno=25, src=/spark2-history/local-1509774703227.inprogress, packetSize=65016, chunksPerPacket=126, bytesCurBlock=145408
+17/11/04 05:54:06 DEBUG DFSClient: DFSClient flush(): bytesCurBlock=148078 lastFlushOffset=145737 createNewBlock=false
+17/11/04 05:54:06 DEBUG DFSClient: Queued packet 25
+17/11/04 05:54:06 DEBUG DFSClient: Waiting for ack for: 25
+17/11/04 05:54:06 DEBUG DFSClient: DataStreamer block BP-387439159-172.30.1.247-1493051499278:blk_1074043741_302970 sending packet packet seqno: 25 offsetInBlock: 145408 lastPacketInBlock: false lastByteOffsetInBlock: 148078
+17/11/04 05:54:06 INFO Executor: Finished task 1.0 in stage 7.0 (TID 13). 1093 bytes result sent to driver
+17/11/04 05:54:06 DEBUG TaskSchedulerImpl: parentName: , name: TaskSet_7.0, runningTasks: 0
+17/11/04 05:54:06 INFO TaskSetManager: Finished task 1.0 in stage 7.0 (TID 13) in 15 ms on localhost (executor driver) (2/2)
+17/11/04 05:54:06 INFO TaskSchedulerImpl: Removed TaskSet 7.0, whose tasks have all completed, from pool
+17/11/04 05:54:06 DEBUG DFSClient: DFSClient seqno: 25 reply: SUCCESS reply: SUCCESS reply: SUCCESS downstreamAckTimeNanos: 846917 flag: 0 flag: 0 flag: 0
+17/11/04 05:54:06 INFO DAGScheduler: ResultStage 7 (take at <console>:26) finished in 0.015 s
+17/11/04 05:54:06 DEBUG DAGScheduler: After removal of stage 7, remaining stages = 0
+17/11/04 05:54:06 INFO DAGScheduler: Job 5 finished: take at <console>:26, took 0.033430 s
+res6: Array[org.apache.spark.sql.Row] = Array()
+
+scala> 17/11/04 05:54:06 DEBUG DFSClient: DFSClient writeChunk allocating new packet seqno=26, src=/spark2-history/local-1509774703227.inprogress, packetSize=65016, chunksPerPacket=126, bytesCurBlock=147968
+17/11/04 05:54:06 DEBUG DFSClient: DFSClient flush(): bytesCurBlock=156478 lastFlushOffset=148078 createNewBlock=false
+17/11/04 05:54:06 DEBUG DFSClient: Queued packet 26
+17/11/04 05:54:06 DEBUG DFSClient: Waiting for ack for: 26
+17/11/04 05:54:06 DEBUG DFSClient: DataStreamer block BP-387439159-172.30.1.247-1493051499278:blk_1074043741_302970 sending packet packet seqno: 26 offsetInBlock: 147968 lastPacketInBlock: false lastByteOffsetInBlock: 156478
+17/11/04 05:54:06 DEBUG DFSClient: DFSClient seqno: 26 reply: SUCCESS reply: SUCCESS reply: SUCCESS downstreamAckTimeNanos: 836508 flag: 0 flag: 0 flag: 0
+17/11/04 05:54:06 DEBUG DFSClient: DFSClient writeChunk allocating new packet seqno=27, src=/spark2-history/local-1509774703227.inprogress, packetSize=65016, chunksPerPacket=126, bytesCurBlock=156160
+17/11/04 05:54:06 DEBUG DFSClient: DFSClient flush(): bytesCurBlock=156592 lastFlushOffset=156478 createNewBlock=false
+17/11/04 05:54:06 DEBUG DFSClient: Queued packet 27
+17/11/04 05:54:06 DEBUG DFSClient: Waiting for ack for: 27
+17/11/04 05:54:06 DEBUG DFSClient: DataStreamer block BP-387439159-172.30.1.247-1493051499278:blk_1074043741_302970 sending packet packet seqno: 27 offsetInBlock: 156160 lastPacketInBlock: false lastByteOffsetInBlock: 156592
+17/11/04 05:54:06 DEBUG DFSClient: DFSClient seqno: 27 reply: SUCCESS reply: SUCCESS reply: SUCCESS downstreamAckTimeNanos: 520393 flag: 0 flag: 0 flag: 0
+17/11/04 05:54:06 DEBUG DFSClient: DFSClient writeChunk allocating new packet seqno=28, src=/spark2-history/local-1509774703227.inprogress, packetSize=65016, chunksPerPacket=126, bytesCurBlock=156160
+17/11/04 05:54:06 DEBUG DFSClient: DFSClient flush(): bytesCurBlock=158933 lastFlushOffset=156592 createNewBlock=false
+17/11/04 05:54:06 DEBUG DFSClient: Queued packet 28
+17/11/04 05:54:06 DEBUG DFSClient: Waiting for ack for: 28
+17/11/04 05:54:06 DEBUG DFSClient: DataStreamer block BP-387439159-172.30.1.247-1493051499278:blk_1074043741_302970 sending packet packet seqno: 28 offsetInBlock: 156160 lastPacketInBlock: false lastByteOffsetInBlock: 158933
+17/11/04 05:54:06 DEBUG DFSClient: DFSClient seqno: 28 reply: SUCCESS reply: SUCCESS reply: SUCCESS downstreamAckTimeNanos: 543995 flag: 0 flag: 0 flag: 0
+17/11/04 05:54:06 DEBUG DFSClient: DFSClient writeChunk allocating new packet seqno=29, src=/spark2-history/local-1509774703227.inprogress, packetSize=65016, chunksPerPacket=126, bytesCurBlock=158720
+17/11/04 05:54:06 DEBUG DFSClient: DFSClient flush(): bytesCurBlock=169967 lastFlushOffset=158933 createNewBlock=false
+17/11/04 05:54:06 DEBUG DFSClient: Queued packet 29
+17/11/04 05:54:06 DEBUG DFSClient: Waiting for ack for: 29
+17/11/04 05:54:06 DEBUG DFSClient: DataStreamer block BP-387439159-172.30.1.247-1493051499278:blk_1074043741_302970 sending packet packet seqno: 29 offsetInBlock: 158720 lastPacketInBlock: false lastByteOffsetInBlock: 169967
+17/11/04 05:54:06 DEBUG DFSClient: DFSClient seqno: 29 reply: SUCCESS reply: SUCCESS reply: SUCCESS downstreamAckTimeNanos: 694261 flag: 0 flag: 0 flag: 0
+17/11/04 05:54:06 DEBUG DFSClient: DFSClient writeChunk allocating new packet seqno=30, src=/spark2-history/local-1509774703227.inprogress, packetSize=65016, chunksPerPacket=126, bytesCurBlock=169472
+17/11/04 05:54:06 DEBUG DFSClient: DFSClient flush(): bytesCurBlock=170081 lastFlushOffset=169967 createNewBlock=false
+17/11/04 05:54:06 DEBUG DFSClient: Queued packet 30
+17/11/04 05:54:06 DEBUG DFSClient: DataStreamer block BP-387439159-172.30.1.247-1493051499278:blk_1074043741_302970 sending packet packet seqno: 30 offsetInBlock: 169472 lastPacketInBlock: false lastByteOffsetInBlock: 170081
+17/11/04 05:54:06 DEBUG DFSClient: Waiting for ack for: 30
+17/11/04 05:54:06 DEBUG DFSClient: DFSClient seqno: 30 reply: SUCCESS reply: SUCCESS reply: SUCCESS downstreamAckTimeNanos: 582482 flag: 0 flag: 0 flag: 0
+17/11/04 05:54:06 DEBUG DFSClient: DFSClient writeChunk allocating new packet seqno=31, src=/spark2-history/local-1509774703227.inprogress, packetSize=65016, chunksPerPacket=126, bytesCurBlock=169984
+17/11/04 05:54:06 DEBUG DFSClient: DFSClient flush(): bytesCurBlock=170193 lastFlushOffset=170081 createNewBlock=false
+17/11/04 05:54:06 DEBUG DFSClient: Queued packet 31
+17/11/04 05:54:06 DEBUG DFSClient: Waiting for ack for: 31
+17/11/04 05:54:06 DEBUG DFSClient: DataStreamer block BP-387439159-172.30.1.247-1493051499278:blk_1074043741_302970 sending packet packet seqno: 31 offsetInBlock: 169984 lastPacketInBlock: false lastByteOffsetInBlock: 170193
+17/11/04 05:54:06 DEBUG DFSClient: DFSClient seqno: 31 reply: SUCCESS reply: SUCCESS reply: SUCCESS downstreamAckTimeNanos: 541179 flag: 0 flag: 0 flag: 0
+
+
+scala> 17/11/04 05:54:14 DEBUG IdleTimeout: SelectChannelEndPoint@38284714{/122.178.219.222:61451<->4040,Open,in,out,FI,-,26484/30000,HttpConnection@6faad44c}{io=1/1,kio=1,kro=1} idle timeout check, elapsed: 26482 ms, remaining: 3518 ms
+17/11/04 05:54:14 DEBUG Client: IPC Client (681088021) connection to ip-172-30-1-247.ec2.internal/172.30.1.247:8020 from ec2-user: closed
+17/11/04 05:54:14 DEBUG Client: IPC Client (681088021) connection to ip-172-30-1-247.ec2.internal/172.30.1.247:8020 from ec2-user: stopped, remaining connections 0
+17/11/04 05:54:14 DEBUG Client: The ping interval is 60000 ms.
+17/11/04 05:54:14 DEBUG Client: Connecting to ip-172-30-1-247.ec2.internal/172.30.1.247:8020
+17/11/04 05:54:14 DEBUG Client: IPC Client (681088021) connection to ip-172-30-1-247.ec2.internal/172.30.1.247:8020 from ec2-user sending #424
+17/11/04 05:54:14 DEBUG Client: IPC Client (681088021) connection to ip-172-30-1-247.ec2.internal/172.30.1.247:8020 from ec2-user: starting, having connections 1
+17/11/04 05:54:14 DEBUG Client: IPC Client (681088021) connection to ip-172-30-1-247.ec2.internal/172.30.1.247:8020 from ec2-user got value #424
+17/11/04 05:54:14 DEBUG ProtobufRpcEngine: Call: renewLease took 2ms
+17/11/04 05:54:14 DEBUG LeaseRenewer: Lease renewed for client DFSClient_NONMAPREDUCE_-1983801828_1
+17/11/04 05:54:14 DEBUG LeaseRenewer: Lease renewer daemon for [DFSClient_NONMAPREDUCE_-1983801828_1] with renew id 1 executed
+17/11/04 05:54:14 DEBUG IdleTimeout: SelectChannelEndPoint@4e41036f{/122.178.219.222:61452<->4040,Open,in,out,FI,-,29999/30000,HttpConnection@5a110503}{io=1/1,kio=1,kro=0} idle timeout check, elapsed: 29999 ms, remaining: 1 ms
+17/11/04 05:54:14 DEBUG IdleTimeout: SelectChannelEndPoint@4e41036f{/122.178.219.222:61452<->4040,Open,in,out,FI,-,30001/30000,HttpConnection@5a110503}{io=1/1,kio=1,kro=0} idle timeout check, elapsed: 30001 ms, remaining: -1 ms
+17/11/04 05:54:14 DEBUG IdleTimeout: SelectChannelEndPoint@4e41036f{/122.178.219.222:61452<->4040,Open,in,out,FI,-,30001/30000,HttpConnection@5a110503}{io=1/1,kio=1,kro=0} idle timeout expired
+17/11/04 05:54:14 DEBUG AbstractConnection: HttpConnection@5a110503[SelectChannelEndPoint@4e41036f{/122.178.219.222:61452<->4040,Open,in,out,-,-,30001/30000,HttpConnection@5a110503}{io=1/1,kio=1,kro=0}][p=HttpParser{s=CLOSE,0 of 0},g=HttpGenerator@63a0b2b9{s=START},c=HttpChannelOverHttp@18195d7a{r=0,c=false,a=IDLE,uri=null}] onFillInterestedFailed {}
+17/11/04 05:54:14 DEBUG ChannelEndPoint: oshut SelectChannelEndPoint@4e41036f{/122.178.219.222:61452<->4040,Open,in,out,-,-,30002/30000,HttpConnection@5a110503}{io=1/1,kio=1,kro=0}
+17/11/04 05:54:14 DEBUG AbstractConnection: fillInterested HttpConnection@5a110503[SelectChannelEndPoint@4e41036f{/122.178.219.222:61452<->4040,Open,in,OSHUT,-,-,30002/30000,HttpConnection@5a110503}{io=1/1,kio=1,kro=0}][p=HttpParser{s=CLOSE,0 of 0},g=HttpGenerator@63a0b2b9{s=START},c=HttpChannelOverHttp@18195d7a{r=0,c=false,a=IDLE,uri=null}]
+17/11/04 05:54:14 DEBUG FillInterest: FillInterest@cb41e33{true,AC.ReadCB@5a110503{HttpConnection@5a110503[SelectChannelEndPoint@4e41036f{/122.178.219.222:61452<->4040,Open,in,OSHUT,FI,-,0/30000,HttpConnection@5a110503}{io=1/1,kio=1,kro=0}][p=HttpParser{s=CLOSE,0 of 0},g=HttpGenerator@63a0b2b9{s=START},c=HttpChannelOverHttp@18195d7a{r=0,c=false,a=IDLE,uri=null}]}} register AC.ReadCB@5a110503{HttpConnection@5a110503[SelectChannelEndPoint@4e41036f{/122.178.219.222:61452<->4040,Open,in,OSHUT,FI,-,1/30000,HttpConnection@5a110503}{io=1/1,kio=1,kro=0}][p=HttpParser{s=CLOSE,0 of 0},g=HttpGenerator@63a0b2b9{s=START},c=HttpChannelOverHttp@18195d7a{r=0,c=false,a=IDLE,uri=null}]}
+17/11/04 05:54:14 DEBUG FillInterest: FillInterest@cb41e33{true,AC.ReadCB@5a110503{HttpConnection@5a110503[SelectChannelEndPoint@4e41036f{/122.178.219.222:61452<->4040,Open,in,OSHUT,FI,-,1/30000,HttpConnection@5a110503}{io=1/1,kio=1,kro=0}][p=HttpParser{s=CLOSE,0 of 0},g=HttpGenerator@63a0b2b9{s=START},c=HttpChannelOverHttp@18195d7a{r=0,c=false,a=IDLE,uri=null}]}} register AC.ReadCB@5a110503{HttpConnection@5a110503[SelectChannelEndPoint@4e41036f{/122.178.219.222:61452<->4040,Open,in,OSHUT,FI,-,1/30000,HttpConnection@5a110503}{io=1/1,kio=1,kro=0}][p=HttpParser{s=CLOSE,0 of 0},g=HttpGenerator@63a0b2b9{s=START},c=HttpChannelOverHttp@18195d7a{r=0,c=false,a=IDLE,uri=null}]}
+17/11/04 05:54:14 DEBUG SelectChannelEndPoint: changeInterests p=false 1->1 for SelectChannelEndPoint@4e41036f{/122.178.219.222:61452<->4040,Open,in,OSHUT,FI,-,2/30000,HttpConnection@5a110503}{io=1/1,kio=1,kro=0}
+17/11/04 05:54:14 DEBUG ManagedSelector: Queued change SelectChannelEndPoint@4e41036f{/122.178.219.222:61452<->4040,Open,in,OSHUT,FI,-,2/30000,HttpConnection@5a110503}{io=1/1,kio=1,kro=0}:runUpdateKey on org.spark_project.jetty.io.ManagedSelector@5e5f3bbb id=1 keys=1 selected=0
+17/11/04 05:54:14 DEBUG AbstractEndPoint: Ignored idle endpoint SelectChannelEndPoint@4e41036f{/122.178.219.222:61452<->4040,Open,in,OSHUT,FI,-,2/30000,HttpConnection@5a110503}{io=1/1,kio=1,kro=0}
+17/11/04 05:54:14 DEBUG ManagedSelector: Selector loop woken up from select, 0/1 selected
+17/11/04 05:54:14 DEBUG ManagedSelector: Running change SelectChannelEndPoint@4e41036f{/122.178.219.222:61452<->4040,Open,in,OSHUT,FI,-,2/30000,HttpConnection@5a110503}{io=1/1,kio=1,kro=0}:runUpdateKey
+17/11/04 05:54:14 DEBUG SelectChannelEndPoint: Key interests updated 1 -> 1 on SelectChannelEndPoint@4e41036f{/122.178.219.222:61452<->4040,Open,in,OSHUT,FI,-,2/30000,HttpConnection@5a110503}{io=1/1,kio=1,kro=0}
+17/11/04 05:54:14 DEBUG ManagedSelector: Selector loop waiting on select
+
+
+scala> 17/11/04 05:54:17 DEBUG IdleTimeout: SelectChannelEndPoint@38284714{/122.178.219.222:61451<->4040,Open,in,out,FI,-,30003/30000,HttpConnection@6faad44c}

@@ -1,0 +1,98 @@
+val source= spark.sql("select * from automation.hivelogger2")
+
+source.write.format("orc").partitionBy("ziw_status_flag").bucketBy(3,"ziw_row_id").saveAsTable("testparbck")
+files:
+        hdfs dfs -ls /apps/hive/warehouse/testparbck/ziw_status_flag=I/
+        -rw-r--r--   3 ec2-user hdfs    1874275 2017-11-03 13:02 /apps/hive/warehouse/testparbck/ziw_status_flag=I/part-00000-48663744-18d5-4d23-a0c5-d70d619c104e_00000.c000.snappy.orc
+        -rw-r--r--   3 ec2-user hdfs     910573 2017-11-03 13:02 /apps/hive/warehouse/testparbck/ziw_status_flag=I/part-00001-48663744-18d5-4d23-a0c5-d70d619c104e_00002.c000.snappy.orc
+        -rw-r--r--   3 ec2-user hdfs    1980238 2017-11-03 13:03 /apps/hive/warehouse/testparbck/ziw_status_flag=I/part-00002-48663744-18d5-4d23-a0c5-d70d619c104e_00000.c000.snappy.orc
+
+source.write.format("orc").bucketBy(3,"ziw_row_id").saveAsTable("testbck")
+files:
+        hdfs dfs -ls /apps/hive/warehouse/testbck/
+        Found 29 items
+        -rw-r--r--   3 ec2-user hdfs    1947011 2017-11-03 13:18 /apps/hive/warehouse/testbck/part-00000-a674e38d-bdb4-49eb-8b9c-3ffc6357667f_00000.c000.snappy.orc
+        -rw-r--r--   3 ec2-user hdfs     897017 2017-11-03 13:18 /apps/hive/warehouse/testbck/part-00000-a674e38d-bdb4-49eb-8b9c-3ffc6357667f_00001.c000.snappy.orc
+
+source.write.format("orc").partitionBy("ziw_status_flag").saveAsTable("testparnobck")
+files:
+        hdfs dfs -ls /apps/hive/warehouse/testparnobck/ziw_status_flag=I
+        -rw-r--r--   3 ec2-user hdfs    4789202 2017-11-03 13:30 /apps/hive/warehouse/testparnobck/ziw_status_flag=I/part-00000-ee2d0072-d981-477a-9a6a-23fb64bfcced.c000.snappy.orc
+        -rw-r--r--   3 ec2-user hdfs    5736906 2017-11-03 13:30 /apps/hive/warehouse/testparnobck/ziw_status_flag=I/part-00001-ee2d0072-d981-477a-9a6a-23fb64bfcced.c000.snappy.orc
+        -rw-r--r--   3 ec2-user hdfs    1845739 2017-11-03 13:28 /apps/hive/warehouse/testparnobck/ziw_status_flag=I/part-00002-ee2d0072-d981-477a-9a6a-23fb64bfcced.c000.snappy.orc
+
+source.write.format("orc").saveAsTable("testnobck")
+files:
+        hdfs dfs -ls /apps/hive/warehouse/testnobck/
+        Found 17 items
+        -rw-r--r--   3 ec2-user hdfs    1632827 2017-11-03 13:35 /apps/hive/warehouse/testnobck/part-00000-ca851749-f363-42ea-8be3-1bcedfdfc4da-c000.snappy.orc
+        -rw-r--r--   3 ec2-user hdfs     804258 2017-11-03 13:34 /apps/hive/warehouse/testnobck/part-00001-ca851749-f363-42ea-8be3-1bcedfdfc4da-c000.snappy.orc
+        -rw-r--r--   3 ec2-user hdfs    4078031 2017-11-03 13:36 /apps/hive/warehouse/testnobck/part-00002-ca851749-f363-42ea-8be3-1bcedfdfc4da-c000.snappy.orc
+
+val testparbck  = spark.sql("select * from testparbck")
+testparbck.filter("ziw_row_id = '91c36e90096e5b5b6d5de85077018406'").take(10)
+plan - testparbck1.htm -- with actual rowid 
+testparbck.filter("ziw_row_id = '91c36e90096e5b5bhihi6d5de85077018406'").take(10)
+plan - testparbck1.htm -- with dummy rowid 
+
+        after reorg of directory structure
+        ====================================
+        val testparbck = spark.sql("select * from testparbck")
+        testparbck.count()
+        plan - testparbck3.htm -- with actual rowid 
+        -- metadata is rendered useless
+
+
+        val testparbck = spark.read.option("inferSchema", true).orc("/apps/hive/warehouse/testparbck")
+        testparbck.filter("ziw_row_id = '91c36e90096e5b5b6d5de85077018406'").take(10)
+        plan - testparbck4.htm -- essentially without metadata reads all files
+
+        testparbck.filter("ziw_status_flag = 'N'").take(10)
+        plan - testparbck5.htm
+
+        copied back to original structure
+        testparbck.filter("ziw_status_flag = 'N'").take(10)
+        plan - testparbck6.htm
+
+
+val testbck  = spark.sql("select * from testbck")
+testbck.filter("ziw_row_id = '91c36e90096e5b5b6d5de85077018406'").take(10)
+plan - testbck1.htm
+testbck.filter("ziw_row_id = '91c36e90096e5b5b6d5dehihi85077018406'").take(10)
+
+plan - testbck.htm
+       testbck2.htm  -- with dummy rowid  
+
+        after reorg of directory structure
+        ====================================
+        testbck.count()
+        plan - testbck3.htm
+         val testbck = spark.read.option("inferSchema", true).orc("/apps/hive/warehouse/testbck")
+         org.apache.spark.sql.AnalysisException: Unable to infer schema for ORC. It must be specified manually.;
+        at org.apache.spark.sql.execution.datasources.DataSource$$anonfun$8.apply(DataSource.scala:182)
+        at org.apache.spark.sql.execution.datasources.DataSource$$anonfun$8.apply(DataSource.scala:182)
+        at scala.Option.getOrElse(Option.scala:121)
+        at org.apache.spark.sql.execution.datasources.DataSource.getOrInferFileFormatSchema(DataSource.scala:181)
+        at org.apache.spark.sql.execution.datasources.DataSource.resolveRelation(DataSource.scala:366)
+        at org.apache.spark.sql.DataFrameReader.load(DataFrameReader.scala:178)
+        at org.apache.spark.sql.DataFrameReader.orc(DataFrameReader.scala:582)
+        at org.apache.spark.sql.DataFrameReader.orc(DataFrameReader.scala:571)
+
+
+
+val testparnobck  = spark.sql("select * from testparnobck")
+testparnobck.filter("ziw_row_id = '91c36e90096e5b5b6d5de85077018406'").take(10)
+plan - testparnobck1.htm -- with actual rowid 
+
+testparnobck.filter("ziw_row_id = '91c36e90096e5b5b6hihid5de85077018406'").take(10)
+plan - testparnobck2.htm -- with dummy rowid 
+
+
+val testnobck  = spark.sql("select * from testnobck")
+testnobck.filter("ziw_row_id = '91c36e90096e5b5b6d5de85077018406'").take(10)
+plan - testnobck1.htm
+
+testnobck.filter("ziw_row_id = '91c36e90096e5b5b6d5dhihie85077018406'").take(10)
+plan - testnobck2.htm
+
+
