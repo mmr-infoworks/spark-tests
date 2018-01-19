@@ -1,0 +1,373 @@
+: jdbc:hive2://localhost:10000/default> select count(*) from test_dt1;
+INFO  : Tez session hasn't been created yet. Opening session
+INFO  : Dag name: select count(*) from test_dt1(Stage-1)
+INFO  :
+
+INFO  : Status: Running (Executing on YARN cluster with App id application_1513157465166_9134)
+
+INFO  : Map 1: 0/2	Reducer 2: 0/1
+INFO  : Map 1: 0(+2)/2	Reducer 2: 0/1
+INFO  : Map 1: 1(+1)/2	Reducer 2: 0/1
+INFO  : Map 1: 1(+1)/2	Reducer 2: 0(+1)/1
+INFO  : Map 1: 2/2	Reducer 2: 0(+1)/1
+INFO  : Map 1: 2/2	Reducer 2: 1/1
++------+--+
+| _c0  |
++------+--+
+| 50   |
++------+--+
+1 row selected (8.944 seconds)
+
+
+0: jdbc:hive2://localhost:10000/default> select ziw_row_id ,c_email_address, c_last_review_date, c_preferred_cust_flag from mayuri_schema.test_dt1;
++-----------------------------------+-----------------------------------------------------+---------------------+------------------------+--+
+|            ziw_row_id             |                   c_email_address                   | c_last_review_date  | c_preferred_cust_flag  |
++-----------------------------------+-----------------------------------------------------+---------------------+------------------------+--+
+| a386c9d754209244244f62520e0ca50b  | Jessica.Long@xx7vUShutMnOEhqKPc.com                 | 2452547             | N                      |
+| f7b04adcad6da6fc674e9965bd8f1f56  | Jerry.Winn@l9ML0nxcbl0H7vqPxTK.org                  | 2452587             | N                      |
+| 041e368a82240b5ad4aa99b7f8684afa  | Anderson.Rose@DQLHpqt1XX.org                        | 2452575             | N                      |
+| d2a09165036c751a35cd2b26c72bff1e  | Cheryl.Reagan@sKmjumEOx1SIj.org                     | 2452409             | N                      |
+| c63b1591a2fb4bd12ffac7dc12fdc87b  | Patrick.Reynoso@LKZNsMh2HuN.com                     | 2452395             | N                      |
+| ab8d619b46c9d0476d75b82babf046f2  | Robert.Butler@e7AfLSPXFeZ.org                       | 2452377             | N                      |
+| 3bfe8ce82f852396fec60f06b28d3e9c  | Marie.Lyman@nqk8P8hn.org                            | 2452534             | N                      |
+| 84b36b1aeae37f88ce71dd6244ec18de  | Howard.King@Czm.com                                 | 2452387             | N                      |
+| 29e289eba32c4ed9ac807aacda484d99  | Diane.May@oTA.edu                                   | 2452504             | N                      |
+| 34ae04805005edcbc49e2f48f2b0a8de  | William.Gill@SmGyrzytSJ.org                         | 2452457             | N                      |
+| b8a85bc8ed62cedf39c0df5117411eaf  | Constance.Salinas@jKts550.org                       | 2452322             | N                      |
+| 4ea4cd3013e4cbaf5646ce7cf52a9e7e  | William.Strong@qJYLA4s5.edu                         | 2452287             | N                      |
+| eed6424c0b6ca95282df1fd3132668a7  | Catherine.Morgan@FYa3eKSzFHOZ7.org                  | 2452360             | N                      |
+| 88f18f659f946f5dbfe744174ee6b9fb  | Robert.Wright@RtqH542oHzyO.com                      | 2452576             | N                      |
+| b785b92ba5ac2edceb62349d1e074e8a  | Jodi.Ray@ChAR0P.com                                 | 2452311             | N                      |
+| 27698b316a92f401e9238c7c2e2904e6  | William.Pollack@XTY2.edu                            | 2452621             | N                      |
+| 8b2faef704882ad941ce66226076b576  | Steven.Finley@9.edu                                 | 2452398             | N                      |
+| 043a70aacc8b48eec605738a7aae6948  | Helen.Bateman@bVJ4ND7frLIIJZX.org                   | 2452541             | N                      |
+| e7a571dd6e1cf290a63199ef39b35acd  | David.Townsend@KBGUR1bbp9OYO.org                    | 2452369             | N                      |
+| 259505036ad52273a1c40f5125171d4b  | Larry.Kerr@V6KToJQKDF4a.org                         | 2452300             | N                      |
+| ba333365264b42d30975f42e83c5010d  | Linda.Ward@LUPhS.com                                | 2452296             | N                      |
+| 639a91473614311b8732b150f689fdc9  | Thomas.Thomas@yFAxDB2MOf.edu                        | 2452593             | N                      |
+| 677ba5dd225e27dbc8396c4d4b78213f  | Clara.Pennell@Tyv9MI51vrgr.org                      | 2452433             | N                      |
+| 1cd55df48b9f23286d816422e3ecaf45  | Peggy.Hamilton@aAO4cO3VoUmtk3.org                   | 2452423             | N                      |
+| 729c49b5798e9a92c27729042d31d4ca  | Beatrice.Potter@PSC.org                             | 2452478             | N                      |
+| c4f9a6679c67970ea752b1944505a03e  | Rex.Reyes@saLGsYab.org                              | 2452297             | N                      |
+| 2db003242bd52721cb42ea891b572e0e  | Matthew.Neal@pfHOj.edu                              | 2452362             | N                      |
+| 19acb240cab014aff02dea6a8461d15b  | Peter.Cowley@QEbmzHhGVVCGPQ3MSs.edu                 | 2452615             | Y                      |
+
+
+
+
+: jdbc:hive2://localhost:10000/default> select * from test_dt1;
++-------------------------+------------------------+------------------------+---------------------------------+---------------------------+-------------------+-----------------------------------------------------+------------------------------+-----------------------------+----------------------------------+---------------------------------+--------------------------+----------------------------------------------+---------------------------------+-------------------------+------------------------------+------------------------------+-----------------------------+----------------------------------+---------------------------------+-----------------------+-------------------------+------------------------+-----------------------------------+---------------------------------+---------------------------------+---------------------------+---------------------------------+---------------------+--+
+| test_dt1.c_customer_id  | test_dt1.c_salutation  | test_dt1.c_first_name  |      test_dt1.c_last_name       | test_dt1.c_birth_country  | test_dt1.c_login  |              test_dt1.c_email_address               | test_dt1.c_last_review_date  | test_dt1.c_customer_sk_new  | test_dt1.c_current_cdemo_sk_new  | test_dt1.c_current_addr_sk_new  |    test_dt1.full_name    |               test_dt1.map_col               |       test_dt1.struct_col       | test_dt1.c_customer_sk  | test_dt1.c_current_cdemo_sk  | test_dt1.c_current_hdemo_sk  | test_dt1.c_current_addr_sk  | test_dt1.c_first_shipto_date_sk  | test_dt1.c_first_sales_date_sk  | test_dt1.c_birth_day  | test_dt1.c_birth_month  | test_dt1.c_birth_year  |        test_dt1.ziw_row_id        | test_dt1.ziw_created_timestamp  | test_dt1.ziw_updated_timestamp  | test_dt1.ziw_status_flag  | test_dt1.c_preferred_cust_flag  | test_dt1.ziw_sec_p  |
++-------------------------+------------------------+------------------------+---------------------------------+---------------------------+-------------------+-----------------------------------------------------+------------------------------+-----------------------------+----------------------------------+---------------------------------+--------------------------+----------------------------------------------+---------------------------------+-------------------------+------------------------------+------------------------------+-----------------------------+----------------------------------+---------------------------------+-----------------------+-------------------------+------------------------+-----------------------------------+---------------------------------+---------------------------------+---------------------------+---------------------------------+---------------------+--+
+| AAAAAAAAKIGIBAAA        | Mrs.                   | Jessica                | Long                            | JAPAN                     | NULL              | Jessica.Long@xx7vUShutMnOEhqKPc.com                 | 2452547                      | 99978.0                     | 1496142.0                        | 9094.0                          | ["Jessica","Long"]       | {"key4":"val4","key5":"val5","key6":"val6"}  | {"col1":"a","col2":1,"col3":1}  | 99978                   | 1496142                      | 1818                         | 9094                        | 2451925                          | 2451895                         | 20                    | 8                       | 1984                   | a386c9d754209244244f62520e0ca50b  | 2018-01-19 09:20:48.524         | 2018-01-19 09:20:48.524         | I                         | N                               | 0                   |
+| AAAAAAAAEJGIBAAA        | Mr.                    | Jerry                  | Winn                            | PUERTO RICO               | NULL              | Jerry.Winn@l9ML0nxcbl0H7vqPxTK.org                  | 2452587                      | 99988.0                     | 487633.0                         | 6303.0                          | ["Jerry","Winn"]         | {"key4":"val4","key5":"val5","key6":"val6"}  | {"col1":"a","col2":1,"col3":1}  | 99988                   | 487633                       | 5768                         | 6303                        | 2452480                          | 2452450                         | 25                    | 11                      | 1931                   | f7b04adcad6da6fc674e9965bd8f1f56  | 2018-01-19 09:20:48.524         | 2018-01-19 09:20:48.524         | I                         | N                               | 0                   |
+| AAAAAAAAHIGIBAAA        | Mr.                    | Anderson               | Rose                            | R?NION                    | NULL              | Anderson.Rose@DQLHpqt1XX.org                        | 2452575                      | 99975.0                     | 1326719.0                        | 6421.0                          | ["Anderson","Rose"]      | {"key4":"val4","key5":"val5","key6":"val6"}  | {"col1":"a","col2":1,"col3":1}  | 99975                   | 1326719                      | 2770                         | 6421                        | 2450732                          | 2450702                         | 18                    | 8                       | 1953                   | 041e368a82240b5ad4aa99b7f8684afa  | 2018-01-19 09:20:48.524         | 2018-01-19 09:20:48.524         | I                         | N                               | 0                   |
+| AAAAAAAAGJGIBAAA        | Ms.                    | Cheryl                 | Reagan                          | ISLE OF MAN               | NULL              | Cheryl.Reagan@sKmjumEOx1SIj.org                     | 2452409                      | 99990.0                     | 1602090.0                        | 30383.0                         | ["Cheryl","Reagan"]      | {"key4":"val4","key5":"val5","key6":"val6"}  | {"col1":"a","col2":1,"col3":1}  | 99990                   | 1602090                      | 5260                         | 30383                       | 2452549                          | 2452519                         | 9                     | 6                       | 1992                   | d2a09165036c751a35cd2b26c72bff1e  | 2018-01-19 09:20:48.524         | 2018-01-19 09:20:48.524         | I                         | N                               | 0                   |
+| AAAAAAAABJGIBAAA        | Mr.                    | Patrick                | Reynoso                         | KUWAIT                    | NULL              | Patrick.Reynoso@LKZNsMh2HuN.com                     | 2452395                      | 99985.0                     | 1051413.0                        | 48298.0                         | ["Patrick","Reynoso"]    | {"key4":"val4","key5":"val5","key6":"val6"}  | {"col1":"a","col2":1,"col3":1}  | 99985                   | 1051413                      | 1279                         | 48298                       | 2449470                          | 2449440                         | 8                     | 11                      | 1981                   | c63b1591a2fb4bd12ffac7dc12fdc87b  | 2018-01-19 09:20:48.524         | 2018-01-19 09:20:48.524         | I                         | N                               | 0                   |
+| AAAAAAAAIIGIBAAA        | Dr.                    | Robert                 | Butler                          | ESTONIA                   | NULL              | Robert.Butler@e7AfLSPXFeZ.org                       | 2452377                      | 99976.0                     | 906755.0                         | 48672.0                         | ["Robert","Butler"]      | {"key4":"val4","key5":"val5","key6":"val6"}  | {"col1":"a","col2":1,"col3":1}  | 99976                   | 906755                       | 1337                         | 48672                       | 2450687                          | 2450657                         | 16                    | 9                       | 1979                   | ab8d619b46c9d0476d75b82babf046f2  | 2018-01-19 09:20:48.524         | 2018-01-19 09:20:48.524         | I                         | N                               | 0                   |
+| AAAAAAAAAIGIBAAA        | Ms.                    | Marie                  | Lyman                           | KYRGYZSTAN                | 
+NULL              | Marie.Lyman@nqk8P8hn.org                            | 2452534                      | 99968.0
+
+
+
+
+
+: jdbc:hive2://localhost:10000/default> show partitions test_dt1;
++--------------------------------------+--+
+|              partition               |
++--------------------------------------+--+
+| c_preferred_cust_flag=N/ziw_sec_p=0  |
+| c_preferred_cust_flag=N/ziw_sec_p=1  |
+| c_preferred_cust_flag=Y/ziw_sec_p=0  |
+| c_preferred_cust_flag=Y/ziw_sec_p=1  |
++--------------------------------------+--+
+
+
+
+
++-------------------------------------------------------------------------------------------+--+
+|                                      createtab_stmt                                       |
++-------------------------------------------------------------------------------------------+--+
+| CREATE EXTERNAL TABLE `test_dt1`(                                                         |
+|   `c_customer_id` string,                                                                 |
+|   `c_salutation` string,                                                                  |
+|   `c_first_name` string,                                                                  |
+|   `c_last_name` string,                                                                   |
+|   `c_birth_country` string,                                                               |
+|   `c_login` string,                                                                       |
+|   `c_email_address` string,                                                               |
+|   `c_last_review_date` string,                                                            |
+|   `c_customer_sk_new` double,                                                             |
+|   `c_current_cdemo_sk_new` double,                                                        |
+|   `c_current_addr_sk_new` double,                                                         |
+|   `full_name` array<string>,                                                              |
+|   `map_col` map<string,string>,                                                           |
+|   `struct_col` struct<col1:string,col2:int,col3:decimal(2,1)>,                            |
+|   `c_customer_sk` decimal(38,0),                                                          |
+|   `c_current_cdemo_sk` decimal(38,0),                                                     |
+|   `c_current_hdemo_sk` decimal(38,0),                                                     |
+|   `c_current_addr_sk` decimal(38,0),                                                      |
+|   `c_first_shipto_date_sk` decimal(38,0),                                                 |
+|   `c_first_sales_date_sk` decimal(38,0),                                                  |
+|   `c_birth_day` decimal(38,0),                                                            |
+|   `c_birth_month` decimal(38,0),                                                          |
+|   `c_birth_year` decimal(38,0),                                                           |
+|   `ziw_row_id` string,                                                                    |
+|   `ziw_created_timestamp` timestamp,                                                      |
+|   `ziw_updated_timestamp` timestamp,                                                      |
+|   `ziw_status_flag` string)                                                               |
+| PARTITIONED BY (                                                                          |
+|   `c_preferred_cust_flag` string,                                                         |
+|   `ziw_sec_p` int)                                                                        |
+| ROW FORMAT SERDE                                                                          |
+|   'org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe'                           |
+| STORED AS INPUTFORMAT                                                                     |
+|   'org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat'                         |
+| OUTPUTFORMAT                                                                              |
+|   'org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat'                        |
+| LOCATION                                                                                  |
+|   'hdfs://ip-172-30-1-247.ec2.internal:8020/test_workspace/mayur_schema/test_dt1/full_0'  |
+| TBLPROPERTIES (                                                                           |
+|   'parquet.compress'='SNAPPY',                                                            |
+|   'totalSize'='89304',                                                                    |
+|   'transient_lastDdlTime'='1516353680')                                                   |
++-------------------------------------------------------------------------------------------+--+
+43 rows selected (0.053 seconds)
+
+
+
+0: jdbc:hive2://localhost:10000/default> select map_col from test_dt1;
++----------------------------------------------+--+
+|                   map_col                    |
++----------------------------------------------+--+
+| {"key4":"val4","key5":"val5","key6":"val6"}  |
+| {"key4":"val4","key5":"val5","key6":"val6"}  |
+| {"key4":"val4","key5":"val5","key6":"val6"}  |
+| {"key4":"val4","key5":"val5","key6":"val6"}  |
+| {"key4":"val4","key5":"val5","key6":"val6"}  |
+| {"key4":"val4","key5":"val5","key6":"val6"}  |
+| {"key4":"val4","key5":"val5","key6":"val6"}  |
+| {"key4":"val4","key5":"val5","key6":"val6"}  |
+| {"key4":"val4","key5":"val5","key6":"val6"}  |
+| {"key4":"val4","key5":"val5","key6":"val6"}  |
+| {"key4":"val4","key5":"val5","key6":"val6"}  |
+| {"key4":"val4","key5":"val5","key6":"val6"}  |
+| {"key4":"val4","key5":"val5","key6":"val6"}  |
+| {"key4":"val4","key5":"val5","key6":"val6"}  |
+| {"key4":"val4","key5":"val5","key6":"val6"}  |
+| {"key4":"val4","key5":"val5","key6":"val6"}  |
+| {"key4":"val4","key5":"val5","key6":"val6"}  |
+| {"key4":"val4","key5":"val5","key6":"val6"}  |
+| {"key4":"val4","key5":"val5","key6":"val6"}  |
+| {"key4":"val4","key5":"val5","key6":"val6"}  |
+| {"key4":"val4","key5":"val5","key6":"val6"}  |
+| {"key4":"val4","key5":"val5","key6":"val6"}  |
+| {"key4":"val4","key5":"val5","key6":"val6"}  |
+| {"key4":"val4","key5":"val5","key6":"val6"}  |
+| {"key4":"val4","key5":"val5","key6":"val6"}  |
+
+
+
+---------------------------------------SPARK SQL -----------------------------------
+
+
+
+scala> spark.sql("select count(*) from mayuri_schema.test_dt1").show();
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[Stage 0:>                                                         (0 + 4) / 12]18/01/19 09:26:54 WARN ParquetRecordReaderWrapper: Skipping split, could not find row group in: hdfs://ip-172-30-1-247.ec2.internal:8020/test_workspace/mayur_schema/test_dt1/full_0/c_preferred_cust_flag=Y/ziw_sec_p=0/part-r-00000-137c7e42-fc53-4cc4-a6bd-78985a6de17a.snappy.parquet:0+3339
++--------+
+|count(1)|
++--------+
+|      50|
++--------+
+
+
+
+scala> spark.sql("select  * from mayuri_schema.test_dt1").show();
+Jan 19, 2018 9:26:53 AM WARNING: parquet.hadoop.ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
+Jan 19, 2018 9:26:53 AM WARNING: parquet.hadoop.ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
+Jan 19, 2018 9:26:53 AM WARNING: parquet.hadoop.ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
+Jan 19, 2018 9:26:53 AM WARNING: parquet.hadoop.ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
+Jan 19, 2018 9:26:53 AM INFO: parquet.hadoop.InternalParquetRecordReader: RecordReader initialized will read a total of 4 records.
+Jan 19, 2018 9:26:53 AM INFO: parquet.hadoop.InternalParquetRecordReader: at row 0. reading next block
+Jan 19, 2018 9:26:53 AM INFO: parquet.hadoop.InternalParquetRecordReader: RecordReader initialized will read a total of 2 records.
+Jan 19, 2018 9:26:53 AM INFO: parquet.hadoop.InternalParquetRecordReader: at row 0. reading next block
+Jan 19, 2018 9:26:53 AM INFO: parquet.hadoop.InternalParquetRecordReader: RecordReader initialized will read a total of 7 records.
+Jan 19, 2018 9:26:53 AM INFO: parquet.hadoop.InternalParquetRecordReader: at row 0. reading next block
+Jan 19, 2018 9:26:53 AM INFO: parquet.hadoop.InternalParquetRecordReader: RecordReader initialized will read a total of 6 records.
+Jan 19, 2018 9:26:53 AM INFO: parquet.hadoop.InternalParquetRecordReader: at row 0. reading next block
+Jan 19, 2018 9:26:53 AM INFO: parquet.hadoop.InternalParquetRecordReader: block read in memory in 1 ms. row count = 7
+Jan 19, 2018 9:26:53 AM INFO: parquet.hadoop.InternalParquetRecordReader: block read in memory in 9 ms. row count = 4
+Jan 19, 2018 9:26:53 AM INFO: parquet.hadoop.InternalParquetRecordReader: block read in memory in 5 ms. row count = 6
+Jan 19, 2018 9:26:53 AM INFO: parquet.hadoop.InternalParquetRecordReader: block read in memory in 8 ms. row count = 2
+Jan 19, 2018 9:26:54 AM WARNING: parquet.hadoop.ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
+Jan 19, 2018 9:26:54 AM WARNING: parquet.hadoop.ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
+Jan 19, 2018 9:26:54 AM WARNING: parquet.hadoop.ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
+Jan 19, 2018 9:26:54 AM INFO: parquet.hadoop.InternalParquetRecordReader: RecordReader initialized will read a total of 2 records.
+Jan 19, 2018 9:26:54 AM INFO: parquet.hadoop.InternalParquetRecordReader: at row 0. reading next block
+Jan 19, 2018 9:26:54 AM INFO: parquet.hadoop.InternalParquetRecordReader: block read in memory in 0 ms. row count = 2
+Jan 19, 2018 9:26:54 AM INFO: parquet.hadoop.InternalParquetRecordReader: RecordReader initialized will read a total of 6 records.
+Jan 19, 2018 9:26:54 AM INFO: parquet.hadoop.InternalParquetRecordReader: at row 0. reading next block
+Jan 19, 2018 9:26:54 AM INFO: parquet.hadoop.InternalParquetRecordReader: block read in memory in 0 ms. row count = 6
+Jan 19, 2018 9:26:54 AM INFO: parquet.hadoop.InternalParquetRecordReader: RecordReader initialized will read a total of 5 records.
+Jan 19, 2018 9:26:54 AM INFO: parquet.hadoop.InternalParquetRecordReader: at row 0. reading next block
+Jan 19, 2018 9:26:54 AM INFO: parquet.hadoop.InternalParquetRecordReader: block read in memory in 0 ms. row count = 5
+Jan 19, 2018 9:26:54 AM WARNING: parquet.hadoop.ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
+Jan 19, 2018 9:26:54 AM WARNING: parquet.hadoop.ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
+Jan 19, 2018 9:26:54 AM WARNING: parquet.hadoop.ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
+Jan 19, 2018 9:26:54 AM WARNING: parquet.hadoop.ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
+Jan 19, 2018 9:26:54 AM INFO: parquet.hadoop.InternalParquetRecordReader: RecordReader initialized will read a total of 2 records.
+Jan 19, 2018 9:26:54 AM INFO: parquet.hadoop.InternalParquetRecordReader: at row 0. reading next block
+Jan 19, 2018 9:26:54 AM INFO: parquet.hadoop.InternalParquetRecordReader: block read in memory in 0 ms. row count = 2
+Jan 19, 2018 9:26:54 AM INFO: parquet.hadoop.InternalParquetRecordReader: RecordReader initialized will read a total of 5 records.
+Jan 19, 2018 9:26:54 AM INFO: parquet.hadoop.InternalParquetRecordReader: at row 0. reading next block
+Jan 19, 2018 9:26:54 AM INFO: parquet.hadoop.InternalParquetRecordReader: block read in memory in 0 ms. row count = 5
+Jan 19, 2018 9:26:54 AM INFO: parquet.hadoop.InternalParquetRecordReader: RecordReader initialized will read a total of 3 records.
+Jan 19, 2018 9:26:54 AM INFO: parquet.hadoop.InternalParquetRecordReader: at row 0. reading next block
+Jan 19, 2018 9:26:54 AM INFO: parquet.hadoop.InternalParquetRecordReader: block read in memory in 0 ms. row count = 3
+Jan 19, 2018 9:26:54 AM INFO: parquet.hadoop.InternalParquetRecordReader: RecordReader initialized will read a total of 8 records.
+Jan 19, 2018 9:26:54 AM INFO: parquet.hadoop.InternalParquetRecordReader: at row 0. reading next block
+Jan 19, 2018 9:26:54 AM INFO: parquet.hadoop.InternalParquetRecordReader: block read in memory in 0 ms. row count = 8
+Jan 19, 2018 9:27:19 AM WARNING: parquet.hadoop.ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
+Jan 19, 2018 9:27:19 AM INFO: parquet.hadoop.InternalParquetRecordReader: RecordReader initialized will read a total of 6 records.
+Jan 19, 2018 9:27:19 AM INFO: parquet.hadoop.InternalParquetRecordReader: at row 0. reading next block
+Jan 19, 2018 9:27:19 AM INFO: parquet.hadoop.InternalParquetRecordReader: block read in memory in 24 ms. row count = 6
+Jan 19, 2018 9:27:19 AM WARNING: parquet.hadoop.ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
+Jan 19, 2018 9:27:19 AM WARNING: parquet.hadoop.ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
+Jan 19, 2018 9:27:19 AM WARNING: parquet.hadoop.ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
+Jan 19, 2018 9:27:19 AM WARNING: parquet.hadoop.ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
+Jan 19, 2018 9:27:19 AM INFO: parquet.hadoop.InternalParquetRecordReader: RecordReader initialized will read a total of 2 records.
+Jan 19, 2018 9:27:19 AM INFO: parquet.hadoop.InternalParquetRecordReader: at row 0. reading next block
+Jan 19, 2018 9:27:19 AM INFO: parquet.hadoop.InternalParquetRecordReader: RecordReader initialized will read a total of 4 records.
+Jan 19, 2018 9:27:19 AM INFO: parquet.hadoop.InternalParquetRecordReader: at row 0. reading next b+----------------+------------+--------------------+--------------------+----------------+-------+--------------------+------------------+-----------------+----------------------+---------------------+--------------------+--------------------+----------+-------------+------------------+------------------+-----------------+----------------------+---------------------+-----------+-------------+------------+--------------------+---------------------+---------------------+---------------+---------------------+---------+
+|   c_customer_id|c_salutation|        c_first_name|         c_last_name| c_birth_country|c_login|     c_email_address|c_last_review_date|c_customer_sk_new|c_current_cdemo_sk_new|c_current_addr_sk_new|           full_name|             map_col|struct_col|c_customer_sk|c_current_cdemo_sk|c_current_hdemo_sk|c_current_addr_sk|c_first_shipto_date_sk|c_first_sales_date_sk|c_birth_day|c_birth_month|c_birth_year|          ziw_row_id|ziw_created_timestamp|ziw_updated_timestamp|ziw_status_flag|c_preferred_cust_flag|ziw_sec_p|
++----------------+------------+--------------------+--------------------+----------------+-------+--------------------+------------------+-----------------+----------------------+---------------------+--------------------+--------------------+----------+-------------+------------------+------------------+-----------------+----------------------+---------------------+-----------+-------------+------------+--------------------+---------------------+---------------------+---------------+---------------------+---------+
+|AAAAAAAAKIGIBAAA|  Mrs.      |Jessica             |Long             ...|           JAPAN|   null|Jessica.Long@xx7v...|        2452547   |          99978.0|             1496142.0|               9094.0|     [Jessica, Long]|Map(key4 -> val4,...| [a,1,1.0]|        99978|           1496142|              1818|             9094|               2451925|              2451895|         20|            8|        1984|a386c9d7542092442...| 2018-01-19 09:20:...| 2018-01-19 09:20:...|              I|                    N|        0|
+|AAAAAAAAEJGIBAAA|  Mr.       |Jerry               |Winn             ...|     PUERTO RICO|   null|Jerry.Winn@l9ML0n...|        2452587   |          99988.0|              487633.0|               6303.0|       [Jerry, Winn]|Map(key4 -> val4,...| [a,1,1.0]|        99988|            487633|              5768|             6303|               2452480|              2452450|         25|           11|        1931|f7b04adcad6da6fc6...| 2018-01-19 09:20:...| 2018-01-19 09:20:...|              I|                    N|        0|
+|AAAAAAAAHIGIBAAA|  Mr.       |Anderson            |Rose             ...|          R?NION|   null|Anderson.Rose@DQL...|        2452575   |          99975.0|             1326719.0|               6421.0|    [Anderson, Rose]|Map(key4 -> val4,...| [a,1,1.0]|        99975|           1326719|              2770|             6421|               2450732|              2450702|         18|            8|        1953|041e368a82240b5ad...| 2018-01-19 09:20:...| 2018-01-19 09:20:...|              I|                    N|        0|
+|AAAAAAAAGJGIBAAA|  Ms.       |Cheryl              |Reagan           ...|     ISLE OF MAN|   null|Cheryl.Reagan@sKm...|        2452409   |          99990.0|             1602090.0|              30383.0|    [Cheryl, Reagan]|Map(key4 -> val4,...| [a,1,1.0]|        99990|           1602090|              5260|            30383|               2452549|              2452519|          9|            6|        1992|d2a09165036c751a3...| 2018-01-19 09:20:...| 2018-01-19 09:20:...|              I|                    N|        0|
+|AAAAAAAABJGIBAAA|  Mr.       |Patrick             |Reynoso          ...|          KUWAIT|   null|Patrick.Reynoso@L...|        2452395   |          99985.0|             1051413.0|              48298.0|  [Patrick, Reynoso]|Map(key4 -> val4,...| [a,1,1.0]|        99985|           1051413|              1279|            48298|               2449470|              2449440|          8|           11|        1981|c63b1591a2fb4bd12...| 2018-01-19 09:20:...| 2018-01-19 09:20:...|              I|                    N|        0|
+|AAAAAAAAIIGIBAAA|  Dr.       |Robert              |Butler           ...|         ESTONIA|   null|Robert.Butler@e7A...|        2452377   |          99976.0|              906755.0|              48672.0|    [Robert, Butler]|Map(key4 -> val4,...| [a,1,1.0]|        99976|            906755|              1337|            48672|               2450687|              2450657|         16|            9|        1979|ab8d619b46c9d0476...| 2018-01-19 09:20:...| 2018-01-19 09:20:...|              I|                    N|        0|
+|AAAAAAAAAIGIBAAA|  Ms.       |Marie               |Lyman            ...|      KYRGYZSTAN|   null|Marie.Lyman@nqk8P...|        2452534   |          99968.0|             1413612.0|              46844.0|      [Marie, Lyman]|Map(key4 -> val4,...| [a,1,1.0]|        99968|           1413612|              5228|            46844|               2449185|              2449155|          5|            4|        1984|3bfe8ce82f852396f...| 2018-01-19 09:20:...| 2018-01-19 09:20:...|              I|                    N|        0|
+|AAAAAAAAMHGIBAAA|  Sir       |Howard              |King             ...|        KIRIBATI|   null|Howard.King@Czm.c...|        2452387   |          99964.0|             1847025.0|              14180.0|      [Howard, King]|Map(key4 -> val4,...| [a,1,1.0]|        99964|           1847025|               379|            14180|               2451733|              2451703|          2|            7|        1965|84b36b1aeae37f88c...| 2018-01-19 09:20:...| 2018-01-19 09:20:...|              I|                    N|        0|
+|AAAAAAAACJGIBAAA|  Mrs.      |Diane               |May              ...|FRENCH POLYNESIA|   null|Diane.May@oTA.edu...|        2452504   |          99986.0|              696879.0|               4682.0|        [Diane, May]|Map(key4 -> val4,...| [a,1,1.0]|        99986|            696879|               757|             4682|               2449029|              2448999|         31|            8|        1935|29e289eba32c4ed9a...| 2018-01-19 09:20:...| 2018-01-19 09:20:...|              I|                    N|        0|
+|AAAAAAAAOHGIBAAA|  Dr.       |William             |Gill             ...|          TUVALU|   null|William.Gill@SmGy...|        2452457   |          99966.0|             1443623.0|              11907.0|     [William, Gill]|Map(key4 -> val4,...| [a,1,1.0]|        99966|           1443623|              3765|            11907|               2450797|              2450767|         20|           12|        1928|34ae04805005edcbc...| 2018-01-19 09:20:...| 2018-01-19 09:20:...|              I|                    N|        0|
+|AAAAAAAAAJGIBAAA|  Dr.       |Constance           |Salinas          ...|            TOGO|   null|Constance.Salinas...|        2452322   |          99984.0|             1024996.0|               9570.0|[Constance, Salinas]|Map(key4 -> val4,...| [a,1,1.0]|        99984|           1024996|              3683|             9570|               2452044|              2452014|         12|           11|        1949|b8a85bc8ed62cedf3...| 2018-01-19 09:20:...| 2018-01-19 09:20:...|              I|
+
+
+scala> spark.sql("select ziw_row_id ,c_email_address, c_last_review_date, c_preferred_cust_flag from mayuri_schema.test_dt1").show();
++--------------------+--------------------+------------------+---------------------+
+|          ziw_row_id|     c_email_address|c_last_review_date|c_preferred_cust_flag|
++--------------------+--------------------+------------------+---------------------+
+|a386c9d7542092442...|Jessica.Long@xx7v...|        2452547   |                    N|
+|f7b04adcad6da6fc6...|Jerry.Winn@l9ML0n...|        2452587   |                    N|
+|041e368a82240b5ad...|Anderson.Rose@DQL...|        2452575   |                    N|
+|d2a09165036c751a3...|Cheryl.Reagan@sKm...|        2452409   |                    N|
+|c63b1591a2fb4bd12...|Patrick.Reynoso@L...|        2452395   |                    N|
+|ab8d619b46c9d0476...|Robert.Butler@e7A...|        2452377   |                    N|
+|3bfe8ce82f852396f...|Marie.Lyman@nqk8P...|        2452534   |                    N|
+|84b36b1aeae37f88c...|Howard.King@Czm.c...|        2452387   |                    N|
+|29e289eba32c4ed9a...|Diane.May@oTA.edu...|        2452504   |                    N|
+|34ae04805005edcbc...|William.Gill@SmGy...|        2452457   |                    N|
+|b8a85bc8ed62cedf3...|Constance.Salinas...|        2452322   |                    N|
+|4ea4cd3013e4cbaf5...|William.Strong@qJ...|        2452287   |                    N|
+|eed6424c0b6ca9528...|Catherine.Morgan@...|        2452360   |                    N|
+|88f18f659f946f5db...|Robert.Wright@Rtq...|        2452576   |                    N|
+|b785b92ba5ac2edce...|Jodi.Ray@ChAR0P.c...|        2452311   |                    N|
+|27698b316a92f401e...|William.Pollack@X...|        2452621   |                    N|
+|8b2faef704882ad94...|Steven.Finley@9.e...|        2452398   |                    N|
+|043a70aacc8b48eec...|Helen.Bateman@bVJ...|        2452541   |                    N|
+|e7a571dd6e1cf290a...|David.Townsend@KB...|        2452369   |                    N|
+|259505036ad52273a...|Larry.Kerr@V6KToJ...|        2452300   |                    N|
++--------------------+--------------------+------------------+---------------------+
+only showing top 20 rows
+
+
+
+scala> spark.sql("select map_col from mayuri_schema.test_dt1").show();
+lock
+Jan 19, 2018 9:27:19 AM INFO: parquet.hadoop.InternalParquetRecordReader: block read in memory in 8 ms. row count = 4
+Jan 19, 2018 9:27:19 AM INFO: parquet.hadoop.InternalParquetRecordReader: RecordReader initialized will read a total of 7 records.
+Jan 19, 2018 9:27:19 AM INFO: parquet.hadoop.InternalParquetRecordReader: at row 0. reading next block
+Jan 19, 2018 9:27:19 AM INFO: parquet.hadoop.InternalParquetRecordReader: block read in memory in 23 ms. row count = 2
+Jan 19, 2018 9:27:19 AM INFO: parquet.hadoop.InternalParquetRecordReader: block read in memory in 3 ms. row count = 7
+Jan 19, 2018 9:27:19 AM INFO: parquet.hadoop.InternalParquetRecordReader: RecordReader initialized will read a total of 2 records.
+Jan 19, 2018 9:27:19 AM INFO: parquet.hadoop.InternalParquetRecordReader: at row 0. reading next block
+Jan 19, 2018 9:27:19 AM INFO: parquet.hadoop.InternalParquetRecordReader: block read in memory in 6 ms. row count = 2
+Jan 19, 2018 9:27:19 AM WARNING: parquet.hadoop.ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
+Jan 19, 2018 9:27:19 AM INFO: parquet.hadoop.InternalParquetRecordReader: RecordReader initialized will read a total of 6 records.
+Jan 19, 2018 9:27:19 AM INFO: parquet.hadoop.InternalParquetRecordReader: at row 0. reading next block
+Jan 19, 2018 9:27:19 AM INFO: parquet.hadoop.InternalParquetRecordReader: block read in memory in 3 ms. row count = 6
+Jan 19, 2018 9:27:51 AM WARNING: parquet.hadoop.ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
+Jan 19, 2018 9:27:51 AM INFO: parquet.hadoop.InternalParquetRecordReader: RecordReader initialized will read a total of 6 records.
+Jan 19, 2018 9:27:51 AM INFO: parquet.hadoop.InternalParquetRecordReader: at row 0. reading next block
+Jan 19, 2018 9:27:51 AM INFO: parquet.hadoop.InternalParquetRecordReader: block read in memory in 13 ms. row count = 6
+Jan 19, 2018 9:27:51 AM WARNING: parquet.hadoop.ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
+Jan 19, 2018 9:27:51 AM WARNING: parquet.hadoop.ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
+Jan 19, 2018 9:27:51 AM WARNING: parquet.hadoop.ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
+Jan 19, 2018 9:27:51 AM WARNING: parquet.hadoop.ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
+Jan 19, 2018 9:27:51 AM INFO: parquet.hadoop.InternalParquetRecordReader: RecordReader initialized will read a total of 2 records.
+Jan 19, 2018 9:27:51 AM INFO: parquet.hadoop.InternalParquetRecordReader: at row 0. reading next block
+Jan 19, 2018 9:27:51 AM INFO: parquet.hadoop.InternalParquetRecordReader: block read in memory in 11 ms. row count = 2
+Jan 19, 2018 9:27:52 AM INFO: parquet.hadoop.InternalParquetRecordReader: RecordReader initialized will read a total of 7 records.
+Jan 19, 2018 9:27:52 AM INFO: parquet.hadoop.InternalParquetRecordReader: at row 0. reading next block
+Jan 19, 2018 9:27:52 AM INFO: parquet.hadoop.InternalParquetRecordReader: block read in memory in 8 ms. row count = 7
+Jan 19, 2018 9:27:52 AM INFO: parquet.hadoop.InternalParquetRecordReader: RecordReader initialized will read a total of 4 records.
+Jan 19, 2018 9:27:52 AM INFO: parquet.hadoop.InternalParquetRecordReader: at row 0. reading next block
+Jan 19, 2018 9:27:52 AM INFO: parquet.hadoop.InternalParquetRecordReader: block read in memory in 5 ms. row count = 4
+Jan 19, 2018 9:27:52 AM WARNING: parquet.hadoop.ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
+Jan 19, 2018 9:27:52 AM INFO: parquet.hadoop.InternalParquetRecordReader: RecordReader initialized will read a total of 2 records.
+Jan 19, 2018 9:27:52 AM INFO: parquet.hadoop.InternalParquetRecordReader: at row 0. reading next block
+Jan 19, 2018 9:27:52 AM INFO: parquet.hadoop.InternalParquetRecordReader: block read in memory in 5 ms. row count = 2
+Jan 19, 2018 9:27:52 AM INFO: parquet.hadoop.InternalParquetRecordReader: RecordReader initialized will read a total of 6 records.
+Jan 19, 2018 9:27:52 AM INFO: parquet.hadoop.InternalParquetRecordReader: at row 0. reading next block
+Jan 19, 2018 9:27:52 AM INFO: parquet.hadoop.InternalParquetRecordReader: block read in memory in 9 ms. row count = 6
+Jan 19, 2018 9:28:14 AM WARNING: parquet.hadoop.ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
+Jan 19, 2018 9:28:14 AM INFO: parquet.hadoop.InternalParquetRecordReader: RecordReader initialized will read a total of 6 records.
+Jan 19, 2018 9:28:14 AM INFO: parquet.hadoop.InternalParquetRecordReader: at row 0. reading next block
+Jan 19, 2018 9:28:14 AM INFO: parquet.hadoop.InternalParquetRecordReader: block read in memory in 2 ms. row count = 6
+Jan 19, 2018 9:28:15 AM WARNING: parquet.hadoop.ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
+Jan 19, 2018 9:28:15 AM WARNING: parquet.hadoop.ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
+Jan 19, 2018 9:28:15 AM WARNING: parquet.hadoop.ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
+Jan 19, 2018 9:28:15 AM WARNING: parquet.hadoop.ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
+Jan 19, 2018 9:28:15 AM INFO: parquet.hadoop.InternalParquetRecordReader: RecordReader initialized will read a total of 7 records.
+Jan 19, 2018 9:28:15 AM INFO: parquet.hadoop.InternalParquetRecordReader: at row 0. reading next block
+Jan 19, 2018 9:28:15 AM INFO: parquet.hadoop.InternalParquetRecordReader: block read in memory in 27 ms. row count = 7
+Jan 19, 2018 9:28:15 AM INFO: parquet.hadoop.InternalParquetRecordReader: RecordReader initialized will read a total of 4 records.
+Jan 19, 2018 9:28:15 AM INFO: parquet.hadoop.InternalParquetRecordReader: at row 0. reading next block
+Jan 19, 2018 9:28:15 AM INFO: parquet.hadoop.InternalParquetRecordReader: RecordReader initialized will read a total of 2 records.
+Jan 19, 2018 9:28:15 AM INFO: parquet.hadoop.InternalParquetRecordReader: at row 0. reading next block
+Jan 19, 2018 9:28:15 AM INFO: parquet.hadoop.InternalParquetRecordReader: RecordReader initialized will read a total of 2 records.
+Jan 19, 2018 9:28:15 AM INFO: parquet.hadoop.InternalParquetRecordReader: at row 0. reading next block
+Jan 19, 2018 9:28:15 AM INFO: parquet.hadoop.InternalParquetRecordReader: block read in memory in 1 ms. row count = 2
+Jan 19, 2018 9:28:15 AM INFO: parquet.hadoop.InternalParquetRecordReader: block read in memory in 6 ms. row count = 2
+Jan 19, 2018 9:28:15 AM INFO: parquet.hadoop.InternalParquetRecordReader: block read in memory in 9 ms. row count = 4
+Jan 19, 2018 9:28:15 AM WARNING: parquet.hadoop.ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
+Jan 19, 2018 9:28:15 AM INFO: parquet.hadoop.InternalParquetRecordReader: RecordReader initialized will read a total of 6 records.
+Jan 19, 2018 9:28:15 AM INFO: parquet.had+--------------------+
+|             map_col|
++--------------------+
+|Map(key4 -> val4,...|
+|Map(key4 -> val4,...|
+|Map(key4 -> val4,...|
+|Map(key4 -> val4,...|
+|Map(key4 -> val4,...|
+|Map(key4 -> val4,...|
+|Map(key4 -> val4,...|
+|Map(key4 -> val4,...|
+|Map(key4 -> val4,...|
+|Map(key4 -> val4,...|
+|Map(key4 -> val4,...|
+|Map(key4 -> val4,...|
+|Map(key4 -> val4,...|
+|Map(key4 -> val4,...|
+|Map(key4 -> val4,...|
+|Map(key4 -> val4,...|
+|Map(key4 -> val4,...|
+|Map(key4 -> val4,...|
+|Map(key4 -> val4,...|
+|Map(key4 -> val4,...|
++--------------------+
+only showing top 20 rows

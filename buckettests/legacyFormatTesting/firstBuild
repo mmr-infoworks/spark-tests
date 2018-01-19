@@ -1,0 +1,252 @@
+0: jdbc:hive2://localhost:10000/default> select count(*) from test_dt1;
+INFO  : Session is already open
+INFO  : Dag name: select count(*) from test_dt1(Stage-1)
+INFO  : Tez session was closed. Reopening...
+INFO  : Session re-established.
+INFO  :
+
+INFO  : Status: Running (Executing on YARN cluster with App id application_1513157465166_9132)
+
+INFO  : Map 1: -/-	Reducer 2: 0/1
+INFO  : Map 1: 0/2	Reducer 2: 0/1
+INFO  : Map 1: 0(+1)/2	Reducer 2: 0/1
+INFO  : Map 1: 0(+2)/2	Reducer 2: 0/1
+INFO  : Map 1: 1(+1)/2	Reducer 2: 0/1
+INFO  : Map 1: 2/2	Reducer 2: 0(+1)/1
+INFO  : Map 1: 2/2	Reducer 2: 1/1
++------+--+
+| _c0  |
++------+--+
+| 23   |
++------+--+
+1 row selected (9.721 seconds)
+
+
+
+
+0: jdbc:hive2://localhost:10000/default> select ziw_row_id ,c_email_address, c_last_review_date, c_preferred_cust_flag from mayuri_schema.test_dt1;
++-----------------------------------+-----------------------------------------------------+---------------------+------------------------+--+
+|            ziw_row_id             |                   c_email_address                   | c_last_review_date  | c_preferred_cust_flag  |
++-----------------------------------+-----------------------------------------------------+---------------------+------------------------+--+
+| 4441b65e5b981d55d059b8e54077885a  | Nick.Wheatley@zq8FkJ67Dq.edu                        | 2452646             | Y                      |
+| f7d482ab7fe8b050c717b22f478522b5  | Emily.Lacroix@dBROU20H.edu                          | 2452448             | Y                      |
+| bbda566cc6c58bd0f6124ea83ae6f4e5  | Arthur.Crockett@cSyIBNygLz.edu                      | 2452442             | Y                      |
+| f16f60c2232d7c8b48957f356cdcc19f  | Jennifer.Bolton@ecidoI.com                          | 2452497             | Y                      |
+| 8e61943887dc594cdefd14cf76cd4521  | Richard.Kemp@6.com                                  | 2452329             | Y                      |
+| 19acb240cab014aff02dea6a8461d15b  | Peter.Cowley@QEbmzHhGVVCGPQ3MSs.edu                 | 2452615             | Y                      |
+| 9917ab46b548a80cdc2e5cacb664cf3e  | Melinda.Fox@rJ2.com                                 | 2452451             | Y                      |
+| bee397fc81356466b7ac6db09d58d6e8  | Joseph.Weston@Mx8ZBB3x6.org                         | 2452497             | Y                      |
+| 6de3bcf5cf3c41a47ad11df0664c701b  | George.Demarco@LUu6fFZgxPTHYXVDDuza.com             | 2452358             | Y                      |
+| b72a0cf61ebf620d460da6e42fcec084  | Erica.Parrott@9pnE.com                              | 2452621             | Y                      |
+| 224e120c6bece94931f81e34893f8e36  | David.Martinez@9Uo2XhmjdR1TnU7C.edu                 | 2452349             | Y                      |
+| 8ebf0e81edbefbcc6324d5d7763e3ac6  | Julian.Santiago@okzz0KglkgZ.edu                     | 2452459             | Y                      |
+| a8a38bcc1d54ae5d1f8aee586d8e091b  | Robert.Forrester@sMzMOlXfpo.org                     | 2452457             | Y                      |
+| d25d7fe3a3c81862fc85f9a081aae79c  | Mike.Alexander@aBDgHKRjh.com                        | 2452536             | Y                      |
+| 379e05abdf2faba986b6908ad224f6d9  | Alicia.Chen@2Sklzmd2uze.com                         | 2452440             | Y                      |
+| 440fd104ddb64d678eb83b14e13e4c3e  | Guillermina.Allen@i7IE.org                          | 2452441             | Y                      |
+| 47abfb495d99c5ebc5287a9354fd7359  | Charles.Lopez@gOyo.com                              | 2452424             | Y                      |
+| 2a605ddc9e7848bbf789c378c6e81b18  | Thomas.Peterson@VI9CkEbcLdCSS1dCR.com               | 2452648             | Y                      |
+| 89b7a1ec8366ebbc0586142641466f7b  | Jason.Dunn@UVSSidu752IK.edu                         | 2452390             | Y                      |
+| e3c69d6e6cf36229b818d5156d35373a  | Dewitt.Porter@b3.edu                                | 2452610             | Y                      |
+| b8623a4a2a304a96d9a5d0f40c331ea6  | Timothy.Chambers@8Ht.org                            | 2452538             | Y                      |
+| 802af4332c89a3ad59703e011081a3f3  | Jacob.Cooper@HDAnDO.org                             | 2452521             | Y                      |
+| 7b98a0ad11073694056534f0109593ae  | David.Bryant@2dlMf64lmx1Pe6.org                     | 2452420             | Y                      |
++-----------------------------------+-----------------------------------------------------+---------------------+------------------------+--+
+
+
+
+
+0: jdbc:hive2://localhost:10000/default> select * from test_dt1;
++-------------------------+------------------------+------------------------+---------------------------------+---------------------------+-------------------+-----------------------------------------------------+------------------------------+-----------------------------+----------------------------------+---------------------------------+--------------------------+----------------------------------------------+---------------------------------+-------------------------+------------------------------+------------------------------+-----------------------------+----------------------------------+---------------------------------+-----------------------+-------------------------+------------------------+-----------------------------------+---------------------------------+---------------------------------+---------------------------+---------------------------------+---------------------+--+
+| test_dt1.c_customer_id  | test_dt1.c_salutation  | test_dt1.c_first_name  |      test_dt1.c_last_name       | test_dt1.c_birth_country  | test_dt1.c_login  |              test_dt1.c_email_address               | test_dt1.c_last_review_date  | test_dt1.c_customer_sk_new  | test_dt1.c_current_cdemo_sk_new  | test_dt1.c_current_addr_sk_new  |    test_dt1.full_name    |               test_dt1.map_col               |       test_dt1.struct_col       | test_dt1.c_customer_sk  | test_dt1.c_current_cdemo_sk  | test_dt1.c_current_hdemo_sk  | test_dt1.c_current_addr_sk  | test_dt1.c_first_shipto_date_sk  | test_dt1.c_first_sales_date_sk  | test_dt1.c_birth_day  | test_dt1.c_birth_month  | test_dt1.c_birth_year  |        test_dt1.ziw_row_id        | test_dt1.ziw_created_timestamp  | test_dt1.ziw_updated_timestamp  | test_dt1.ziw_status_flag  | test_dt1.c_preferred_cust_flag  | test_dt1.ziw_sec_p  |
++-------------------------+------------------------+------------------------+---------------------------------+---------------------------+-------------------+-----------------------------------------------------+------------------------------+-----------------------------+----------------------------------+---------------------------------+--------------------------+----------------------------------------------+---------------------------------+-------------------------+------------------------------+------------------------------+-----------------------------+----------------------------------+---------------------------------+-----------------------+-------------------------+------------------------+-----------------------------------+---------------------------------+---------------------------------+---------------------------+---------------------------------+---------------------+--+
+| AAAAAAAALIGIBAAA        | Dr.                    | Nick                   | Wheatley                        | YEMEN                     | NULL              | Nick.Wheatley@zq8FkJ67Dq.edu                        | 2452646                      | 99979.0                     | 856747.0                         | 1295.0                          | ["Nick","Wheatley"]      | {"key1":"val1","key3":"val3","key2":"val2"}  | {"col1":"a","col2":1,"col3":1}  | 99979                   | 856747                       | 5221                         | 1295                        | 2450483                          | 2450453                         | 23                    | 12                      | 1943                   | 4441b65e5b981d55d059b8e54077885a  | 2018-01-19 09:10:06.355         | 2018-01-19 09:10:06.355         | I                         | Y                               | 0                   |
+| AAAAAAAANHGIBAAA        | Mrs.                   | Emily                  | Lacroix                         | THAILAND                  | NULL              | Emily.Lacroix@dBROU20H.edu                          | 2452448                      | 99965.0                     | 1213699.0                        | 38207.0                         | ["Emily","Lacroix"]      | {"key1":"val1","key3":"val3","key2":"val2"}  | {"col1":"a","col2":1,"col3":1}  | 99965                   | 1213699                      | 6953                         | 38207                       | 2452647                          | 2452617                         | 18                    | 9                       | 1932                   | f7d482ab7fe8b050c717b22f478522b5  | 2018-01-19 09:10:06.355         | 2018-01-19 09:10:06.355         | I                         | Y                               | 0                   |
+| AAAAAAAAIHGIBAAA        | Ms.                    | Arthur                 | Crockett                        | FRANCE                    | NULL              | Arthur.Crockett@cSyIBNygLz.edu                      | 2452442                      | 99960.0                     | 1652957.0                        | 33827.0                         | ["Arthur","Crockett"]    | {"key1":"val1","key3":"val3","key2":"val2"}  | {"col1":"a","col2":1,"col3":1}  | 99960                   | 1652957                      | 6192                         | 33827                       | 2450381                          | 2450351                         | 20                    | 2                       | 1941                   | bbda566cc6c58bd0f6124ea83ae6f4e5  | 2018-01-19 09:10:06.355         | 2018-01-19 09:10:06.355         | I                         | Y                               | 0                   |
+| AAAAAAAANJGIBAAA        | Dr.                    | Jennifer               | Bolton                          | BRUNEI DARUSSALAM         | NULL              | Jennifer.Bolton@ecidoI.com                          | 2452497                      | 99997.0                     | 1822151.0                        | 2919.0                          | ["Jennifer","Bolton"]    | {"key1":"val1","key3":"val3","key2":"val
+
+
+
+
+
+0: jdbc:hive2://localhost:10000/default> show create table test_dt1;
++-------------------------------------------------------------------------------------------+--+
+|                                      createtab_stmt                                       |
++-------------------------------------------------------------------------------------------+--+
+| CREATE EXTERNAL TABLE `test_dt1`(                                                         |
+|   `c_customer_id` string,                                                                 |
+|   `c_salutation` string,                                                                  |
+|   `c_first_name` string,                                                                  |
+|   `c_last_name` string,                                                                   |
+|   `c_birth_country` string,                                                               |
+|   `c_login` string,                                                                       |
+|   `c_email_address` string,                                                               |
+|   `c_last_review_date` string,                                                            |
+|   `c_customer_sk_new` double,                                                             |
+|   `c_current_cdemo_sk_new` double,                                                        |
+|   `c_current_addr_sk_new` double,                                                         |
+|   `full_name` array<string>,                                                              |
+|   `map_col` map<string,string>,                                                           |
+|   `struct_col` struct<col1:string,col2:int,col3:decimal(2,1)>,                            |
+|   `c_customer_sk` decimal(38,0),                                                          |
+|   `c_current_cdemo_sk` decimal(38,0),                                                     |
+|   `c_current_hdemo_sk` decimal(38,0),                                                     |
+|   `c_current_addr_sk` decimal(38,0),                                                      |
+|   `c_first_shipto_date_sk` decimal(38,0),                                                 |
+|   `c_first_sales_date_sk` decimal(38,0),                                                  |
+|   `c_birth_day` decimal(38,0),                                                            |
+|   `c_birth_month` decimal(38,0),                                                          |
+|   `c_birth_year` decimal(38,0),                                                           |
+|   `ziw_row_id` string,                                                                    |
+|   `ziw_created_timestamp` timestamp,                                                      |
+|   `ziw_updated_timestamp` timestamp,                                                      |
+|   `ziw_status_flag` string)                                                               |
+| PARTITIONED BY (                                                                          |
+|   `c_preferred_cust_flag` string,                                                         |
+|   `ziw_sec_p` int)                                                                        |
+| ROW FORMAT SERDE                                                                          |
+|   'org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe'                           |
+| STORED AS INPUTFORMAT                                                                     |
+|   'org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat'                         |
+| OUTPUTFORMAT                                                                              |
+|   'org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat'                        |
+| LOCATION                                                                                  |
+|   'hdfs://ip-172-30-1-247.ec2.internal:8020/test_workspace/mayur_schema/test_dt1/full_0'  |
+| TBLPROPERTIES (                                                                           |
+|   'parquet.compress'='SNAPPY',                                                            |
+|   'transient_lastDdlTime'='1516353017')                                                   |
++-------------------------------------------------------------------------------------------+--+
+
+
+
+
+0: jdbc:hive2://localhost:10000/default> select map_col from test_dt1;
++----------------------------------------------+--+
+|                   map_col                    |
++----------------------------------------------+--+
+| {"key1":"val1","key3":"val3","key2":"val2"}  |
+| {"key1":"val1","key3":"val3","key2":"val2"}  |
+| {"key1":"val1","key3":"val3","key2":"val2"}  |
+| {"key1":"val1","key3":"val3","key2":"val2"}  |
+| {"key1":"val1","key3":"val3","key2":"val2"}  |
+| {"key1":"val1","key3":"val3","key2":"val2"}  |
+| {"key1":"val1","key3":"val3","key2":"val2"}  |
+| {"key1":"val1","key3":"val3","key2":"val2"}  |
+| {"key1":"val1","key3":"val3","key2":"val2"}  |
+| {"key1":"val1","key3":"val3","key2":"val2"}  |
+| {"key1":"val1","key3":"val3","key2":"val2"}  |
+| {"key1":"val1","key3":"val3","key2":"val2"}  |
+| {"key1":"val1","key3":"val3","key2":"val2"}  |
+| {"key1":"val1","key3":"val3","key2":"val2"}  |
+| {"key1":"val1","key3":"val3","key2":"val2"}  |
+| {"key1":"val1","key3":"val3","key2":"val2"}  |
+| {"key1":"val1","key3":"val3","key2":"val2"}  |
+| {"key1":"val1","key3":"val3","key2":"val2"}  |
+| {"key1":"val1","key3":"val3","key2":"val2"}  |
+| {"key1":"val1","key3":"val3","key2":"val2"}  |
+| {"key1":"val1","key3":"val3","key2":"val2"}  |
+| {"key1":"val1","key3":"val3","key2":"val2"}  |
+| {"key1":"val1","key3":"val3","key2":"val2"}  |
++----------------------------------------------+--+
+23 rows selected (0.142 seconds)
+
+
+
+
+
+
+--------------------Spark SQL------------------------------------
+
+
+
+
+
+scala> spark.sql("select count(*) from mayuri_schema.test_dt1").show();
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
++--------+
+|count(1)|
++--------+
+|      23|
++--------+
+
+
+
+scala> spark.sql("select ziw_row_id ,c_email_address, c_last_review_date, c_preferred_cust_flag from mayuri_schema.test_dt1").show();
++--------------------+--------------------+------------------+---------------------+
+|          ziw_row_id|     c_email_address|c_last_review_date|c_preferred_cust_flag|
++--------------------+--------------------+------------------+---------------------+
+|4441b65e5b981d55d...|Nick.Wheatley@zq8...|        2452646   |                    Y|
+|f7d482ab7fe8b050c...|Emily.Lacroix@dBR...|        2452448   |                    Y|
+|bbda566cc6c58bd0f...|Arthur.Crockett@c...|        2452442   |                    Y|
+|f16f60c2232d7c8b4...|Jennifer.Bolton@e...|        2452497   |                    Y|
+|8e61943887dc594cd...|Richard.Kemp@6.co...|        2452329   |                    Y|
+|19acb240cab014aff...|Peter.Cowley@QEbm...|        2452615   |                    Y|
+|9917ab46b548a80cd...|Melinda.Fox@rJ2.c...|        2452451   |                    Y|
+|bee397fc81356466b...|Joseph.Weston@Mx8...|        2452497   |                    Y|
+|6de3bcf5cf3c41a47...|George.Demarco@LU...|        2452358   |                    Y|
+|b72a0cf61ebf620d4...|Erica.Parrott@9pn...|        2452621   |                    Y|
+|224e120c6bece9493...|David.Martinez@9U...|        2452349   |                    Y|
+|8ebf0e81edbefbcc6...|Julian.Santiago@o...|        2452459   |                    Y|
+|a8a38bcc1d54ae5d1...|Robert.Forrester@...|        2452457   |                    Y|
+|d25d7fe3a3c81862f...|Mike.Alexander@aB...|        2452536   |                    Y|
+|379e05abdf2faba98...|Alicia.Chen@2Sklz...|        2452440   |                    Y|
+|440fd104ddb64d678...|Guillermina.Allen...|        2452441   |                    Y|
+|47abfb495d99c5ebc...|Charles.Lopez@gOy...|        2452424   |                    Y|
+|2a605ddc9e7848bbf...|Thomas.Peterson@V...|        2452648   |                    Y|
+|89b7a1ec8366ebbc0...|Jason.Dunn@UVSSid...|        2452390   |                    Y|
+|e3c69d6e6cf36229b...|Dewitt.Porter@b3....|        2452610   |                    Y|
++--------------------+--------------------+------------------+---------------------+
+only showing top 20 rows
+
+
+
+
+
+scala> spark.sql("select  * from mayuri_schema.test_dt1").show();
+
+-+-------------+------------------+------------------+-----------------+----------------------+---------------------+-----------+-------------+------------+--------------------+---------------------+---------------------+---------------+---------------------+---------+
+|   c_customer_id|c_salutation|        c_first_name|         c_last_name|  c_birth_country|c_login|     c_email_address|c_last_review_date|c_customer_sk_new|c_current_cdemo_sk_new|c_current_addr_sk_new|           full_name|             map_col|struct_col|c_customer_sk|c_current_cdemo_sk|c_current_hdemo_sk|c_current_addr_sk|c_first_shipto_date_sk|c_first_sales_date_sk|c_birth_day|c_birth_month|c_birth_year|          ziw_row_id|ziw_created_timestamp|ziw_updated_timestamp|ziw_status_flag|c_preferred_cust_flag|ziw_sec_p|
++----------------+------------+--------------------+--------------------+-----------------+-------+--------------------+------------------+-----------------+----------------------+---------------------+--------------------+--------------------+----------+-------------+------------------+------------------+-----------------+----------------------+---------------------+-----------+-------------+------------+--------------------+---------------------+---------------------+---------------+---------------------+---------+
+|AAAAAAAALIGIBAAA|  Dr.       |Nick                |Wheatley         ...|            YEMEN|   null|Nick.Wheatley@zq8...|        2452646   |          99979.0|              856747.0|               1295.0|    [Nick, Wheatley]|Map(key1 -> val1,...| [a,1,1.0]|        99979|            856747|              5221|             1295|               2450483|              2450453|         23|           12|        1943|4441b65e5b981d55d...| 2018-01-19 09:10:...| 2018-01-19 09:10:...|              I|                    Y|        0|
+|AAAAAAAANHGIBAAA|  Mrs.      |Emily               |Lacroix          ...|         THAILAND|   null|Emily.Lacroix@dBR...|        2452448   |          99965.0|             1213699.0|              38207.0|    [Emily, Lacroix]|Map(key1 -> val1,...| [a,1,1.0]|        99965|           1213699|              6953|            38207|               2452647|              2452617|         18|            9|        1932|f7d482ab7fe8b050c...| 2018-01-19 09:10:...| 2018-01-19 09:10:...|              I|                    Y|        0|
+|AAAAAAAAIHGIBAAA|  Ms.       |Arthur              |Crockett         ...|           FRANCE|   null|Arthur.Crockett@c...|        2452442   |          99960.0|             1652957.0|              33827.0|  [Arthur, Crockett]|Map(key1 -> val1,...| [a,1,1.0]|        99960|           1652957|              6192|            33827|               2450381|              2450351|         20|            2|        1941|bbda566cc6c58bd0f...| 2018-01-19 09:10:...| 2018-01-19 09:10:...|              I|                    Y|        0|
+|AAAAAAAANJGIBAAA|  Dr.       |Jennifer            |Bolton           ...|BRUNEI DARUSSALAM|   null|Jennifer.Bolton@e...|        2452497   |          99997.0|             1822151.0|               2919.0|  [Jennifer, Bolton]|Map(key1 -> val1,...| [a,1,1.0]|        99997|           1822151|              6135|             2919|               2450290|              2450260|          9|            4|        1954|f16f60c2232d7c8b4...| 2018-01-19 09:10:...| 2018-01-19 09:10:...|              I|                    Y|        0|
+|AAAAAAAAGHGIBAAA|  Mr.       |Richard             |Kemp             ...|          LEBANON|   null|Richard.Kemp@6.co...|        2452329   |          99958.0|             1882624.0|              11363.0|     [Richard, Kemp]|Map(key1 -> val1,...| [a,1,1.0]|        99958|           1882624|               170|            11363|               2449145|              2449115|          9|            9|        1982|8e61943887dc594cd...| 2018-01-19 09:10:...| 2018-01-19 09:10:...|              I|                    Y|        0|
+|AAAAAAAAKJGIBAAA|  Sir       |Peter               |Cowley           ...|         ZIMBABWE|   null|Peter.Cowley@QEbm...|        2452615   |          99994.0|             1352252.0|              18333.0|     [Peter, Cowley]|Map(key1 -> val1,...| [a,1,1.0]|        99994|           1352252|               269|            18333|               2452172|              2452142|         19|           11|        1943|19acb240cab014aff...| 2018-01-19 09:10:...| 2018-01-19 09:10:...|              I|                    Y|        0|
+|AAAAAAAAMIGIBAAA|  Miss      |Melinda             |Fox              ...|            KENYA|   null|Melinda.Fox@rJ2.c...|        2452451   |          99980.0|             1357170.0|              10534.0|      [Melinda, Fox]|Map(key1 -> val1,...| [a,1,1.0]|        99980|           1357170|              2452|            10534|               2451003|              2450973|         30|           11|        1970|9917ab46b548a80cd...| 2018-01-19 09:10:...| 2018-01-19 09:10:...|              I|                    Y|        0|
+|AAAAAAAAPHGIBAAA|  Mr.       |Joseph              |Weston           ...|         PARAGUAY|   null|Joseph.Weston@Mx8...|        2452497   |          99967.0|              276567.0|               5655.0|    [Joseph, Weston]|Map(key1 -> val1,...| [a,1,1.0]|        99967|            276567|              1511|             5655|               2451181|              2451151|         22|            9|        1946|bee397fc81356466b...| 2018-01-19 09:10:...| 2018-01-19 09:10:...|              I|                    Y|        0|
+|AAAAAAAAFJGIBAAA|  Sir       |George              |Demarco          ...|           FRANCE|   null|George.Demarco@LU...|        2452358   |          99989.0|              890490.0|               6244.0|   [George, Demarco]|Map(key1 -> val1,...| [a,1,1.0]|        99989|            890490|               167|             6244|               2450864|              2450834|          8|            6|        1937|6de3bcf5cf3c41a47...| 2018-01-19 09:10:...| 2018-01-19 09:10:...|              I|                    Y|        0|
+|AAAAAAAAAKGIBAAA|  Mrs.      |Erica               |Parrott          ...|          BELGIUM|   null|Erica.Parrott@9pn...|        2452621   |         100000.0|              441077.0|               8487.0|    [Erica, Parrott]|Map(key1 -> v
+
+
+
+
+
+scala> spark.sql("select map_col from mayuri_schema.test_dt1").show();
++--------------------+
+|             map_col|
++--------------------+
+|Map(key1 -> val1,...|
+|Map(key1 -> val1,...|
+|Map(key1 -> val1,...|
+|Map(key1 -> val1,...|
+|Map(key1 -> val1,...|
+|Map(key1 -> val1,...|
+|Map(key1 -> val1,...|
+|Map(key1 -> val1,...|
+|Map(key1 -> val1,...|
+|Map(key1 -> val1,...|
+|Map(key1 -> val1,...|
+|Map(key1 -> val1,...|
+|Map(key1 -> val1,...|
+|Map(key1 -> val1,...|
+|Map(key1 -> val1,...|
+|Map(key1 -> val1,...|
+|Map(key1 -> val1,...|
+|Map(key1 -> val1,...|
+|Map(key1 -> val1,...|
+|Map(key1 -> val1,...|
++--------------------+
+only showing top 20 rows
